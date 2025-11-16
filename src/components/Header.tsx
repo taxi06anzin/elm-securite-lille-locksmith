@@ -12,6 +12,7 @@ const Header = () => {
     { name: "Ouverture de porte", href: "/ouverture-porte" },
     { name: "Changement de serrure", href: "/changement-serrure" },
     { name: "Portes blindées", href: "/porte-blindee" },
+    { name: "Serrurier pas cher", href: "/serrurier-pas-cher" },
   ];
 
   return (

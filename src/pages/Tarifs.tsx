@@ -78,11 +78,11 @@ const Tarifs = () => {
           <div className="container mx-auto px-4 text-secondary-foreground">
             <div className="max-w-3xl mx-auto text-center">
               <h1 className="text-5xl font-bold mb-6">
-                Tarifs Serrurerie à Lille
+                Tarifs serrurier Lille – Prix annoncés avant intervention
               </h1>
               <p className="text-xl mb-8 opacity-90">
-                Prix transparents et fixes • Devis gratuit avant intervention • 
-                Aucun frais caché
+                Grille tarifaire indicative. Forfait journée, nuit, dimanche et jours fériés. 
+                Surcoûts encadrés. Aucun ajout non annoncé.
               </p>
               <CallButton size="lg" />
             </div>

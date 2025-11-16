@@ -57,11 +57,11 @@ const OuverturePorte = () => {
           <div className="container mx-auto px-4 text-secondary-foreground">
             <div className="max-w-3xl">
               <h1 className="text-5xl font-bold mb-6">
-                Ouverture de Porte à Lille
+                Ouverture de porte Lille – Intervention express
               </h1>
               <p className="text-xl mb-8 opacity-90">
-                Service professionnel d'ouverture de porte 24h/24 et 7j/7 à Lille. 
-                Porte claquée ou bloquée ? Notre serrurier intervient en 20-30 minutes.
+                Ouverture de toutes portes fermées. Porte claquée, clé perdue, mécanisme bloqué. 
+                Intervention rapide avec méthodes adaptées au type de serrure.
               </p>
               <CallButton size="lg" />
             </div>
@@ -75,7 +75,7 @@ const OuverturePorte = () => {
 
           <section className="py-16">
             <h2 className="text-3xl font-bold mb-8 text-center">
-              Situations d'ouverture de porte à Lille
+              Types de portes prises en charge
             </h2>
             
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">

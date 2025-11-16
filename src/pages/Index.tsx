@@ -77,12 +77,13 @@ const Index = () => {
           <div className="container mx-auto px-4 relative z-10">
             <div className="max-w-2xl text-secondary-foreground">
               <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight">
-                Serrurier à Lille<br />
-                <span className="text-accent">Intervention 24/7</span>
+                Serrurier Lille<br />
+                <span className="text-accent">Dépannage rapide 24h/24 et 7j/7</span>
               </h1>
               <p className="text-xl mb-8 opacity-90">
-                Dépannage serrurerie en urgence • Ouverture de porte • Changement de serrure • 
-                Porte blindée • Intervention rapide en 20-30 minutes à Lille et dans toute la MEL
+                Intervention disponible à Lille et dans toute la MEL. Dépannage immédiat pour porte claquée, 
+                clé perdue, serrure bloquée, barillet endommagé ou changement de cylindre. 
+                Déplacement rapide et prise en charge des situations urgentes de jour comme de nuit.
               </p>
               
               <div className="flex flex-wrap gap-4 mb-8">
@@ -118,33 +119,62 @@ const Index = () => {
         {/* Services */}
         <section className="container mx-auto px-4 py-16">
           <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold mb-4">Nos services de serrurerie à Lille</h2>
+            <h2 className="text-4xl font-bold mb-4">Intervention serrurier en urgence à Lille</h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              Expert en serrurerie, dépannage, métallerie, vitrerie et menuiserie
+              Déplacement rapide en cas de porte impossible à ouvrir. Méthodes adaptées selon le type de serrure : 
+              simple, multipoints, haute sécurité ou système compatible Fichet. Intervention sur portes d'appartements, 
+              maisons, locaux commerciaux et immeubles.
             </p>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
-            {services.map((service, index) => {
-              const Icon = service.icon;
-              return (
-                <a
-                  key={index}
-                  href={service.link}
-                  className="group bg-card border rounded-lg p-6 shadow-card hover:shadow-elegant transition-all duration-300 hover:-translate-y-1"
-                >
-                  <div className="w-14 h-14 rounded-full bg-primary/10 flex items-center justify-center mb-4 group-hover:bg-primary/20 transition-colors">
-                    <Icon className="h-7 w-7 text-primary" />
-                  </div>
-                  <h3 className="text-xl font-bold mb-2 group-hover:text-primary transition-colors">
-                    {service.title}
-                  </h3>
-                  <p className="text-muted-foreground text-sm">
-                    {service.description}
-                  </p>
-                </a>
-              );
-            })}
+            <div className="group bg-card border rounded-lg p-6 shadow-card hover:shadow-elegant transition-all duration-300 hover:-translate-y-1">
+              <div className="w-14 h-14 rounded-full bg-primary/10 flex items-center justify-center mb-4 group-hover:bg-primary/20 transition-colors">
+                <DoorOpen className="h-7 w-7 text-primary" />
+              </div>
+              <h3 className="text-xl font-bold mb-2 group-hover:text-primary transition-colors">
+                Ouverture de porte
+              </h3>
+              <p className="text-muted-foreground text-sm">
+                Porte claquée, fermée à clé, méthodes non destructives prioritaires
+              </p>
+            </div>
+
+            <div className="group bg-card border rounded-lg p-6 shadow-card hover:shadow-elegant transition-all duration-300 hover:-translate-y-1">
+              <div className="w-14 h-14 rounded-full bg-primary/10 flex items-center justify-center mb-4 group-hover:bg-primary/20 transition-colors">
+                <Lock className="h-7 w-7 text-primary" />
+              </div>
+              <h3 className="text-xl font-bold mb-2 group-hover:text-primary transition-colors">
+                Changement de serrure
+              </h3>
+              <p className="text-muted-foreground text-sm">
+                Remplacement cylindre, installation multipoints, systèmes renforcés
+              </p>
+            </div>
+
+            <div className="group bg-card border rounded-lg p-6 shadow-card hover:shadow-elegant transition-all duration-300 hover:-translate-y-1">
+              <div className="w-14 h-14 rounded-full bg-primary/10 flex items-center justify-center mb-4 group-hover:bg-primary/20 transition-colors">
+                <Shield className="h-7 w-7 text-primary" />
+              </div>
+              <h3 className="text-xl font-bold mb-2 group-hover:text-primary transition-colors">
+                Blindage de porte
+              </h3>
+              <p className="text-muted-foreground text-sm">
+                Renforcement sur porte existante, installation porte blindée neuve
+              </p>
+            </div>
+
+            <div className="group bg-card border rounded-lg p-6 shadow-card hover:shadow-elegant transition-all duration-300 hover:-translate-y-1">
+              <div className="w-14 h-14 rounded-full bg-primary/10 flex items-center justify-center mb-4 group-hover:bg-primary/20 transition-colors">
+                <Wrench className="h-7 w-7 text-primary" />
+              </div>
+              <h3 className="text-xl font-bold mb-2 group-hover:text-primary transition-colors">
+                Dépannage 24/7
+              </h3>
+              <p className="text-muted-foreground text-sm">
+                Intervention urgente jour et nuit, sécurisation après effraction
+              </p>
+            </div>
           </div>
 
           <div className="grid md:grid-cols-3 gap-6">
@@ -172,10 +202,10 @@ const Index = () => {
         {/* Pourquoi nous choisir */}
         <section className="bg-muted py-16">
           <div className="container mx-auto px-4">
-            <div className="max-w-4xl mx-auto">
-              <h2 className="text-3xl font-bold text-center mb-12">
-                Pourquoi appeler ELM SÉCURITÉ pour votre serrurerie à Lille ?
-              </h2>
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-3xl font-bold text-center mb-12">
+              Pourquoi appeler ELM SÉCURITÉ à Lille ?
+            </h2>
               
               <div className="grid md:grid-cols-2 gap-4">
                 {whyChooseUs.map((reason, index) => (
@@ -199,19 +229,18 @@ const Index = () => {
         <section className="container mx-auto px-4 py-16">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-3xl font-bold mb-6">
-              Intervention rapide en 20 à 30 minutes
+              Zones d'intervention Lille + MEL
             </h2>
             <p className="text-xl text-muted-foreground mb-8">
-              Notre serrurier intervient à Lille et dans toute la Métropole Européenne de Lille (MEL)
+              Intervention rapide dans tous les quartiers et communes de la Métropole Européenne de Lille
             </p>
             
             <div className="bg-card border rounded-lg p-8 shadow-card">
               <h3 className="font-bold text-xl mb-4">Nos zones d'intervention :</h3>
               <p className="text-muted-foreground leading-relaxed">
-                Lille Centre, Lille-Sud, Wazemmes, Vauban, Fives, Gambetta, Rue Nationale • 
-                Lomme, Hellemmes, Villeneuve-d'Ascq, Ronchin, La Madeleine, Lambersart, 
-                Mons-en-Barœul, Marcq-en-Barœul, Faches-Thumesnil, Wattignies, Loos, Seclin, 
-                Roubaix, Tourcoing, Wasquehal, Croix, Hem et toutes les communes de la MEL
+                Lille-Centre, Wazemmes, Fives, Vauban, Gambetta, Lille-Sud, Rue Nationale • 
+                Lomme, Hellemmes, Mons-en-Barœul, Villeneuve-d'Ascq, Ronchin, La Madeleine, Lambersart, 
+                Marcq-en-Barœul, Wattignies, Loos, Seclin et toutes les communes de la MEL.
               </p>
             </div>
           </div>
@@ -222,10 +251,10 @@ const Index = () => {
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto">
               <h2 className="text-3xl font-bold text-center mb-6">
-                Tarifs serrurerie transparents à Lille
+                Tarifs clairs
               </h2>
               <p className="text-center text-muted-foreground mb-12">
-                Pas de frais cachés • Devis gratuit avant intervention • Prix fixes annoncés
+                Forfait journée, nuit, dimanche et jours fériés. Prix communiqués avant intervention. Aucun frais caché.
               </p>
 
               <div className="grid md:grid-cols-3 gap-6">

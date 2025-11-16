@@ -26,10 +26,11 @@ const Contact = () => {
           <div className="container mx-auto px-4 text-secondary-foreground">
             <div className="max-w-3xl mx-auto text-center">
               <h1 className="text-5xl font-bold mb-6">
-                Contactez votre serrurier à Lille
+                Contact serrurier Lille – Intervention immédiate
               </h1>
               <p className="text-xl mb-8 opacity-90">
-                Intervention rapide 24h/24 et 7j/7 • Devis gratuit sur place
+                Appel direct au 06 26 16 06 87. Formulaire disponible pour devis technique. 
+                Possibilité d'ajouter une photo du problème.
               </p>
               <CallButton size="lg" />
             </div>

@@ -57,11 +57,11 @@ const ChangementSerrure = () => {
           <div className="container mx-auto px-4 text-secondary-foreground">
             <div className="max-w-3xl">
               <h1 className="text-5xl font-bold mb-6">
-                Changement de Serrure à Lille
+                Changement de serrure Lille – Cylindres et verrous sécurisés
               </h1>
               <p className="text-xl mb-8 opacity-90">
-                Installation et remplacement de serrures toutes marques à Lille. 
-                Serrures 3 points, 5 points, haute sécurité A2P. Intervention rapide et devis gratuit.
+                Installation rapide de systèmes compatibles avec les portes standard et blindées. 
+                Cylindres européens, multipoints, verrous haute résistance, systèmes compatibles Fichet.
               </p>
               <CallButton size="lg" />
             </div>
