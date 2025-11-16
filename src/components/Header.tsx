@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import { Phone, Menu, X, MapPin, Clock } from "lucide-react";
+import { Phone, Menu, X, MapPin, Clock, Mail } from "lucide-react";
 import { CallButton } from "./ui/button-variants";
 import { Button } from "./ui/button";
 
@@ -33,6 +33,10 @@ const Header = () => {
             <a href="tel:0621660867" className="flex items-center gap-2 font-bold hover:underline">
               <Phone className="h-4 w-4" />
               06 21 66 08 67
+            </a>
+            <a href="mailto:elmsecuritemolinel@gmail.com" className="hidden md:flex items-center gap-2 hover:underline">
+              <Mail className="h-4 w-4" />
+              elmsecuritemolinel@gmail.com
             </a>
           </div>
         </div>

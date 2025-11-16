@@ -22,9 +22,13 @@ const Footer = () => {
                 <span>143 Rue du Molinel<br />59800 Lille</span>
               </div>
               <div className="flex items-center gap-2">
-                <Phone className="h-5 w-5" />
-                <a href="tel:0621660867" className="hover:underline font-bold">
-                  06 21 66 08 67
+                <Phone className="h-4 w-4" />
+                <span>06 21 66 08 67</span>
+              </div>
+              <div className="flex items-start gap-2">
+                <Mail className="h-5 w-5 mt-0.5 flex-shrink-0" />
+                <a href="mailto:elmsecuritemolinel@gmail.com" className="hover:underline">
+                  elmsecuritemolinel@gmail.com
                 </a>
               </div>
               <div className="flex items-start gap-2">
