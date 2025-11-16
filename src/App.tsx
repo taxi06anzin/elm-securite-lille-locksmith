@@ -9,6 +9,12 @@ import OuverturePorte from "./pages/OuverturePorte";
 import ChangementSerrure from "./pages/ChangementSerrure";
 import PorteBlindee from "./pages/PorteBlindee";
 import SerrurierPasCher from "./pages/SerrurierPasCher";
+import SerrurierLille from "./pages/SerrurierLille";
+import SerrurierRoubaix from "./pages/SerrurierRoubaix";
+import SerrurierTourcoing from "./pages/SerrurierTourcoing";
+import SerrurierVilleneuve from "./pages/SerrurierVilleneuve";
+import SerrurierMarcq from "./pages/SerrurierMarcq";
+import SerrurierMadeleine from "./pages/SerrurierMadeleine";
 import Tarifs from "./pages/Tarifs";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
@@ -28,6 +34,12 @@ const App = () => (
           <Route path="/changement-serrure" element={<ChangementSerrure />} />
           <Route path="/porte-blindee" element={<PorteBlindee />} />
           <Route path="/serrurier-pas-cher" element={<SerrurierPasCher />} />
+          <Route path="/serrurier-lille" element={<SerrurierLille />} />
+          <Route path="/serrurier-roubaix" element={<SerrurierRoubaix />} />
+          <Route path="/serrurier-tourcoing" element={<SerrurierTourcoing />} />
+          <Route path="/serrurier-villeneuve-ascq" element={<SerrurierVilleneuve />} />
+          <Route path="/serrurier-marcq-en-baroeul" element={<SerrurierMarcq />} />
+          <Route path="/serrurier-la-madeleine" element={<SerrurierMadeleine />} />
           <Route path="/tarifs" element={<Tarifs />} />
           <Route path="/contact" element={<Contact />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
