@@ -15,6 +15,12 @@ import SerrurierTourcoing from "./pages/SerrurierTourcoing";
 import SerrurierVilleneuve from "./pages/SerrurierVilleneuve";
 import SerrurierMarcq from "./pages/SerrurierMarcq";
 import SerrurierMadeleine from "./pages/SerrurierMadeleine";
+import SerrurierLambersart from "./pages/SerrurierLambersart";
+import SerrurierMouvaux from "./pages/SerrurierMouvaux";
+import SerrurierCroix from "./pages/SerrurierCroix";
+import SerrurierWambrechies from "./pages/SerrurierWambrechies";
+import SerrurierMons from "./pages/SerrurierMons";
+import SerrurierWasquehal from "./pages/SerrurierWasquehal";
 import Tarifs from "./pages/Tarifs";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
@@ -34,12 +40,18 @@ const App = () => (
           <Route path="/changement-serrure" element={<ChangementSerrure />} />
           <Route path="/porte-blindee" element={<PorteBlindee />} />
           <Route path="/serrurier-pas-cher" element={<SerrurierPasCher />} />
-          <Route path="/serrurier-lille" element={<SerrurierLille />} />
-          <Route path="/serrurier-roubaix" element={<SerrurierRoubaix />} />
-          <Route path="/serrurier-tourcoing" element={<SerrurierTourcoing />} />
-          <Route path="/serrurier-villeneuve-ascq" element={<SerrurierVilleneuve />} />
-          <Route path="/serrurier-marcq-en-baroeul" element={<SerrurierMarcq />} />
-          <Route path="/serrurier-la-madeleine" element={<SerrurierMadeleine />} />
+        <Route path="/serrurier-lille" element={<SerrurierLille />} />
+        <Route path="/serrurier-roubaix" element={<SerrurierRoubaix />} />
+        <Route path="/serrurier-tourcoing" element={<SerrurierTourcoing />} />
+        <Route path="/serrurier-villeneuve-ascq" element={<SerrurierVilleneuve />} />
+        <Route path="/serrurier-marcq-en-baroeul" element={<SerrurierMarcq />} />
+        <Route path="/serrurier-la-madeleine" element={<SerrurierMadeleine />} />
+        <Route path="/serrurier-lambersart" element={<SerrurierLambersart />} />
+        <Route path="/serrurier-mouvaux" element={<SerrurierMouvaux />} />
+        <Route path="/serrurier-croix" element={<SerrurierCroix />} />
+        <Route path="/serrurier-wambrechies" element={<SerrurierWambrechies />} />
+        <Route path="/serrurier-mons-en-baroeul" element={<SerrurierMons />} />
+        <Route path="/serrurier-wasquehal" element={<SerrurierWasquehal />} />
           <Route path="/tarifs" element={<Tarifs />} />
           <Route path="/contact" element={<Contact />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
