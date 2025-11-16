@@ -28,12 +28,22 @@ const ContactForm = () => {
       return;
     }
 
-    // En production, envoyer les données au backend
-    console.log("Form data:", formData);
+    // Créer le message WhatsApp
+    const message = `🔒 *Nouvelle demande serrurier*\n\n` +
+      `👤 *Nom:* ${formData.name}\n` +
+      `📞 *Téléphone:* ${formData.phone}\n` +
+      `📍 *Adresse:* ${formData.address || 'Non précisée'}\n` +
+      `📝 *Problème:* ${formData.message || 'Non précisé'}`;
+    
+    // Ouvrir WhatsApp avec le message pré-rempli (remplacez par votre numéro)
+    const whatsappNumber = "33621660867"; // Format international sans + ni espaces
+    const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
+    
+    window.open(whatsappUrl, '_blank');
     
     toast({
-      title: "Demande envoyée !",
-      description: "Nous vous contactons dans les plus brefs délais.",
+      title: "Redirection vers WhatsApp",
+      description: "Envoyez le message pour finaliser votre demande.",
     });
 
     // Reset form
