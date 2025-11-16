@@ -4,6 +4,9 @@ import Footer from "@/components/Footer";
 import TrustBadges from "@/components/TrustBadges";
 import ContactForm from "@/components/ContactForm";
 import JsonLd from "@/components/JsonLd";
+import InternalLinks from "@/components/InternalLinks";
+import Breadcrumb from "@/components/Breadcrumb";
+import OptimizedImage from "@/components/OptimizedImage";
 import { CallButton } from "@/components/ui/button-variants";
 import { MapPin, CheckCircle, Lock } from "lucide-react";
 import ouverturePorte from "@/assets/ouverture-porte-1.png";
@@ -30,12 +33,29 @@ const SerrurierHellemmes = () => {
           name="description" 
           content="Serrurier à Hellemmes 24/7. Intervention Faidherbe, Éléphant, Centre. Ouverture porte, remplacement cylindre ☎ 06 26 16 06 87" 
         />
+        <meta name="robots" content="index, follow" />
         <link rel="canonical" href="https://serrurier-urgence-lille.fr/serrurier-hellemmes" />
+        
+        <meta property="og:title" content="Serrurier Hellemmes – Intervention technique 7j/7 | ELM SÉCURITÉ" />
+        <meta property="og:description" content="Serrurier à Hellemmes 24/7. Intervention Faidherbe, Éléphant, Centre. Ouverture porte, remplacement cylindre ☎ 06 26 16 06 87" />
+        <meta property="og:url" content="https://serrurier-urgence-lille.fr/serrurier-hellemmes" />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="https://serrurier-urgence-lille.fr/hero-locksmith.jpg" />
+        
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Serrurier Hellemmes – Intervention technique 7j/7 | ELM SÉCURITÉ" />
+        <meta name="twitter:description" content="Serrurier à Hellemmes 24/7. Intervention Faidherbe, Éléphant, Centre. Ouverture porte, remplacement cylindre ☎ 06 26 16 06 87" />
       </Helmet>
-      <JsonLd />
+      <JsonLd pageName="Serrurier Hellemmes" pageUrl="https://serrurier-urgence-lille.fr/serrurier-hellemmes" />
       
       <div className="min-h-screen bg-background">
         <Header />
+        <Breadcrumb 
+          items={[
+            { label: "Accueil", path: "/" },
+            { label: "Serrurier Hellemmes", path: "/serrurier-hellemmes" }
+          ]} 
+        />
         
         <section className="relative py-20 bg-gradient-to-br from-secondary to-primary">
           <div className="container mx-auto px-4 text-secondary-foreground">
@@ -74,7 +94,7 @@ const SerrurierHellemmes = () => {
             </div>
 
             <div className="relative h-96 rounded-lg overflow-hidden shadow-elegant">
-              <img src={ouverturePorte} alt="Dépannage Hellemmes" className="w-full h-full object-cover" />
+              <OptimizedImage src={ouverturePorte} alt="Dépannage serrurier Hellemmes – ouverture de porte 24/7" className="w-full h-full object-cover" />
             </div>
           </section>
 
@@ -103,7 +123,7 @@ const SerrurierHellemmes = () => {
               
               <div className="grid md:grid-cols-2 gap-8 items-center">
                 <div className="relative h-80 rounded-lg overflow-hidden shadow-elegant">
-                  <img src={installationSerrure} alt="Remplacement cylindre Hellemmes" className="w-full h-full object-cover" />
+                  <OptimizedImage src={installationSerrure} alt="Remplacement cylindre Hellemmes – installation serrure sécurisée" className="w-full h-full object-cover" />
                 </div>
 
                 <div>
@@ -134,6 +154,8 @@ const SerrurierHellemmes = () => {
               <ContactForm />
             </div>
           </section>
+
+          <InternalLinks currentCity="Hellemmes" />
         </div>
 
         <Footer />
