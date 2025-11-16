@@ -39,11 +39,11 @@ const DepannageSerrurerie = () => {
           <div className="container mx-auto px-4 text-secondary-foreground">
             <div className="max-w-3xl">
               <h1 className="text-5xl font-bold mb-6">
-                Dépannage Serrurerie 24/7 à Lille
+                Dépannage serrurier Lille 24h/24
               </h1>
               <p className="text-xl mb-8 opacity-90">
-                Service d'urgence serrurerie disponible jour et nuit, week-ends et jours fériés. 
-                Intervention rapide en 20-30 minutes partout à Lille et dans la MEL.
+                Dépannage disponible en continu. Intervention rapide après appel. 
+                Gestion des portes bloquées, clés perdues, serrures forcées ou mécanismes endommagés.
               </p>
               <div className="flex flex-wrap gap-4">
                 <CallButton size="lg" />
@@ -63,7 +63,7 @@ const DepannageSerrurerie = () => {
           {/* Urgences courantes */}
           <section className="py-16">
             <h2 className="text-3xl font-bold mb-8 text-center">
-              Quand faire appel à notre service d'urgence serrurerie ?
+              Situations d'urgence prises en charge
             </h2>
             
             <div className="grid md:grid-cols-2 gap-6 mb-12">
@@ -93,16 +93,16 @@ const DepannageSerrurerie = () => {
           <section className="py-16 grid md:grid-cols-2 gap-12 items-center">
             <div>
               <h2 className="text-3xl font-bold mb-6">
-                Un service d'urgence serrurerie professionnel à Lille
+                Dépannage immédiat après effraction
               </h2>
               <p className="mb-4 text-muted-foreground">
-                ELM SÉCURITÉ met à votre disposition un serrurier d'urgence qualifié et expérimenté, 
-                disponible 24 heures sur 24 et 7 jours sur 7 pour tous vos problèmes de serrurerie à Lille.
+                Sécurisation de l'accès, remplacement du cylindre, pose provisoire selon le niveau de dommage.
               </p>
+              <h3 className="text-2xl font-bold mb-4 mt-8">
+                Ouverture de porte sans dégâts
+              </h3>
               <p className="mb-4 text-muted-foreground">
-                Que vous soyez confronté à une porte claquée, une serrure cassée, une clé perdue ou 
-                une tentative d'effraction, notre équipe intervient rapidement pour résoudre votre problème 
-                de serrurerie dans les meilleurs délais.
+                Méthodes non destructives prioritaires. Percussion interdite si une ouverture technique est possible.
               </p>
               <p className="mb-6 text-muted-foreground">
                 Nous nous engageons à vous fournir un devis gratuit et transparent avant toute intervention. 

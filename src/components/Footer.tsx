@@ -40,7 +40,7 @@ const Footer = () => {
             <ul className="space-y-2">
               <li>
                 <Link to="/depannage-serrurerie" className="hover:underline">
-                  Dépannage serrurerie 24/7
+                  Dépannage serrurier 24/7
                 </Link>
               </li>
               <li>
@@ -56,6 +56,11 @@ const Footer = () => {
               <li>
                 <Link to="/porte-blindee" className="hover:underline">
                   Portes blindées
+                </Link>
+              </li>
+              <li>
+                <Link to="/serrurier-pas-cher" className="hover:underline">
+                  Serrurier pas cher
                 </Link>
               </li>
               <li>
@@ -85,10 +90,13 @@ const Footer = () => {
                   Point Fort Fichet
                 </Link>
               </li>
-              <li>Serrurerie</li>
-              <li>Métallerie</li>
               <li>Vitrerie</li>
               <li>Menuiserie</li>
+              <li>
+                <Link to="/serrurier-pas-cher" className="hover:underline">
+                  Tarifs accessibles
+                </Link>
+              </li>
             </ul>
           </div>
 
@@ -110,7 +118,7 @@ const Footer = () => {
         <div className="border-t border-secondary-foreground/20 mt-8 pt-8 text-center text-sm">
           <p>© {new Date().getFullYear()} ELM SÉCURITÉ - Serrurier Lille - Tous droits réservés</p>
           <p className="mt-2 text-xs opacity-80">
-            Serrurerie, Dépannage, Métallerie, Vitrerie, Menuiserie à Lille et dans toute la MEL
+            Serrurier, Dépannage, Métallerie, Vitrerie, Menuiserie à Lille et dans toute la MEL
           </p>
         </div>
       </div>
