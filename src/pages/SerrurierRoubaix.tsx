@@ -4,6 +4,9 @@ import Footer from "@/components/Footer";
 import TrustBadges from "@/components/TrustBadges";
 import ContactForm from "@/components/ContactForm";
 import JsonLd from "@/components/JsonLd";
+import InternalLinks from "@/components/InternalLinks";
+import Breadcrumb from "@/components/Breadcrumb";
+import OptimizedImage from "@/components/OptimizedImage";
 import { CallButton } from "@/components/ui/button-variants";
 import { MapPin, CheckCircle } from "lucide-react";
 import ouvertureFine from "@/assets/ouverture-fine.png";
@@ -32,12 +35,18 @@ const SerrurierRoubaix = () => {
           name="description" 
           content="Serrurier à Roubaix 24/7. Intervention rapide tous quartiers : Alma, Pile, 3 Ponts, Centre. Ouverture porte, dépannage urgent ☎ 06 26 16 06 87" 
         />
+        <meta name="robots" content="index, follow" />
         <link rel="canonical" href="https://serrurier-urgence-lille.fr/serrurier-roubaix" />
+        <meta property="og:title" content="Serrurier Roubaix – Service rapide et disponible 7j/7 | ELM SÉCURITÉ" />
+        <meta property="og:description" content="Serrurier à Roubaix 24/7. Intervention rapide tous quartiers." />
+        <meta property="og:url" content="https://serrurier-urgence-lille.fr/serrurier-roubaix" />
+        <meta property="og:image" content="https://serrurier-urgence-lille.fr/og-image.jpg" />
       </Helmet>
-      <JsonLd />
+      <JsonLd pageName="Serrurier Roubaix" pageUrl="/serrurier-roubaix" />
       
       <div className="min-h-screen bg-background">
         <Header />
+        <Breadcrumb items={[{ label: "Serrurier Roubaix", path: "/serrurier-roubaix" }]} />
         
         <section className="relative py-20 bg-gradient-to-br from-secondary to-primary">
           <div className="container mx-auto px-4 text-secondary-foreground">
@@ -79,7 +88,7 @@ const SerrurierRoubaix = () => {
               </div>
 
               <div className="relative h-80 rounded-lg overflow-hidden shadow-elegant">
-                <img src={ouvertureFine} alt="Dépannage serrurier Roubaix" className="w-full h-full object-cover" />
+                <OptimizedImage src={ouvertureFine} alt="Dépannage serrurier Roubaix - intervention urgente" className="w-full h-full object-cover" />
               </div>
             </div>
           </section>
@@ -115,7 +124,7 @@ const SerrurierRoubaix = () => {
               
               <div className="grid md:grid-cols-2 gap-8 items-center">
                 <div className="relative h-80 rounded-lg overflow-hidden shadow-elegant">
-                  <img src={changementCylindre} alt="Installation cylindre Roubaix" className="w-full h-full object-cover" />
+                  <OptimizedImage src={changementCylindre} alt="Installation cylindre Roubaix - changement serrure" className="w-full h-full object-cover" />
                 </div>
 
                 <div>
@@ -151,6 +160,7 @@ const SerrurierRoubaix = () => {
           </section>
         </div>
 
+        <InternalLinks currentCity="serrurier-roubaix" />
         <Footer />
       </div>
     </>
