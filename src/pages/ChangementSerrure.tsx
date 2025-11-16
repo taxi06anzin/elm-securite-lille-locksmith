@@ -1,3 +1,5 @@
+import FAQ from "@/components/FAQ";
+import Reviews from "@/components/Reviews";
 import { Helmet } from "react-helmet";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
@@ -73,14 +75,37 @@ const ChangementSerrure = () => {
             <TrustBadges />
           </div>
 
-          <section className="py-16 grid md:grid-cols-2 gap-12 items-center">
+          <section className="py-16">
+            <div className="max-w-4xl mx-auto mb-12">
+              <p className="text-lg text-muted-foreground mb-8">
+                Le <strong>changement de serrure à Lille</strong> (59000, 59800, 59260) est une intervention courante pour sécuriser votre domicile 
+                ou votre commerce. Que vous ayez perdu vos clés, subi une tentative d'effraction ou que vous veniez d'emménager dans un nouveau logement, 
+                notre service de <a href="/depannage-serrurerie" className="text-primary hover:underline">dépannage serrurerie</a> intervient rapidement 
+                dans tous les quartiers de Lille (Centre, Fives, Wazemmes, Vauban, Moulins) et dans toute la MEL 
+                (<a href="/serrurier-roubaix" className="text-primary hover:underline">Roubaix</a>, 
+                <a href="/serrurier-tourcoing" className="text-primary hover:underline">Tourcoing</a>, 
+                <a href="/serrurier-villeneuve-ascq" className="text-primary hover:underline">Villeneuve-d'Ascq</a>).
+              </p>
+              
+              <p className="text-lg text-muted-foreground mb-8">
+                Nous installons tous types de serrures : <strong>serrures 3 points</strong> pour appartements, 
+                <strong>serrures 5 points</strong> pour maisons, et <strong>serrures haute sécurité A2P</strong> 
+                pour une protection maximale reconnue par les assurances. Notre stock permanent de cylindres européens, 
+                serrures multipoints et verrous de toutes marques (Fichet, Bricard, Vachette, Mottura) nous permet d'intervenir 
+                immédiatement sans délai d'attente. Si vous avez besoin d'une <a href="/porte-blindee" className="text-primary hover:underline">porte blindée</a> 
+                complète, nous proposons également ce service d'installation.
+              </p>
+            </div>
+          </section>
+
+          <section className="py-16 grid md:grid-cols-2 gap-12 items-center bg-muted -mx-4 px-4 md:mx-0 md:rounded-lg">
             <div className="relative h-[500px] rounded-lg overflow-hidden shadow-elegant">
-              <img src={changementSerrure} alt="Changement de serrure multipoint" className="w-full h-full object-cover" />
+              <img src={changementSerrure} alt="Changement serrure Lille intervention rapide" className="w-full h-full object-cover" />
             </div>
 
             <div>
               <h2 className="text-3xl font-bold mb-6">
-                Quand faut-il changer sa serrure ?
+                Quand changer sa serrure à Lille ?
               </h2>
               
               <div className="space-y-3 mb-8">
@@ -105,8 +130,14 @@ const ChangementSerrure = () => {
           <section className="py-16 bg-muted -mx-4 px-4 md:mx-0 md:rounded-lg">
             <div className="max-w-6xl mx-auto">
               <h2 className="text-3xl font-bold mb-12 text-center">
-                Types de serrures que nous installons
+                Types de serrures pour Lille et Métropole (59000, 59800, 59260)
               </h2>
+              
+              <p className="text-center text-muted-foreground max-w-3xl mx-auto mb-12">
+                Notre service de <strong>changement de serrure à Lille</strong> propose une gamme complète de solutions 
+                adaptées à tous les types d'habitation et budgets. Du simple remplacement de cylindre au <strong>changement complet 
+                de serrure multipoints</strong>, nous intervenons avec du matériel professionnel de haute qualité garanti par nos fournisseurs.
+              </p>
               
               <div className="grid md:grid-cols-3 gap-8 mb-12">
                 {typesSerrures.map((serrure, index) => (
@@ -138,11 +169,17 @@ const ChangementSerrure = () => {
             </div>
           </section>
 
-          <section className="py-16">
+          <section className="py-16 bg-muted -mx-4 px-4 md:mx-0 md:rounded-lg">
             <div className="max-w-4xl mx-auto">
               <h2 className="text-3xl font-bold mb-8 text-center">
-                Notre procédure de changement de serrure
+                Déroulement d'une intervention de changement de serrure à Lille
               </h2>
+              
+              <p className="text-center text-muted-foreground mb-8">
+                Chaque <strong>intervention de changement de serrure</strong> suit un protocole professionnel rigoureux 
+                pour garantir votre satisfaction et votre sécurité. De l'appel d'urgence à la remise des nouvelles clés, 
+                notre serrurier vous accompagne à chaque étape dans tous les quartiers de Lille et la MEL.
+              </p>
 
               <div className="grid md:grid-cols-4 gap-6">
                 <div className="text-center">
@@ -208,6 +245,31 @@ const ChangementSerrure = () => {
               </p>
             </div>
           </section>
+
+          <FAQ items={[
+            {
+              question: "Combien coûte un changement de serrure à Lille ?",
+              answer: "Le prix d'un changement de serrure à Lille dépend du type : à partir de 150€ pour une serrure 3 points, 250€ pour une 5 points, et 350€ pour une serrure haute sécurité A2P. Ces tarifs incluent le matériel et la pose. Un devis gratuit est systématiquement établi avant intervention dans tous les quartiers de Lille et la MEL."
+            },
+            {
+              question: "Faut-il changer toute la serrure ou juste le cylindre ?",
+              answer: "Si seul le cylindre est défectueux ou si vous avez perdu vos clés, le remplacement du cylindre suffit (moins coûteux). Si le mécanisme de la serrure est usé, endommagé ou obsolète, un changement complet est recommandé. Notre serrurier à Lille établit un diagnostic précis pour vous conseiller la solution la plus adaptée et économique."
+            },
+            {
+              question: "Puis-je changer ma serrure moi-même ?",
+              answer: "Techniquement possible pour une serrure simple, mais déconseillé car : risque de mauvais montage (sécurité compromise), perte de garantie fabricant, non-conformité pour l'assurance. Notre intervention professionnelle à Lille garantit une installation conforme, garantie et reconnue par les assurances."
+            },
+            {
+              question: "Quelle serrure choisir après une effraction à Lille ?",
+              answer: "Après une effraction à Lille, nous recommandons une serrure haute sécurité certifiée A2P (minimum 1 étoile). Ces serrures retardent considérablement les tentatives d'effraction et sont exigées par certaines assurances. Notre stock permanent permet une installation immédiate à Lille et dans toute la MEL."
+            },
+            {
+              question: "Combien de temps pour changer une serrure à Lille ?",
+              answer: "Le changement d'un simple cylindre prend 15-30 minutes. Pour une serrure complète multipoints, comptez 1h à 1h30. Notre serrurier arrive en 20-30 minutes à Lille (59000, 59800, 59260) avec tout le matériel nécessaire pour une intervention immédiate, même en urgence."
+            }
+          ]} />
+
+          <Reviews />
 
           <section id="contact" className="py-16">
             <div className="max-w-2xl mx-auto">
