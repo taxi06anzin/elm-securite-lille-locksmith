@@ -4,6 +4,9 @@ import Footer from "@/components/Footer";
 import TrustBadges from "@/components/TrustBadges";
 import ContactForm from "@/components/ContactForm";
 import JsonLd from "@/components/JsonLd";
+import InternalLinks from "@/components/InternalLinks";
+import Breadcrumb from "@/components/Breadcrumb";
+import OptimizedImage from "@/components/OptimizedImage";
 import { CallButton } from "@/components/ui/button-variants";
 import { MapPin, CheckCircle, Shield } from "lucide-react";
 import porteBlindeeImage from "@/assets/porte-blindee-installation.png";
@@ -30,12 +33,29 @@ const SerrurierBondues = () => {
           name="description" 
           content="Serrurier à Bondues 24/7. Intervention Centre, Bois d'Achelles, Grand Bondues, Ravennes. Ouverture porte, cylindre haute sécurité ☎ 06 26 16 06 87" 
         />
+        <meta name="robots" content="index, follow" />
         <link rel="canonical" href="https://serrurier-urgence-lille.fr/serrurier-bondues" />
+        
+        <meta property="og:title" content="Serrurier Bondues – Intervention sur secteurs résidentiels premium | ELM SÉCURITÉ" />
+        <meta property="og:description" content="Serrurier à Bondues 24/7. Intervention Centre, Bois d'Achelles, Grand Bondues, Ravennes. Ouverture porte, cylindre haute sécurité ☎ 06 26 16 06 87" />
+        <meta property="og:url" content="https://serrurier-urgence-lille.fr/serrurier-bondues" />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="https://serrurier-urgence-lille.fr/hero-locksmith.jpg" />
+        
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Serrurier Bondues – Intervention sur secteurs résidentiels premium | ELM SÉCURITÉ" />
+        <meta name="twitter:description" content="Serrurier à Bondues 24/7. Intervention Centre, Bois d'Achelles, Grand Bondues, Ravennes. Ouverture porte, cylindre haute sécurité ☎ 06 26 16 06 87" />
       </Helmet>
-      <JsonLd />
+      <JsonLd pageName="Serrurier Bondues" pageUrl="https://serrurier-urgence-lille.fr/serrurier-bondues" />
       
       <div className="min-h-screen bg-background">
         <Header />
+        <Breadcrumb 
+          items={[
+            { label: "Accueil", path: "/" },
+            { label: "Serrurier Bondues", path: "/serrurier-bondues" }
+          ]} 
+        />
         
         <section className="relative py-20 bg-gradient-to-br from-secondary to-primary">
           <div className="container mx-auto px-4 text-secondary-foreground">
@@ -75,7 +95,7 @@ const SerrurierBondues = () => {
             </div>
 
             <div className="relative h-96 rounded-lg overflow-hidden shadow-elegant">
-              <img src={porteBlindeeImage} alt="Dépannage Bondues" className="w-full h-full object-cover" />
+              <OptimizedImage src={porteBlindeeImage} alt="Dépannage serrurier Bondues – porte blindée haute sécurité" className="w-full h-full object-cover" />
             </div>
           </section>
 
@@ -135,6 +155,8 @@ const SerrurierBondues = () => {
               <ContactForm />
             </div>
           </section>
+
+          <InternalLinks currentCity="Bondues" />
         </div>
 
         <Footer />
