@@ -6,7 +6,7 @@ import ContactForm from "@/components/ContactForm";
 import JsonLd from "@/components/JsonLd";
 import { CallButton } from "@/components/ui/button-variants";
 import { MapPin, CheckCircle, Lock } from "lucide-react";
-import ouvertureProfessionnelle from "@/assets/ouverture-professionnelle.png";
+import ouvertureFine from "@/assets/ouverture-fine.png";
 import installationSerrure from "@/assets/installation-serrure.png";
 
 const SerrurierWasquehal = () => {
@@ -73,7 +73,7 @@ const SerrurierWasquehal = () => {
             </div>
 
             <div className="relative h-96 rounded-lg overflow-hidden shadow-elegant">
-              <img src={ouvertureProfessionnelle} alt="Dépannage serrurier Wasquehal" className="w-full h-full object-cover" />
+              <img src={ouvertureFine} alt="Dépannage serrurier Wasquehal" className="w-full h-full object-cover" />
             </div>
           </section>
 
