@@ -4,6 +4,9 @@ import Footer from "@/components/Footer";
 import TrustBadges from "@/components/TrustBadges";
 import ContactForm from "@/components/ContactForm";
 import JsonLd from "@/components/JsonLd";
+import InternalLinks from "@/components/InternalLinks";
+import Breadcrumb from "@/components/Breadcrumb";
+import OptimizedImage from "@/components/OptimizedImage";
 import { CallButton } from "@/components/ui/button-variants";
 import { MapPin, Clock, Shield, CheckCircle } from "lucide-react";
 import interventionImage from "@/assets/intervention-urgence.png";
@@ -32,12 +35,26 @@ const SerrurierLille = () => {
           name="description" 
           content="Serrurier à Lille disponible 24h/24. Intervention rapide dans tous les quartiers : Centre, Wazemmes, Fives, Vauban. Ouverture porte, changement serrure ☎ 06 26 16 06 87" 
         />
+        <meta name="robots" content="index, follow" />
         <link rel="canonical" href="https://serrurier-urgence-lille.fr/serrurier-lille" />
+        
+        {/* Open Graph */}
+        <meta property="og:title" content="Serrurier Lille – Dépannage immédiat 24h/24 | ELM SÉCURITÉ" />
+        <meta property="og:description" content="Serrurier à Lille disponible 24h/24. Intervention rapide dans tous les quartiers." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://serrurier-urgence-lille.fr/serrurier-lille" />
+        <meta property="og:image" content="https://serrurier-urgence-lille.fr/og-image.jpg" />
+        
+        {/* Twitter Card */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Serrurier Lille – Dépannage immédiat 24h/24" />
+        <meta name="twitter:description" content="Serrurier à Lille disponible 24h/24. Intervention rapide." />
       </Helmet>
-      <JsonLd />
+      <JsonLd pageName="Serrurier Lille" pageUrl="/serrurier-lille" />
       
       <div className="min-h-screen bg-background">
         <Header />
+        <Breadcrumb items={[{ label: "Serrurier Lille", path: "/serrurier-lille" }]} />
         
         <section className="relative py-20 bg-gradient-to-br from-secondary to-primary">
           <div className="container mx-auto px-4 text-secondary-foreground">
@@ -84,7 +101,11 @@ const SerrurierLille = () => {
 
           <section className="py-16 grid md:grid-cols-2 gap-12 items-center">
             <div className="relative h-96 rounded-lg overflow-hidden shadow-elegant">
-              <img src={interventionImage} alt="Intervention serrurier Lille" className="w-full h-full object-cover" />
+              <OptimizedImage 
+                src={interventionImage} 
+                alt="Intervention serrurier Lille - ouverture de porte urgente" 
+                className="w-full h-full object-cover" 
+              />
             </div>
 
             <div>
@@ -133,7 +154,11 @@ const SerrurierLille = () => {
                 </div>
 
                 <div className="relative h-80 rounded-lg overflow-hidden shadow-elegant">
-                  <img src={changementSerrure} alt="Changement serrure Lille" className="w-full h-full object-cover" />
+                  <OptimizedImage 
+                    src={changementSerrure} 
+                    alt="Changement serrure Lille - installation cylindre sécurisé" 
+                    className="w-full h-full object-cover" 
+                  />
                 </div>
               </div>
             </div>
@@ -191,6 +216,7 @@ const SerrurierLille = () => {
           </section>
         </div>
 
+        <InternalLinks currentCity="serrurier-lille" />
         <Footer />
       </div>
     </>
