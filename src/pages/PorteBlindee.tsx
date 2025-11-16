@@ -1,3 +1,5 @@
+import FAQ from "@/components/FAQ";
+import Reviews from "@/components/Reviews";
 import { Helmet } from "react-helmet";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
@@ -53,14 +55,35 @@ const PorteBlindee = () => {
             <TrustBadges />
           </div>
 
-          <section className="py-16 grid md:grid-cols-2 gap-12 items-center">
+          <section className="py-16">
+            <div className="max-w-4xl mx-auto mb-12">
+              <p className="text-lg text-muted-foreground mb-8">
+                L'<strong>installation d'une porte blindée à Lille</strong> (59000, 59800, 59260) est la solution la plus efficace 
+                pour sécuriser votre logement ou commerce contre les tentatives d'effraction. Que vous soyez situé dans le 
+                <a href="/serrurier-lille" className="text-primary hover:underline"> centre de Lille</a>, à 
+                <a href="/serrurier-marcq-en-baroeul" className="text-primary hover:underline"> Marcq-en-Barœul</a>, 
+                <a href="/serrurier-lambersart" className="text-primary hover:underline"> Lambersart</a> ou dans toute autre commune de la MEL, 
+                notre service de <strong>blindage de porte</strong> s'adapte à vos besoins et votre budget.
+              </p>
+              
+              <p className="text-lg text-muted-foreground mb-8">
+                Nous proposons deux solutions principales : le <strong>blindage de votre porte existante</strong> pour un coût maîtrisé, 
+                ou l'<strong>installation d'une porte blindée neuve</strong> certifiée A2P pour une sécurité maximale. 
+                Dans les deux cas, nos techniciens qualifiés garantissent une installation conforme aux normes d'assurance et 
+                une protection optimale de votre domicile. Si vous avez récemment subi une effraction ou souhaitez simplement 
+                renforcer votre sécurité, notre expertise en <a href="/changement-serrure" className="text-primary hover:underline">serrurerie haute sécurité</a> vous assure une solution pérenne.
+              </p>
+            </div>
+          </section>
+
+          <section className="py-16 grid md:grid-cols-2 gap-12 items-center bg-muted -mx-4 px-4 md:mx-0 md:rounded-lg">
             <div className="relative h-[500px] rounded-lg overflow-hidden shadow-elegant">
-              <img src={porteBlindeeImage} alt="Porte blindée haute sécurité" className="w-full h-full object-cover" />
+              <img src={porteBlindeeImage} alt="Installation porte blindée Lille" className="w-full h-full object-cover" />
             </div>
 
             <div>
               <h2 className="text-3xl font-bold mb-6">
-                Blindage sur porte existante
+                Blindage sur porte existante à Lille (59000, 59800)
               </h2>
               <p className="mb-6 text-muted-foreground">
                 Pose d'une tôle de renfort, système anti-dégondage et plaque acier. 
@@ -79,11 +102,18 @@ const PorteBlindee = () => {
             </div>
           </section>
 
-          <section className="py-16 bg-muted -mx-4 px-4 md:mx-0 md:rounded-lg">
+          <section className="py-16">
             <div className="max-w-6xl mx-auto">
               <h2 className="text-3xl font-bold mb-12 text-center">
-                Porte blindée neuve
+                Installation porte blindée neuve à Lille et MEL
               </h2>
+              
+              <p className="text-center text-muted-foreground max-w-3xl mx-auto mb-12">
+                Pour une <strong>sécurité maximale à Lille</strong>, l'installation d'une <strong>porte blindée certifiée A2P</strong> 
+                représente l'investissement le plus efficace. Nos portes blindées répondent aux exigences des compagnies d'assurance 
+                et offrent une protection reconnue contre les effractions. Intervention dans tous les quartiers de Lille (Centre, Fives, Wazemmes, Vauban) 
+                et l'ensemble de la Métropole (Roubaix, Tourcoing, Villeneuve-d'Ascq, Marcq-en-Barœul).
+              </p>
               
               <div className="grid md:grid-cols-2 gap-12 items-center mb-12">
                 <div>
@@ -161,6 +191,31 @@ const PorteBlindee = () => {
               </div>
             </div>
           </section>
+
+          <FAQ items={[
+            {
+              question: "Quelle différence entre blindage de porte et porte blindée ?",
+              answer: "Le blindage de porte consiste à renforcer votre porte existante avec une plaque d'acier et des renforts (à partir de 800€). La porte blindée est un bloc-porte complet neuf avec structure en acier certifiée A2P (à partir de 1500€). Le blindage convient aux budgets serrés, la porte blindée offre une sécurité maximale reconnue par les assurances."
+            },
+            {
+              question: "Qu'est-ce que la certification A2P pour une porte blindée ?",
+              answer: "La certification A2P (Assurance Prévention Protection) classe les portes blindées selon leur résistance à l'effraction : A2P BP1 (5 min), A2P BP2 (10 min), A2P BP3 (15 min). Cette norme française est reconnue par toutes les compagnies d'assurance à Lille et garantit une protection testée et certifiée."
+            },
+            {
+              question: "Combien de temps pour installer une porte blindée à Lille ?",
+              answer: "L'installation d'une porte blindée à Lille prend entre 3 et 5 heures selon la configuration de votre bâti. Pour un blindage de porte existante, comptez 2 à 4 heures. Notre équipe intervient rapidement dans tous les quartiers de Lille (Centre, Fives, Wazemmes) et la MEL."
+            },
+            {
+              question: "Une porte blindée améliore-t-elle l'isolation phonique ?",
+              answer: "Oui, une porte blindée de qualité améliore considérablement l'isolation phonique (jusqu'à -30 dB) et thermique de votre logement à Lille. C'est un double avantage : sécurité renforcée et confort acoustique, particulièrement apprécié en centre-ville de Lille."
+            },
+            {
+              question: "Peut-on installer une porte blindée en copropriété à Lille ?",
+              answer: "Oui, sous certaines conditions. La porte doit respecter l'esthétique de l'immeuble côté palier. Nous proposons des portes blindées avec finitions adaptées aux immeubles lillois (haussmanniens, modernes). Une déclaration préalable à la copropriété est recommandée mais rarement refusée pour des raisons de sécurité."
+            }
+          ]} />
+
+          <Reviews />
 
           <section id="contact" className="py-16">
             <div className="max-w-2xl mx-auto">
