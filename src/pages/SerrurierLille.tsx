@@ -63,10 +63,11 @@ const SerrurierLille = () => {
                 Serrurier Lille – Dépannage immédiat 24h/24
               </h1>
               <p className="text-xl mb-8 opacity-90">
-                Intervention disponible dans tous les quartiers de Lille pour les ouvertures de portes, 
+                ELM SÉCURITÉ intervient dans tous les quartiers de Lille (59000, 59800) pour les <a href="/ouverture-porte" className="text-accent-foreground hover:underline font-semibold">ouvertures de portes</a>, 
                 remplacements de cylindres, réparations urgentes et sécurisations après incident. 
-                Les interventions s'adaptent au type de mécanisme et au niveau de sécurité installé. 
-                Chaque action suit une méthode définie pour réduire les risques de dommage sur la porte ou le cadre.
+                Nos interventions s'adaptent au type de mécanisme et au niveau de sécurité installé : serrure simple, multipoints, haute sécurité ou système compatible Fichet. 
+                Chaque action suit une méthode définie pour réduire les risques de dommage sur la porte ou le cadre. 
+                Service disponible nuit, dimanche et jours fériés dans toute la Métropole Européenne de Lille (59260).
               </p>
               <CallButton size="lg" />
             </div>
@@ -80,13 +81,15 @@ const SerrurierLille = () => {
 
           <section className="py-16">
             <h2 className="text-3xl font-bold mb-8 text-center">
-              Intervention rapide à travers toute la ville de Lille
+              Intervention rapide dans tous les quartiers de Lille
             </h2>
             
             <p className="text-muted-foreground mb-8 max-w-4xl mx-auto text-center">
-              Le service couvre l'ensemble de la ville : Lille-Centre, Vieux-Lille, Wazemmes, Vauban-Esquermes, 
+              Notre service de <a href="/depannage-serrurerie" className="text-primary hover:underline font-semibold">dépannage serrurerie</a> couvre l'ensemble de la ville de Lille et ses quartiers : 
+              Lille-Centre (59000, 59800), Vieux-Lille, Wazemmes, Vauban-Esquermes, 
               Bois-Blancs, Fives, Moulins, Lille-Sud, Saint-Maurice Pellevoisin, Hellemmes et Lomme. 
-              Ces zones sont traitées en priorité grâce à la proximité directe et aux accès rapides par les grands axes.
+              Ces zones sont traitées en priorité grâce à la proximité directe et aux accès rapides par les grands axes (A1, A25, périphérique). 
+              Nous intervenons également dans toute la <a href="/villes-couvertes" className="text-primary hover:underline font-semibold">Métropole Européenne de Lille</a> (59260) en moins de 30 minutes.
             </p>
 
             <div className="grid md:grid-cols-3 lg:grid-cols-4 gap-4 mb-12">
@@ -110,13 +113,15 @@ const SerrurierLille = () => {
 
             <div>
               <h2 className="text-3xl font-bold mb-6">
-                Ouverture de porte à Lille
+                Ouverture de porte à Lille sans casse
               </h2>
               <p className="mb-6 text-muted-foreground">
-                Les techniques utilisées privilégient l'ouverture sans destruction lorsque cela est réalisable.
+                Notre serrurier à Lille privilégie systématiquement les techniques d'<a href="/ouverture-porte" className="text-primary hover:underline font-semibold">ouverture de porte sans destruction</a> 
+                lorsque cela est techniquement réalisable. Dans 90% des cas, aucun dommage n'est causé à votre porte, serrure ou bâti. 
+                Cette approche permet d'économiser les frais de remplacement et de préserver l'intégrité de votre installation.
               </p>
 
-              <h3 className="font-bold text-lg mb-4">Traitement des situations suivantes :</h3>
+              <h3 className="font-bold text-lg mb-4">Situations d'urgence traitées :</h3>
               <div className="space-y-3">
                 {situations.map((situation, index) => (
                   <div key={index} className="flex items-start gap-3">
@@ -131,24 +136,27 @@ const SerrurierLille = () => {
           <section className="py-16 bg-muted -mx-4 px-4 md:mx-0 md:rounded-lg">
             <div className="max-w-4xl mx-auto">
               <h2 className="text-3xl font-bold mb-8 text-center">
-                Changement de cylindre ou de serrure
+                Changement de cylindre ou de serrure à Lille
               </h2>
               
               <div className="grid md:grid-cols-2 gap-8 items-center">
                 <div>
                   <p className="text-muted-foreground mb-6">
-                    En cas de perte des clés ou de dysfonctionnement, le remplacement du cylindre ou de la serrure 
-                    assure un retour à un accès sécurisé du logement ou du local professionnel. 
-                    Plusieurs modèles peuvent être installés selon le besoin.
+                    En cas de perte des clés, de dysfonctionnement ou après une tentative d'effraction, 
+                    le <a href="/changement-serrure" className="text-primary hover:underline font-semibold">remplacement du cylindre ou de la serrure</a> 
+                    assure un retour à un accès sécurisé de votre logement ou local professionnel à Lille (59000, 59800). 
+                    Plusieurs modèles peuvent être installés selon vos besoins de sécurité et votre budget. 
+                    Pour une sécurité maximale, nous proposons également l'installation de <a href="/porte-blindee" className="text-primary hover:underline font-semibold">portes blindées certifiées</a>.
                   </p>
 
                   <div className="bg-background border-l-4 border-primary p-4 rounded-lg">
-                    <h3 className="font-bold mb-2">Types d'interventions</h3>
+                    <h3 className="font-bold mb-2">Types d'interventions de serrurerie</h3>
                     <ul className="space-y-1 text-sm text-muted-foreground">
-                      <li>• Remplacement de cylindre européen</li>
-                      <li>• Installation serrure multipoints</li>
-                      <li>• Pose de système haute sécurité</li>
-                      <li>• Changement barillet endommagé</li>
+                      <li>• Remplacement de cylindre européen standard ou haute sécurité</li>
+                      <li>• Installation serrure multipoints (3, 5 ou 7 points)</li>
+                      <li>• Pose de système haute sécurité certifié A2P</li>
+                      <li>• Changement barillet endommagé ou grippé</li>
+                      <li>• Installation serrures compatibles Fichet</li>
                     </ul>
                   </div>
                 </div>
@@ -167,12 +175,14 @@ const SerrurierLille = () => {
           <section className="py-16">
             <div className="max-w-4xl mx-auto">
               <h2 className="text-3xl font-bold mb-8 text-center">
-                Sécurisation après incident
+                Sécurisation après effraction ou incident
               </h2>
               
               <p className="text-center text-muted-foreground mb-12">
-                Si la porte présente un dommage, une solution temporaire ou définitive peut être posée 
-                pour sécuriser l'ouverture jusqu'à la réparation complète.
+                Suite à une effraction, tentative de cambriolage ou tout autre incident ayant endommagé votre porte ou serrure à Lille, 
+                notre serrurier intervient rapidement pour sécuriser votre logement. Une solution temporaire ou définitive peut être posée 
+                pour sécuriser l'ouverture jusqu'à la réparation complète. Nous proposons également des <a href="/porte-blindee" className="text-primary hover:underline font-semibold">solutions de blindage</a> 
+                pour renforcer durablement la sécurité de votre domicile dans tous les quartiers de Lille (59000, 59800).
               </p>
 
               <div className="grid md:grid-cols-3 gap-6">
