@@ -21,6 +21,16 @@ import SerrurierCroix from "./pages/SerrurierCroix";
 import SerrurierWambrechies from "./pages/SerrurierWambrechies";
 import SerrurierMons from "./pages/SerrurierMons";
 import SerrurierWasquehal from "./pages/SerrurierWasquehal";
+import SerrurierLomme from "./pages/SerrurierLomme";
+import SerrurierLoos from "./pages/SerrurierLoos";
+import SerrurierFaches from "./pages/SerrurierFaches";
+import SerrurierRonchin from "./pages/SerrurierRonchin";
+import SerrurierWattignies from "./pages/SerrurierWattignies";
+import SerrurierHellemmes from "./pages/SerrurierHellemmes";
+import SerrurierHem from "./pages/SerrurierHem";
+import SerrurierPerenchies from "./pages/SerrurierPerenchies";
+import SerrurierBondues from "./pages/SerrurierBondues";
+import SerrurierHalluin from "./pages/SerrurierHalluin";
 import Tarifs from "./pages/Tarifs";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
@@ -52,6 +62,16 @@ const App = () => (
         <Route path="/serrurier-wambrechies" element={<SerrurierWambrechies />} />
         <Route path="/serrurier-mons-en-baroeul" element={<SerrurierMons />} />
         <Route path="/serrurier-wasquehal" element={<SerrurierWasquehal />} />
+        <Route path="/serrurier-lomme" element={<SerrurierLomme />} />
+        <Route path="/serrurier-loos" element={<SerrurierLoos />} />
+        <Route path="/serrurier-faches-thumesnil" element={<SerrurierFaches />} />
+        <Route path="/serrurier-ronchin" element={<SerrurierRonchin />} />
+        <Route path="/serrurier-wattignies" element={<SerrurierWattignies />} />
+        <Route path="/serrurier-hellemmes" element={<SerrurierHellemmes />} />
+        <Route path="/serrurier-hem" element={<SerrurierHem />} />
+        <Route path="/serrurier-perenchies" element={<SerrurierPerenchies />} />
+        <Route path="/serrurier-bondues" element={<SerrurierBondues />} />
+        <Route path="/serrurier-halluin" element={<SerrurierHalluin />} />
           <Route path="/tarifs" element={<Tarifs />} />
           <Route path="/contact" element={<Contact />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
