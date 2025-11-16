@@ -9,7 +9,9 @@ import { Phone, Clock, MapPin, Shield, Wrench, Lock, DoorOpen } from "lucide-rea
 import heroImage from "@/assets/hero-locksmith.jpg";
 import porteBlindeeImage from "@/assets/porte-blindee.jpg";
 import serrureImage from "@/assets/serrure-cylindre.jpg";
-import urgenceImage from "@/assets/urgence-24-7.jpg";
+import changementSerrureImage from "@/assets/changement-serrure.jpg";
+import interventionImage from "@/assets/intervention-urgence.png";
+import ouverturePorteImage from "@/assets/ouverture-fine.png";
 
 const Index = () => {
   const services = [
@@ -147,21 +149,21 @@ const Index = () => {
 
           <div className="grid md:grid-cols-3 gap-6">
             <div className="relative h-64 rounded-lg overflow-hidden shadow-card">
-              <img src={porteBlindeeImage} alt="Porte blindée sécurisée" className="w-full h-full object-cover" />
+              <img src={changementSerrureImage} alt="Changement de serrure professionnelle" className="w-full h-full object-cover" />
               <div className="absolute inset-0 bg-gradient-to-t from-secondary/90 to-transparent flex items-end p-6">
-                <h3 className="text-white font-bold text-xl">Portes blindées</h3>
+                <h3 className="text-white font-bold text-xl">Changement de serrure</h3>
               </div>
             </div>
             <div className="relative h-64 rounded-lg overflow-hidden shadow-card">
-              <img src={serrureImage} alt="Serrure haute sécurité" className="w-full h-full object-cover" />
+              <img src={interventionImage} alt="Intervention rapide serrurier" className="w-full h-full object-cover" />
               <div className="absolute inset-0 bg-gradient-to-t from-secondary/90 to-transparent flex items-end p-6">
-                <h3 className="text-white font-bold text-xl">Serrures haute sécurité</h3>
+                <h3 className="text-white font-bold text-xl">Intervention rapide</h3>
               </div>
             </div>
             <div className="relative h-64 rounded-lg overflow-hidden shadow-card">
-              <img src={urgenceImage} alt="Intervention d'urgence" className="w-full h-full object-cover" />
+              <img src={ouverturePorteImage} alt="Ouverture fine sans casse" className="w-full h-full object-cover" />
               <div className="absolute inset-0 bg-gradient-to-t from-secondary/90 to-transparent flex items-end p-6">
-                <h3 className="text-white font-bold text-xl">Urgence 24/7</h3>
+                <h3 className="text-white font-bold text-xl">Ouverture professionnelle</h3>
               </div>
             </div>
           </div>

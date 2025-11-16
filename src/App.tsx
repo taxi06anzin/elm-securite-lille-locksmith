@@ -6,6 +6,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import DepannageSerrurerie from "./pages/DepannageSerrurerie";
 import OuverturePorte from "./pages/OuverturePorte";
+import ChangementSerrure from "./pages/ChangementSerrure";
 import Tarifs from "./pages/Tarifs";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
@@ -22,6 +23,7 @@ const App = () => (
           <Route path="/" element={<Index />} />
           <Route path="/depannage-serrurerie" element={<DepannageSerrurerie />} />
           <Route path="/ouverture-porte" element={<OuverturePorte />} />
+          <Route path="/changement-serrure" element={<ChangementSerrure />} />
           <Route path="/tarifs" element={<Tarifs />} />
           <Route path="/contact" element={<Contact />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}

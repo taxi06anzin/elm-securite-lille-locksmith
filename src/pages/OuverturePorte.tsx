@@ -6,6 +6,9 @@ import ContactForm from "@/components/ContactForm";
 import JsonLd from "@/components/JsonLd";
 import { CallButton } from "@/components/ui/button-variants";
 import { DoorOpen, Key, AlertCircle, CheckCircle } from "lucide-react";
+import ouverturePorte1 from "@/assets/ouverture-porte-1.png";
+import ouvertureFine from "@/assets/ouverture-fine.png";
+import cleCassee from "@/assets/cle-cassee.png";
 
 const OuverturePorte = () => {
   const situations = [
@@ -86,24 +89,31 @@ const OuverturePorte = () => {
           </section>
 
           <section className="py-16 bg-muted -mx-4 px-4 md:mx-0 md:rounded-lg">
-            <div className="max-w-4xl mx-auto">
+            <div className="max-w-6xl mx-auto">
               <h2 className="text-3xl font-bold mb-12 text-center">
                 Nos techniques d'ouverture de porte
               </h2>
               
-              <div className="grid md:grid-cols-3 gap-8">
-                {techniques.map((technique, index) => {
-                  const Icon = technique.icon;
-                  return (
-                    <div key={index} className="bg-background p-6 rounded-lg shadow-card">
-                      <div className="w-14 h-14 rounded-full bg-primary/10 flex items-center justify-center mb-4">
-                        <Icon className="h-7 w-7 text-primary" />
-                      </div>
-                      <h3 className="font-bold text-xl mb-2">{technique.title}</h3>
-                      <p className="text-muted-foreground">{technique.description}</p>
+              <div className="grid md:grid-cols-2 gap-8 mb-12">
+                <div className="relative h-80 rounded-lg overflow-hidden shadow-elegant">
+                  <img src={ouvertureFine} alt="Technique ouverture fine" className="w-full h-full object-cover" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-secondary/90 to-transparent flex items-end p-6">
+                    <div>
+                      <h3 className="text-white font-bold text-xl mb-2">Ouverture fine</h3>
+                      <p className="text-white/90 text-sm">Technique non destructive pour préserver votre serrure</p>
                     </div>
-                  );
-                })}
+                  </div>
+                </div>
+                
+                <div className="relative h-80 rounded-lg overflow-hidden shadow-elegant">
+                  <img src={cleCassee} alt="Extraction de clé cassée" className="w-full h-full object-cover" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-secondary/90 to-transparent flex items-end p-6">
+                    <div>
+                      <h3 className="text-white font-bold text-xl mb-2">Extraction de clé</h3>
+                      <p className="text-white/90 text-sm">Retrait de clés cassées avec outils professionnels</p>
+                    </div>
+                  </div>
+                </div>
               </div>
 
               <div className="mt-12 bg-primary/5 border-l-4 border-primary p-6 rounded-lg">

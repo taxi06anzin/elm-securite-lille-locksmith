@@ -6,7 +6,8 @@ import ContactForm from "@/components/ContactForm";
 import JsonLd from "@/components/JsonLd";
 import { CallButton } from "@/components/ui/button-variants";
 import { Clock, Shield, Wrench, AlertCircle } from "lucide-react";
-import urgenceImage from "@/assets/urgence-24-7.jpg";
+import interventionImage from "@/assets/intervention-urgence.png";
+import reparationImage from "@/assets/reparation-effraction.webp";
 
 const DepannageSerrurerie = () => {
   const urgences = [
@@ -109,8 +110,13 @@ const DepannageSerrurerie = () => {
               </p>
               <CallButton size="lg" />
             </div>
-            <div className="relative h-[400px] rounded-lg overflow-hidden shadow-elegant">
-              <img src={urgenceImage} alt="Service d'urgence serrurerie 24/7" className="w-full h-full object-cover" />
+            <div className="grid grid-cols-2 gap-4">
+              <div className="relative h-64 rounded-lg overflow-hidden shadow-elegant">
+                <img src={interventionImage} alt="Serrurier intervention urgence" className="w-full h-full object-cover" />
+              </div>
+              <div className="relative h-64 rounded-lg overflow-hidden shadow-elegant mt-8">
+                <img src={reparationImage} alt="Réparation après effraction" className="w-full h-full object-cover" />
+              </div>
             </div>
           </section>
 
