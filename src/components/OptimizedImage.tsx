@@ -3,13 +3,17 @@ interface OptimizedImageProps {
   alt: string;
   className?: string;
   loading?: "lazy" | "eager";
+  width?: number;
+  height?: number;
 }
 
 const OptimizedImage = ({ 
   src, 
   alt, 
   className = "", 
-  loading = "lazy" 
+  loading = "lazy",
+  width,
+  height
 }: OptimizedImageProps) => {
   return (
     <img
@@ -18,6 +22,9 @@ const OptimizedImage = ({
       className={className}
       loading={loading}
       decoding="async"
+      width={width}
+      height={height}
+      fetchPriority={loading === "eager" ? "high" : "auto"}
     />
   );
 };

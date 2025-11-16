@@ -1,11 +1,16 @@
 import FAQ from "@/components/FAQ";
 import Reviews from "@/components/Reviews";
+import SeoHead from "@/components/SeoHead";
+import JsonLd from "@/components/JsonLd";
+import Breadcrumb from "@/components/Breadcrumb";
+import OptimizedImage from "@/components/OptimizedImage";
+import InternalLinks from "@/components/InternalLinks";
+import ServiceSchema from "@/components/ServiceSchema";
 import { Helmet } from "react-helmet";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import TrustBadges from "@/components/TrustBadges";
 import ContactForm from "@/components/ContactForm";
-import JsonLd from "@/components/JsonLd";
 import { CallButton } from "@/components/ui/button-variants";
 import { DoorOpen, Key, AlertCircle, CheckCircle } from "lucide-react";
 import ouverturePorte1 from "@/assets/ouverture-porte-1.png";
@@ -50,7 +55,14 @@ const OuverturePorte = () => {
         />
         <link rel="canonical" href="https://serrurier-urgence-lille.fr/ouverture-porte" />
       </Helmet>
-      <JsonLd />
+      <JsonLd pageName="Ouverture de porte" pageUrl="/ouverture-porte" />
+      <ServiceSchema 
+        serviceName="Ouverture de porte à Lille"
+        description="Service d'ouverture de porte 24h/24 à Lille et métropole lilloise. Intervention rapide en 20-30 min, ouverture sans casse si possible. Tarif dès 89€ TTC."
+        serviceType="Locksmith"
+        priceRange="€€"
+        areaServed={["Lille", "Roubaix", "Tourcoing", "Villeneuve-d'Ascq", "Marcq-en-Barœul", "Lomme", "La Madeleine", "Lambersart"]}
+      />
       
       <div className="min-h-screen bg-background">
         <Header />

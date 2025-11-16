@@ -1,11 +1,16 @@
 import FAQ from "@/components/FAQ";
 import Reviews from "@/components/Reviews";
+import SeoHead from "@/components/SeoHead";
+import JsonLd from "@/components/JsonLd";
+import Breadcrumb from "@/components/Breadcrumb";
+import OptimizedImage from "@/components/OptimizedImage";
+import InternalLinks from "@/components/InternalLinks";
+import ServiceSchema from "@/components/ServiceSchema";
 import { Helmet } from "react-helmet";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import TrustBadges from "@/components/TrustBadges";
 import ContactForm from "@/components/ContactForm";
-import JsonLd from "@/components/JsonLd";
 import { CallButton } from "@/components/ui/button-variants";
 import { Shield, Lock, CheckCircle } from "lucide-react";
 import porteBlindeeImage from "@/assets/porte-blindee.jpg";
@@ -30,7 +35,14 @@ const PorteBlindee = () => {
         />
         <link rel="canonical" href="https://serrurier-urgence-lille.fr/porte-blindee" />
       </Helmet>
-      <JsonLd />
+      <JsonLd pageName="Porte blindée" pageUrl="/porte-blindee" />
+      <ServiceSchema 
+        serviceName="Installation de porte blindée à Lille"
+        description="Installation de portes blindées certifiées A2P à Lille. Blindage de porte existante ou pose de bloc-porte complet. Protection optimale contre les effractions. Devis gratuit."
+        serviceType="Locksmith"
+        priceRange="€€€"
+        areaServed={["Lille", "Roubaix", "Tourcoing", "Villeneuve-d'Ascq", "Marcq-en-Barœul", "Lomme", "La Madeleine", "Lambersart"]}
+      />
       
       <div className="min-h-screen bg-background">
         <Header />
