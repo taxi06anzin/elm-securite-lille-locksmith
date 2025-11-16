@@ -31,20 +31,20 @@ const SerrurierBondues = () => {
         <title>Serrurier Bondues – Intervention sur secteurs résidentiels premium | ELM SÉCURITÉ</title>
         <meta 
           name="description" 
-          content="Serrurier à Bondues 24/7. Intervention Centre, Bois d'Achelles, Grand Bondues, Ravennes. Ouverture porte, cylindre haute sécurité ☎ 06 26 16 06 87" 
+          content="Serrurier à Bondues 24/7. Intervention Centre, Bois d'Achelles, Grand Bondues, Ravennes. Ouverture porte, cylindre haute sécurité ☎ 06 21 66 08 67"
         />
         <meta name="robots" content="index, follow" />
         <link rel="canonical" href="https://serrurier-urgence-lille.fr/serrurier-bondues" />
         
         <meta property="og:title" content="Serrurier Bondues – Intervention sur secteurs résidentiels premium | ELM SÉCURITÉ" />
-        <meta property="og:description" content="Serrurier à Bondues 24/7. Intervention Centre, Bois d'Achelles, Grand Bondues, Ravennes. Ouverture porte, cylindre haute sécurité ☎ 06 26 16 06 87" />
+        <meta property="og:description" content="Serrurier à Bondues 24/7. Intervention Centre, Bois d'Achelles, Grand Bondues, Ravennes. Ouverture porte, cylindre haute sécurité ☎ 06 21 66 08 67" />
         <meta property="og:url" content="https://serrurier-urgence-lille.fr/serrurier-bondues" />
         <meta property="og:type" content="website" />
         <meta property="og:image" content="https://serrurier-urgence-lille.fr/hero-locksmith.jpg" />
         
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Serrurier Bondues – Intervention sur secteurs résidentiels premium | ELM SÉCURITÉ" />
-        <meta name="twitter:description" content="Serrurier à Bondues 24/7. Intervention Centre, Bois d'Achelles, Grand Bondues, Ravennes. Ouverture porte, cylindre haute sécurité ☎ 06 26 16 06 87" />
+        <meta name="twitter:description" content="Serrurier à Bondues 24/7. Intervention Centre, Bois d'Achelles, Grand Bondues, Ravennes. Ouverture porte, cylindre haute sécurité ☎ 06 21 66 08 67" />
       </Helmet>
       <JsonLd pageName="Serrurier Bondues" pageUrl="https://serrurier-urgence-lille.fr/serrurier-bondues" />
       
@@ -150,7 +150,7 @@ const SerrurierBondues = () => {
                 Contact
               </h2>
               <p className="text-center text-muted-foreground mb-8">
-                Téléphone : <a href="tel:0626160687" className="text-primary font-bold hover:underline">06 26 16 06 87</a>
+                Téléphone : <a href="tel:0621660867" className="text-primary font-bold hover:underline">06 21 66 08 67</a>
               </p>
               <ContactForm />
             </div>

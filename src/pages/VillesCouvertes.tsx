@@ -163,10 +163,10 @@ const VillesCouvertes = () => {
                 Appelez-nous immédiatement pour une intervention rapide
               </p>
               <a 
-                href="tel:0626160687"
+                href="tel:0621660867"
                 className="inline-block bg-background text-foreground px-8 py-4 rounded-lg font-bold text-lg hover:shadow-elegant transition-shadow"
               >
-                06 26 16 06 87
+                06 21 66 08 67
               </a>
             </div>
           </section>

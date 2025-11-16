@@ -13,7 +13,7 @@ const Contact = () => {
         <title>Contact Serrurier Lille - Intervention Immédiate | ELM SÉCURITÉ</title>
         <meta 
           name="description" 
-          content="Contactez ELM SÉCURITÉ, serrurier à Lille. ☎ 06 26 16 06 87. Disponible 24/7. 143 Rue du Molinel, 59800 Lille. Devis gratuit." 
+          content="Contactez ELM SÉCURITÉ, serrurier à Lille. ☎ 06 21 66 08 67. Disponible 24/7. 143 Rue du Molinel, 59800 Lille. Devis gratuit." 
         />
         <link rel="canonical" href="https://serrurier-urgence-lille.fr/contact" />
       </Helmet>
@@ -29,7 +29,7 @@ const Contact = () => {
                 Contact serrurier Lille – Intervention immédiate
               </h1>
               <p className="text-xl mb-8 opacity-90">
-                Appel direct au 06 26 16 06 87. Formulaire disponible pour devis technique. 
+                Appel direct au 06 21 66 08 67. Formulaire disponible pour devis technique. 
                 Possibilité d'ajouter une photo du problème.
               </p>
               <CallButton size="lg" />
@@ -50,8 +50,8 @@ const Contact = () => {
                   </div>
                   <div>
                     <h3 className="font-bold mb-1">Téléphone</h3>
-                    <a href="tel:0626160687" className="text-xl text-primary font-bold hover:underline">
-                      06 26 16 06 87
+                    <a href="tel:0621660867" className="text-xl text-primary font-bold hover:underline">
+                      06 21 66 08 67
                     </a>
                     <p className="text-sm text-muted-foreground mt-1">
                       Appel direct pour intervention immédiate
@@ -95,7 +95,7 @@ const Contact = () => {
                 <h3 className="font-bold text-lg mb-2">Intervention d'urgence</h3>
                 <p className="text-muted-foreground">
                   Pour une intervention urgente (porte claquée, serrure cassée, cambriolage), 
-                  appelez-nous directement au <a href="tel:0626160687" className="text-primary font-bold hover:underline">06 26 16 06 87</a>. 
+                  appelez-nous directement au <a href="tel:0621660867" className="text-primary font-bold hover:underline">06 21 66 08 67</a>. 
                   Notre serrurier arrive en 20-30 minutes maximum à Lille et dans la MEL.
                 </p>
               </div>

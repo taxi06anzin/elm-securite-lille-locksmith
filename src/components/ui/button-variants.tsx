@@ -17,9 +17,9 @@ export const CallButton = ({ className, size = "default" }: CallButtonProps) => 
       )}
       asChild
     >
-      <a href="tel:0626160687" className="flex items-center gap-2">
+      <a href="tel:0621660867" className="flex items-center gap-2">
         <Phone className="h-4 w-4" />
-        <span>06 26 16 06 87</span>
+        <span>06 21 66 08 67</span>
       </a>
     </Button>
   );

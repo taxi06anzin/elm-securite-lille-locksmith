@@ -28,7 +28,7 @@ const SerrurierLoos = () => {
         <title>Serrurier Loos – Intervention rapide 7j/7 | ELM SÉCURITÉ</title>
         <meta 
           name="description" 
-          content="Serrurier à Loos 24/7. Intervention Centre-ville, CHU Eurasanté, Oliveaux. Ouverture porte, changement cylindre ☎ 06 26 16 06 87" 
+          content="Serrurier à Loos 24/7. Intervention Centre-ville, CHU Eurasanté, Oliveaux. Ouverture porte, changement cylindre ☎ 06 21 66 08 67" 
         />
         <link rel="canonical" href="https://serrurier-urgence-lille.fr/serrurier-loos" />
       </Helmet>
@@ -134,7 +134,7 @@ const SerrurierLoos = () => {
                 Contact
               </h2>
               <p className="text-center text-muted-foreground mb-8">
-                Téléphone : <a href="tel:0626160687" className="text-primary font-bold hover:underline">06 26 16 06 87</a>
+                Téléphone : <a href="tel:0621660867" className="text-primary font-bold hover:underline">06 21 66 08 67</a>
               </p>
               <ContactForm />
             </div>

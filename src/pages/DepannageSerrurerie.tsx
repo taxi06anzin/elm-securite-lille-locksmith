@@ -25,7 +25,7 @@ const DepannageSerrurerie = () => {
         <title>Dépannage Serrurerie 24/7 à Lille | Intervention Urgente | ELM SÉCURITÉ</title>
         <meta 
           name="description" 
-          content="Dépannage serrurerie 24h/24 à Lille. Serrurier d'urgence disponible jour et nuit. Intervention rapide en 20-30 min. Devis gratuit ☎ 06 26 16 06 87" 
+          content="Dépannage serrurerie 24h/24 à Lille. Serrurier d'urgence disponible jour et nuit. Intervention rapide en 20-30 min. Devis gratuit ☎ 06 21 66 08 67" 
         />
         <link rel="canonical" href="https://serrurier-urgence-lille.fr/depannage-serrurerie" />
       </Helmet>

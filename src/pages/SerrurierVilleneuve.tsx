@@ -32,7 +32,7 @@ const SerrurierVilleneuve = () => {
         <title>Serrurier Villeneuve-d'Ascq – Dépannage sur toute la ville | ELM SÉCURITÉ</title>
         <meta 
           name="description" 
-          content="Serrurier à Villeneuve-d'Ascq 24/7. Intervention tous quartiers : Triolo, Pont-de-Bois, Cité Scientifique, Ascq. Dépannage urgent ☎ 06 26 16 06 87" 
+          content="Serrurier à Villeneuve-d'Ascq 24/7. Intervention tous quartiers : Triolo, Pont-de-Bois, Cité Scientifique, Ascq. Dépannage urgent ☎ 06 21 66 08 67" 
         />
         <link rel="canonical" href="https://serrurier-urgence-lille.fr/serrurier-villeneuve-ascq" />
       </Helmet>
@@ -143,7 +143,7 @@ const SerrurierVilleneuve = () => {
                 Contact
               </h2>
               <p className="text-center text-muted-foreground mb-8">
-                Téléphone : <a href="tel:0626160687" className="text-primary font-bold hover:underline">06 26 16 06 87</a>
+                Téléphone : <a href="tel:0621660867" className="text-primary font-bold hover:underline">06 21 66 08 67</a>
               </p>
               <ContactForm />
             </div>

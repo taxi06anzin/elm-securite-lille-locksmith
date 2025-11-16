@@ -17,7 +17,7 @@ const JsonLd = ({ pageName, pageUrl }: JsonLdProps) => {
     "image": `${baseUrl}/og-image.jpg`,
     "@id": baseUrl,
     "url": fullUrl,
-    "telephone": "+33626160687",
+    "telephone": "+33621660867",
     "priceRange": "€€",
     "address": {
       "@type": "PostalAddress",

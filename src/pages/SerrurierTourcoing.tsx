@@ -31,7 +31,7 @@ const SerrurierTourcoing = () => {
         <title>Serrurier Tourcoing – Intervention locale et rapide | ELM SÉCURITÉ</title>
         <meta 
           name="description" 
-          content="Serrurier à Tourcoing 24/7. Dépannage urgent tous secteurs : Brun-Pain, Epidème, Bourgogne. Ouverture porte, changement serrure ☎ 06 26 16 06 87" 
+          content="Serrurier à Tourcoing 24/7. Dépannage urgent tous secteurs : Brun-Pain, Epidème, Bourgogne. Ouverture porte, changement serrure ☎ 06 21 66 08 67" 
         />
         <link rel="canonical" href="https://serrurier-urgence-lille.fr/serrurier-tourcoing" />
       </Helmet>
@@ -152,7 +152,7 @@ const SerrurierTourcoing = () => {
                 Contact
               </h2>
               <p className="text-center text-muted-foreground mb-8">
-                Téléphone : <a href="tel:0626160687" className="text-primary font-bold hover:underline">06 26 16 06 87</a>
+                Téléphone : <a href="tel:0621660867" className="text-primary font-bold hover:underline">06 21 66 08 67</a>
               </p>
               <ContactForm />
             </div>

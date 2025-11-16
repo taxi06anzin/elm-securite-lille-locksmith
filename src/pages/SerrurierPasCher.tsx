@@ -13,7 +13,7 @@ const SerrurierPasCher = () => {
         <title>Serrurier Pas Cher Lille – Tarifs Accessibles | ELM SÉCURITÉ</title>
         <meta 
           name="description" 
-          content="Serrurier pas cher à Lille. Tarifs accessibles et annoncés à l'avance. Tarification transparente, déplacements optimisés ☎ 06 26 16 06 87" 
+          content="Serrurier pas cher à Lille. Tarifs accessibles et annoncés à l'avance. Tarification transparente, déplacements optimisés ☎ 06 21 66 08 67" 
         />
         <link rel="canonical" href="https://serrurier-urgence-lille.fr/serrurier-pas-cher" />
       </Helmet>

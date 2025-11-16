@@ -94,7 +94,7 @@ const ContactForm = () => {
       </Button>
 
       <p className="text-xs text-muted-foreground text-center">
-        Ou appelez-nous directement au <a href="tel:0626160687" className="font-bold text-primary hover:underline">06 26 16 06 87</a>
+        Ou appelez-nous directement au <a href="tel:0621660867" className="font-bold text-primary hover:underline">06 21 66 08 67</a>
       </p>
     </form>
   );
