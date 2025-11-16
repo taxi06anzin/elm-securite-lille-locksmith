@@ -34,6 +34,8 @@ import SerrurierBondues from "./pages/SerrurierBondues";
 import SerrurierHalluin from "./pages/SerrurierHalluin";
 import Tarifs from "./pages/Tarifs";
 import Contact from "./pages/Contact";
+import VillesCouvertes from "./pages/VillesCouvertes";
+import FichetLille from "./pages/FichetLille";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -76,6 +78,8 @@ const App = () => (
         <Route path="/serrurier-halluin" element={<SerrurierHalluin />} />
           <Route path="/tarifs" element={<Tarifs />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/villes-couvertes" element={<VillesCouvertes />} />
+          <Route path="/fichet-lille" element={<FichetLille />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

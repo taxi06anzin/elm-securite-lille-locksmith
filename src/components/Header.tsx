@@ -12,6 +12,7 @@ const Header = () => {
     { name: "Ouverture de porte", href: "/ouverture-porte" },
     { name: "Changement de serrure", href: "/changement-serrure" },
     { name: "Portes blindées", href: "/porte-blindee" },
+    { name: "Serrurier Fichet Lille", href: "/fichet-lille" },
     { name: "Serrurier pas cher", href: "/serrurier-pas-cher" },
   ];
 
@@ -72,6 +73,9 @@ const Header = () => {
             <Link to="/tarifs" className="text-foreground hover:text-primary transition-colors">
               Tarifs
             </Link>
+            <Link to="/villes-couvertes" className="text-foreground hover:text-primary transition-colors">
+              Villes couvertes
+            </Link>
             <Link to="/contact" className="text-foreground hover:text-primary transition-colors">
               Contact
             </Link>
@@ -115,6 +119,13 @@ const Header = () => {
               onClick={() => setMobileMenuOpen(false)}
             >
               Tarifs
+            </Link>
+            <Link
+              to="/villes-couvertes"
+              className="block py-2 text-foreground hover:text-primary transition-colors"
+              onClick={() => setMobileMenuOpen(false)}
+            >
+              Villes couvertes
             </Link>
             <Link
               to="/contact"
