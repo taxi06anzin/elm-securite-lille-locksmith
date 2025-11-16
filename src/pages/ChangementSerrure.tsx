@@ -1,11 +1,16 @@
 import FAQ from "@/components/FAQ";
 import Reviews from "@/components/Reviews";
+import SeoHead from "@/components/SeoHead";
+import JsonLd from "@/components/JsonLd";
+import Breadcrumb from "@/components/Breadcrumb";
+import OptimizedImage from "@/components/OptimizedImage";
+import InternalLinks from "@/components/InternalLinks";
+import ServiceSchema from "@/components/ServiceSchema";
 import { Helmet } from "react-helmet";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import TrustBadges from "@/components/TrustBadges";
 import ContactForm from "@/components/ContactForm";
-import JsonLd from "@/components/JsonLd";
 import { CallButton } from "@/components/ui/button-variants";
 import { Lock, Shield, Key, CheckCircle } from "lucide-react";
 import changementSerrure from "@/assets/changement-serrure.jpg";
@@ -50,7 +55,14 @@ const ChangementSerrure = () => {
         />
         <link rel="canonical" href="https://serrurier-urgence-lille.fr/changement-serrure" />
       </Helmet>
-      <JsonLd />
+      <JsonLd pageName="Changement de serrure" pageUrl="/changement-serrure" />
+      <ServiceSchema 
+        serviceName="Changement de serrure à Lille"
+        description="Changement de serrure et cylindre à Lille. Installation de serrures certifiées A2P, multipoints, haute sécurité. Intervention 24h/24. Tarif dès 150€ TTC pose comprise."
+        serviceType="Locksmith"
+        priceRange="€€"
+        areaServed={["Lille", "Roubaix", "Tourcoing", "Villeneuve-d'Ascq", "Marcq-en-Barœul", "Lomme", "La Madeleine", "Lambersart"]}
+      />
       
       <div className="min-h-screen bg-background">
         <Header />
