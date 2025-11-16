@@ -23,17 +23,17 @@ const DepannageSerrurerie = () => {
   return (
     <>
       <Helmet>
-        <title>Dépannage Serrurerie 24/7 à Lille | Intervention Urgente | ELM SÉCURITÉ</title>
+        <title>Serrurier Urgence 24/7 à Lille | Intervention Rapide | ELM SÉCURITÉ</title>
         <meta 
           name="description" 
-          content="Dépannage serrurerie 24h/24 à Lille. Serrurier d'urgence disponible jour et nuit. Intervention rapide en 20-30 min. Devis gratuit ☎ 06 21 66 08 67" 
+          content="Serrurier urgence 24h/24 à Lille. Disponible jour et nuit. Intervention rapide en 20-30 min. Devis gratuit ☎ 06 21 66 08 67" 
         />
         <link rel="canonical" href="https://serrurier-urgence-lille.fr/depannage-serrurerie" />
       </Helmet>
       <JsonLd />
       <ServiceSchema 
-        serviceName="Dépannage serrurerie d'urgence à Lille"
-        description="Service de dépannage serrurerie 24h/24 et 7j/7 à Lille. Intervention rapide en 20-30 min pour porte claquée, clé perdue, serrure bloquée, effraction. Tarif dès 89€."
+        serviceName="Serrurier d'urgence à Lille"
+        description="Serrurier urgence 24h/24 et 7j/7 à Lille. Intervention rapide en 20-30 min pour porte claquée, clé perdue, serrure bloquée, effraction. Tarif dès 89€."
         serviceType="Emergency Locksmith"
         priceRange="€€"
         areaServed={["Lille", "Roubaix", "Tourcoing", "Villeneuve-d'Ascq", "Marcq-en-Barœul", "Lomme", "La Madeleine", "Lambersart", "Hellemmes", "Mons-en-Barœul"]}
@@ -120,7 +120,7 @@ const DepannageSerrurerie = () => {
               </p>
               <p className="mb-6 text-muted-foreground">
                 Nous nous engageons à vous fournir un <a href="/tarifs" className="text-primary hover:underline font-semibold">devis gratuit et transparent</a> avant toute intervention. 
-                Pas de frais cachés, pas de surprises : vous savez exactement ce que vous payez pour votre dépannage serrurerie.
+                Pas de frais cachés, pas de surprises : vous savez exactement ce que vous payez pour votre intervention serrurier.
               </p>
               <CallButton size="lg" />
             </div>
@@ -138,7 +138,7 @@ const DepannageSerrurerie = () => {
           <section className="py-16 bg-muted -mx-4 px-4 md:mx-0 md:rounded-lg">
             <div className="max-w-4xl mx-auto">
               <h2 className="text-3xl font-bold mb-12 text-center">
-                Nos engagements pour votre dépannage serrurerie
+                Nos engagements pour votre intervention serrurier
               </h2>
               
               <div className="grid md:grid-cols-3 gap-8">
@@ -179,7 +179,7 @@ const DepannageSerrurerie = () => {
           <section className="py-16">
             <div className="max-w-4xl mx-auto">
               <h2 className="text-3xl font-bold mb-6 text-center">
-                Tarifs dépannage serrurerie d'urgence à Lille
+                Tarifs serrurier d'urgence à Lille
               </h2>
               <p className="text-center text-muted-foreground mb-12">
                 Tarifs fixes et transparents, annoncés avant intervention

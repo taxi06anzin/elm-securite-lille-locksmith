@@ -125,7 +125,7 @@ const Tarifs = () => {
 
             <div className="max-w-5xl mx-auto">
               <h2 className="text-3xl font-bold mb-8 text-center">
-                Grille tarifaire serrurerie Lille
+                Grille tarifaire serrurier Lille
               </h2>
 
               <div className="bg-card border rounded-lg shadow-card overflow-hidden">
@@ -191,7 +191,7 @@ const Tarifs = () => {
                   Chez ELM SÉCURITÉ, nous croyons en la transparence totale. Pas d'intermédiaires, 
                   pas de frais cachés : vous payez uniquement le service rendu avec un matériel de qualité 
                   professionnelle. Notre objectif est de vous offrir le meilleur rapport qualité-prix 
-                  pour tous vos besoins en serrurerie à Lille.
+                  pour tous vos besoins serrurier à Lille.
                 </p>
                 <CallButton size="lg" />
               </div>

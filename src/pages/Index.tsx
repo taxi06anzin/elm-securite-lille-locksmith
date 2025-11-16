@@ -120,7 +120,7 @@ const Index = () => {
         {/* Services */}
         <section className="container mx-auto px-4 py-16">
           <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold mb-4">Nos services de serrurerie à Lille</h2>
+            <h2 className="text-4xl font-bold mb-4">Nos services de serrurier à Lille</h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
               ELM SÉCURITÉ intervient dans tous les quartiers de Lille (59000, 59800) : Centre, Wazemmes, Fives, Vauban, Gambetta, et dans toute la Métropole Européenne de Lille (59260). 
               Déplacement rapide en cas de porte impossible à ouvrir. Nous utilisons des méthodes adaptées selon le type de serrure : 
@@ -259,7 +259,7 @@ const Index = () => {
         <section className="container mx-auto px-4 py-16">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl font-bold text-center mb-8">
-              Questions fréquentes sur nos services de serrurerie
+              Questions fréquentes sur nos services de serrurier
             </h2>
             <p className="text-center text-muted-foreground mb-12">
               Retrouvez les réponses aux questions les plus courantes concernant nos interventions à Lille (59000, 59800) et dans toute la Métropole Européenne de Lille (59260).

@@ -83,7 +83,7 @@ const PorteBlindee = () => {
                 ou l'<strong>installation d'une porte blindée neuve</strong> certifiée A2P pour une sécurité maximale. 
                 Dans les deux cas, nos techniciens qualifiés garantissent une installation conforme aux normes d'assurance et 
                 une protection optimale de votre domicile. Si vous avez récemment subi une effraction ou souhaitez simplement 
-                renforcer votre sécurité, notre expertise en <a href="/changement-serrure" className="text-primary hover:underline">serrurerie haute sécurité</a> vous assure une solution pérenne.
+                renforcer votre sécurité, notre expertise en <a href="/changement-serrure" className="text-primary hover:underline">serrures haute sécurité</a> vous assure une solution pérenne.
               </p>
             </div>
           </section>

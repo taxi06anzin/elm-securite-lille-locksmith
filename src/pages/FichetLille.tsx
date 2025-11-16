@@ -75,7 +75,7 @@ const FichetLille = () => {
               </h2>
               
               <p className="text-muted-foreground mb-6">
-                Fichet est le leader français de la serrurerie haute sécurité depuis 1825. 
+                Fichet est le leader français des serrures haute sécurité depuis 1825. 
                 Nos serrures et cylindres certifiés A2P offrent une protection maximale contre 
                 l'effraction et sont reconnus par toutes les compagnies d'assurance.
               </p>

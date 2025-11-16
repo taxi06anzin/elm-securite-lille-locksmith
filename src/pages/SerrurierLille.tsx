@@ -85,7 +85,7 @@ const SerrurierLille = () => {
             </h2>
             
             <p className="text-muted-foreground mb-8 max-w-4xl mx-auto text-center">
-              Notre service de <a href="/depannage-serrurerie" className="text-primary hover:underline font-semibold">dépannage serrurerie</a> couvre l'ensemble de la ville de Lille et ses quartiers : 
+              Notre <a href="/depannage-serrurerie" className="text-primary hover:underline font-semibold">serrurier d'urgence</a> couvre l'ensemble de la ville de Lille et ses quartiers : 
               Lille-Centre (59000, 59800), Vieux-Lille, Wazemmes, Vauban-Esquermes, 
               Bois-Blancs, Fives, Moulins, Lille-Sud, Saint-Maurice Pellevoisin, Hellemmes et Lomme. 
               Ces zones sont traitées en priorité grâce à la proximité directe et aux accès rapides par les grands axes (A1, A25, périphérique). 
@@ -150,7 +150,7 @@ const SerrurierLille = () => {
                   </p>
 
                   <div className="bg-background border-l-4 border-primary p-4 rounded-lg">
-                    <h3 className="font-bold mb-2">Types d'interventions de serrurerie</h3>
+                    <h3 className="font-bold mb-2">Types d'interventions serrurier</h3>
                     <ul className="space-y-1 text-sm text-muted-foreground">
                       <li>• Remplacement de cylindre européen standard ou haute sécurité</li>
                       <li>• Installation serrure multipoints (3, 5 ou 7 points)</li>

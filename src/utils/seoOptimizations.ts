@@ -52,7 +52,7 @@ export const localPages = [
 ];
 
 export const servicePages = [
-  { name: "Dépannage", slug: "depannage-serrurerie", label: "Dépannage Serrurerie" },
+  { name: "Dépannage", slug: "depannage-serrurerie", label: "Dépannage 24/7" },
   { name: "Ouverture", slug: "ouverture-porte", label: "Ouverture de Porte" },
   { name: "Changement", slug: "changement-serrure", label: "Changement de Serrure" },
   { name: "Porte Blindée", slug: "porte-blindee", label: "Porte Blindée" },

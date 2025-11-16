@@ -145,7 +145,7 @@ const Contact = () => {
 
           {/* Services proposés */}
           <section className="mt-16 max-w-6xl mx-auto">
-            <h2 className="text-3xl font-bold mb-8 text-center">Nos services de serrurerie</h2>
+            <h2 className="text-3xl font-bold mb-8 text-center">Nos services de serrurier</h2>
             <div className="grid md:grid-cols-4 gap-6">
               <div className="bg-card p-5 rounded-lg border text-center shadow-card">
                 <h3 className="font-bold mb-2">Dépannage 24/7</h3>
