@@ -92,7 +92,7 @@ const ChangementSerrure = () => {
               <p className="text-lg text-muted-foreground mb-8">
                 Le <strong>changement de serrure à Lille</strong> (59000, 59800, 59260) est une intervention courante pour sécuriser votre domicile 
                 ou votre commerce. Que vous ayez perdu vos clés, subi une tentative d'effraction ou que vous veniez d'emménager dans un nouveau logement, 
-                notre service de <a href="/depannage-serrurerie" className="text-primary hover:underline">dépannage serrurerie</a> intervient rapidement 
+                notre <a href="/depannage-serrurerie" className="text-primary hover:underline">serrurier d'urgence</a> intervient rapidement 
                 dans tous les quartiers de Lille (Centre, Fives, Wazemmes, Vauban, Moulins) et dans toute la MEL 
                 (<a href="/serrurier-roubaix" className="text-primary hover:underline">Roubaix</a>, 
                 <a href="/serrurier-tourcoing" className="text-primary hover:underline">Tourcoing</a>, 
@@ -252,7 +252,7 @@ const ChangementSerrure = () => {
               </div>
 
               <p className="text-center text-muted-foreground">
-                Nous travaillons avec les meilleures marques de serrurerie pour garantir 
+                Nous travaillons avec les meilleures marques de serrures pour garantir 
                 votre sécurité et la longévité de vos installations.
               </p>
             </div>

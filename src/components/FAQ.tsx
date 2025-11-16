@@ -18,11 +18,11 @@ const defaultFAQItems: FAQItem[] = [
   },
   {
     question: "Intervenez-vous la nuit et le dimanche ?",
-    answer: "Oui, notre service de dépannage serrurerie est disponible 24h/24 et 7j/7 à Lille et dans toute la MEL (59000, 59800, 59260). Nous intervenons également les week-ends, jours fériés et durant la nuit pour toutes vos urgences de serrurerie : porte claquée, clé perdue, serrure bloquée."
+    answer: "Oui, notre serrurier est disponible 24h/24 et 7j/7 à Lille et dans toute la MEL (59000, 59800, 59260). Nous intervenons également les week-ends, jours fériés et durant la nuit pour toutes vos urgences : porte claquée, clé perdue, serrure bloquée."
   },
   {
     question: "Quel délai pour une intervention d'urgence ?",
-    answer: "Notre serrurier intervient en 20 à 30 minutes maximum à Lille et dans les communes de la Métropole Européenne de Lille. Dès votre appel au 06 21 66 08 67, nous organisons un déplacement immédiat pour résoudre votre problème de serrurerie dans les plus brefs délais."
+    answer: "Notre serrurier intervient en 20 à 30 minutes maximum à Lille et dans les communes de la Métropole Européenne de Lille. Dès votre appel au 06 21 66 08 67, nous organisons un déplacement immédiat pour résoudre votre problème de serrure dans les plus brefs délais."
   },
   {
     question: "Couvrez-vous tous les quartiers de Lille ?",

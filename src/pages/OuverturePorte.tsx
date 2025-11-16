@@ -175,7 +175,7 @@ const OuverturePorte = () => {
               Notre expertise en <strong>ouverture de porte d'urgence</strong> nous permet d'intervenir efficacement 
               dans tous les quartiers de Lille (Centre, Fives, Wazemmes, Vauban, Moulins) et dans l'ensemble de la MEL. 
               Avec plus de 10 ans d'expérience et des centaines d'interventions réussies, nous sommes le partenaire 
-              de confiance pour tous vos besoins en serrurerie d'urgence. Notre service de <a href="/depannage-serrurerie" className="text-primary hover:underline">dépannage serrurerie 24/7</a> garantit une intervention rapide, professionnelle et à tarif transparent.
+              de confiance pour tous vos besoins urgents. Notre <a href="/depannage-serrurerie" className="text-primary hover:underline">serrurier d'urgence 24/7</a> garantit une intervention rapide, professionnelle et à tarif transparent.
             </p>
           </section>
 
