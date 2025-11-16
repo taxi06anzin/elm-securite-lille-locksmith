@@ -39,11 +39,14 @@ const DepannageSerrurerie = () => {
           <div className="container mx-auto px-4 text-secondary-foreground">
             <div className="max-w-3xl">
               <h1 className="text-5xl font-bold mb-6">
-                Dépannage serrurier Lille 24h/24
+                Dépannage serrurier Lille 24h/24 et 7j/7
               </h1>
               <p className="text-xl mb-8 opacity-90">
-                Dépannage disponible en continu. Intervention rapide après appel. 
-                Gestion des portes bloquées, clés perdues, serrures forcées ou mécanismes endommagés.
+                Service de dépannage disponible en continu à Lille (59000, 59800) et dans toute la Métropole Européenne de Lille (59260). 
+                Intervention rapide après appel pour la gestion des portes bloquées, clés perdues, serrures forcées ou mécanismes endommagés. 
+                Notre équipe est spécialisée dans les <a href="/ouverture-porte" className="text-accent-foreground hover:underline font-semibold">ouvertures de portes d'urgence</a>, 
+                le <a href="/changement-serrure" className="text-accent-foreground hover:underline font-semibold">remplacement de serrures</a> et la sécurisation après effraction. 
+                Disponible nuit, dimanche et jours fériés.
               </p>
               <div className="flex flex-wrap gap-4">
                 <CallButton size="lg" />
@@ -93,20 +96,23 @@ const DepannageSerrurerie = () => {
           <section className="py-16 grid md:grid-cols-2 gap-12 items-center">
             <div>
               <h2 className="text-3xl font-bold mb-6">
-                Dépannage immédiat après effraction
+                Dépannage immédiat après effraction à Lille
               </h2>
               <p className="mb-4 text-muted-foreground">
-                Sécurisation de l'accès, remplacement du cylindre, pose provisoire selon le niveau de dommage.
+                Suite à une tentative d'effraction ou un cambriolage, notre serrurier intervient rapidement pour sécuriser votre domicile ou local commercial. 
+                Sécurisation de l'accès, remplacement du cylindre endommagé, pose provisoire ou définitive selon le niveau de dommage. 
+                Nous intervenons dans tous les quartiers de Lille (59000, 59800) : Centre, Wazemmes, Fives, Vauban, et dans toute la MEL (59260).
               </p>
               <h3 className="text-2xl font-bold mb-4 mt-8">
                 Ouverture de porte sans dégâts
               </h3>
               <p className="mb-4 text-muted-foreground">
-                Méthodes non destructives prioritaires. Percussion interdite si une ouverture technique est possible.
+                Nous privilégions systématiquement les méthodes non destructives pour <a href="/ouverture-porte" className="text-primary hover:underline font-semibold">l'ouverture de votre porte</a>. 
+                Percussion interdite si une ouverture technique est possible. Dans 90% des cas, aucun dommage n'est causé à votre porte ou serrure.
               </p>
               <p className="mb-6 text-muted-foreground">
-                Nous nous engageons à vous fournir un devis gratuit et transparent avant toute intervention. 
-                Pas de frais cachés, pas de surprises : vous savez exactement ce que vous payez.
+                Nous nous engageons à vous fournir un <a href="/tarifs" className="text-primary hover:underline font-semibold">devis gratuit et transparent</a> avant toute intervention. 
+                Pas de frais cachés, pas de surprises : vous savez exactement ce que vous payez pour votre dépannage serrurerie.
               </p>
               <CallButton size="lg" />
             </div>

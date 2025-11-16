@@ -4,6 +4,7 @@ import Footer from "@/components/Footer";
 import TrustBadges from "@/components/TrustBadges";
 import ContactForm from "@/components/ContactForm";
 import JsonLd from "@/components/JsonLd";
+import FAQ from "@/components/FAQ";
 import { CallButton, CtaButton } from "@/components/ui/button-variants";
 import { Phone, Clock, MapPin, Shield, Wrench, Lock, DoorOpen } from "lucide-react";
 import heroImage from "@/assets/hero-locksmith.jpg";
@@ -119,16 +120,18 @@ const Index = () => {
         {/* Services */}
         <section className="container mx-auto px-4 py-16">
           <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold mb-4">Intervention serrurier en urgence à Lille</h2>
-            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              Déplacement rapide en cas de porte impossible à ouvrir. Méthodes adaptées selon le type de serrure : 
-              simple, multipoints, haute sécurité ou système compatible Fichet. Intervention sur portes d'appartements, 
-              maisons, locaux commerciaux et immeubles.
+            <h2 className="text-4xl font-bold mb-4">Nos services de serrurerie à Lille</h2>
+            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+              ELM SÉCURITÉ intervient dans tous les quartiers de Lille (59000, 59800) : Centre, Wazemmes, Fives, Vauban, Gambetta, et dans toute la Métropole Européenne de Lille (59260). 
+              Déplacement rapide en cas de porte impossible à ouvrir. Nous utilisons des méthodes adaptées selon le type de serrure : 
+              simple, multipoints, haute sécurité ou système compatible Fichet. Nos <a href="/depannage-serrurerie" className="text-primary hover:underline font-semibold">interventions d'urgence</a> couvrent les portes d'appartements, 
+              maisons, locaux commerciaux et immeubles. Pour plus d'informations sur nos <a href="/tarifs" className="text-primary hover:underline font-semibold">tarifs</a>, 
+              n'hésitez pas à nous contacter.
             </p>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
-            <div className="group bg-card border rounded-lg p-6 shadow-card hover:shadow-elegant transition-all duration-300 hover:-translate-y-1">
+            <a href="/ouverture-porte" className="group bg-card border rounded-lg p-6 shadow-card hover:shadow-elegant transition-all duration-300 hover:-translate-y-1 block">
               <div className="w-14 h-14 rounded-full bg-primary/10 flex items-center justify-center mb-4 group-hover:bg-primary/20 transition-colors">
                 <DoorOpen className="h-7 w-7 text-primary" />
               </div>
@@ -136,11 +139,11 @@ const Index = () => {
                 Ouverture de porte
               </h3>
               <p className="text-muted-foreground text-sm">
-                Porte claquée, fermée à clé, méthodes non destructives prioritaires
+                Porte claquée, fermée à clé, méthodes non destructives prioritaires. Intervention sans casse dans 90% des cas.
               </p>
-            </div>
+            </a>
 
-            <div className="group bg-card border rounded-lg p-6 shadow-card hover:shadow-elegant transition-all duration-300 hover:-translate-y-1">
+            <a href="/changement-serrure" className="group bg-card border rounded-lg p-6 shadow-card hover:shadow-elegant transition-all duration-300 hover:-translate-y-1 block">
               <div className="w-14 h-14 rounded-full bg-primary/10 flex items-center justify-center mb-4 group-hover:bg-primary/20 transition-colors">
                 <Lock className="h-7 w-7 text-primary" />
               </div>
@@ -148,11 +151,11 @@ const Index = () => {
                 Changement de serrure
               </h3>
               <p className="text-muted-foreground text-sm">
-                Remplacement cylindre, installation multipoints, systèmes renforcés
+                Remplacement cylindre, installation multipoints, systèmes renforcés certifiés A2P pour une sécurité maximale.
               </p>
-            </div>
+            </a>
 
-            <div className="group bg-card border rounded-lg p-6 shadow-card hover:shadow-elegant transition-all duration-300 hover:-translate-y-1">
+            <a href="/porte-blindee" className="group bg-card border rounded-lg p-6 shadow-card hover:shadow-elegant transition-all duration-300 hover:-translate-y-1 block">
               <div className="w-14 h-14 rounded-full bg-primary/10 flex items-center justify-center mb-4 group-hover:bg-primary/20 transition-colors">
                 <Shield className="h-7 w-7 text-primary" />
               </div>
@@ -160,11 +163,11 @@ const Index = () => {
                 Blindage de porte
               </h3>
               <p className="text-muted-foreground text-sm">
-                Renforcement sur porte existante, installation porte blindée neuve
+                Renforcement sur porte existante, installation porte blindée neuve. Protection optimale contre les effractions.
               </p>
-            </div>
+            </a>
 
-            <div className="group bg-card border rounded-lg p-6 shadow-card hover:shadow-elegant transition-all duration-300 hover:-translate-y-1">
+            <a href="/depannage-serrurerie" className="group bg-card border rounded-lg p-6 shadow-card hover:shadow-elegant transition-all duration-300 hover:-translate-y-1 block">
               <div className="w-14 h-14 rounded-full bg-primary/10 flex items-center justify-center mb-4 group-hover:bg-primary/20 transition-colors">
                 <Wrench className="h-7 w-7 text-primary" />
               </div>
@@ -172,9 +175,9 @@ const Index = () => {
                 Dépannage 24/7
               </h3>
               <p className="text-muted-foreground text-sm">
-                Intervention urgente jour et nuit, sécurisation après effraction
+                Intervention urgente jour et nuit, sécurisation après effraction. Disponible dimanches et jours fériés.
               </p>
-            </div>
+            </a>
           </div>
 
           <div className="grid md:grid-cols-3 gap-6">
@@ -229,20 +232,39 @@ const Index = () => {
         <section className="container mx-auto px-4 py-16">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-3xl font-bold mb-6">
-              Zones d'intervention Lille + MEL
+              Zones d'intervention : Lille et Métropole Européenne
             </h2>
             <p className="text-xl text-muted-foreground mb-8">
-              Intervention rapide dans tous les quartiers et communes de la Métropole Européenne de Lille
+              Notre serrurier intervient rapidement dans tous les quartiers de Lille (59000, 59800) et dans l'ensemble des 90 communes de la Métropole Européenne de Lille (59260). 
+              Que vous soyez à <a href="/serrurier-lille" className="text-primary hover:underline font-semibold">Lille</a>, <a href="/serrurier-roubaix" className="text-primary hover:underline font-semibold">Roubaix</a>, <a href="/serrurier-tourcoing" className="text-primary hover:underline font-semibold">Tourcoing</a> ou dans n'importe quelle autre commune, 
+              nous garantissons une intervention en 20-30 minutes maximum.
             </p>
             
             <div className="bg-card border rounded-lg p-8 shadow-card">
-              <h3 className="font-bold text-xl mb-4">Nos zones d'intervention :</h3>
-              <p className="text-muted-foreground leading-relaxed">
-                Lille-Centre, Wazemmes, Fives, Vauban, Gambetta, Lille-Sud, Rue Nationale • 
-                Lomme, Hellemmes, Mons-en-Barœul, Villeneuve-d'Ascq, Ronchin, La Madeleine, Lambersart, 
-                Marcq-en-Barœul, Wattignies, Loos, Seclin et toutes les communes de la MEL.
+              <h3 className="font-bold text-xl mb-4">Nos principales zones d'intervention :</h3>
+              <p className="text-muted-foreground leading-relaxed mb-4">
+                <strong className="text-foreground">Lille et quartiers</strong> : Centre (59000), Wazemmes, Fives, Vauban-Esquermes, Gambetta, Lille-Sud, Rue Nationale, Bois-Blancs, Moulins, Vieux-Lille • 
+                <strong className="text-foreground">Périphérie proche</strong> : <a href="/serrurier-lomme" className="text-primary hover:underline">Lomme</a>, <a href="/serrurier-hellemmes" className="text-primary hover:underline">Hellemmes</a>, <a href="/serrurier-la-madeleine" className="text-primary hover:underline">La Madeleine</a>, <a href="/serrurier-lambersart" className="text-primary hover:underline">Lambersart</a>, <a href="/serrurier-marcq-en-baroeul" className="text-primary hover:underline">Marcq-en-Barœul</a> • 
+                <strong className="text-foreground">Grandes villes MEL</strong> : <a href="/serrurier-roubaix" className="text-primary hover:underline">Roubaix</a>, <a href="/serrurier-tourcoing" className="text-primary hover:underline">Tourcoing</a>, <a href="/serrurier-villeneuve-ascq" className="text-primary hover:underline">Villeneuve-d'Ascq</a> • 
+                <strong className="text-foreground">Autres communes</strong> : <a href="/serrurier-ronchin" className="text-primary hover:underline">Ronchin</a>, <a href="/serrurier-wattignies" className="text-primary hover:underline">Wattignies</a>, <a href="/serrurier-loos" className="text-primary hover:underline">Loos</a>, <a href="/serrurier-faches-thumesnil" className="text-primary hover:underline">Faches-Thumesnil</a>, et bien d'autres.
               </p>
+              <a href="/villes-couvertes" className="inline-flex items-center gap-2 text-primary font-semibold hover:underline">
+                Voir toutes les communes couvertes →
+              </a>
             </div>
+          </div>
+        </section>
+
+        {/* FAQ Section */}
+        <section className="container mx-auto px-4 py-16">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-3xl font-bold text-center mb-8">
+              Questions fréquentes sur nos services de serrurerie
+            </h2>
+            <p className="text-center text-muted-foreground mb-12">
+              Retrouvez les réponses aux questions les plus courantes concernant nos interventions à Lille (59000, 59800) et dans toute la Métropole Européenne de Lille (59260).
+            </p>
+            <FAQ />
           </div>
         </section>
 
@@ -251,7 +273,7 @@ const Index = () => {
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto">
               <h2 className="text-3xl font-bold text-center mb-6">
-                Tarifs clairs
+                Tarifs transparents pour tous nos services
               </h2>
               <p className="text-center text-muted-foreground mb-12">
                 Forfait journée, nuit, dimanche et jours fériés. Prix communiqués avant intervention. Aucun frais caché.
