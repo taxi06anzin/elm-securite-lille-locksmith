@@ -65,7 +65,7 @@ const Tarifs = () => {
         <title>Tarifs Serrurier Lille - Prix Transparents | ELM SÉCURITÉ</title>
         <meta 
           name="description" 
-          content="Tarifs serrurier à Lille : ouverture porte dès 89€, changement serrure dès 150€. Devis gratuit, prix fixes sans surprise ☎ 06 26 16 06 87" 
+          content="Tarifs serrurier à Lille : ouverture porte dès 89€, changement serrure dès 150€. Devis gratuit, prix fixes sans surprise ☎ 06 21 66 08 67" 
         />
         <link rel="canonical" href="https://serrurier-urgence-lille.fr/tarifs" />
       </Helmet>
