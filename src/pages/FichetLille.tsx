@@ -33,7 +33,7 @@ const FichetLille = () => {
     <>
       <SeoHead 
         title="Serrurier Fichet Lille - Installation & Dépannage Haute Sécurité | ELM SÉCURITÉ"
-        description="Spécialiste Fichet à Lille : installation serrures A2P, cylindres haute sécurité, portes blindées. Intervention 24/7 par expert certifié ☎ 06 26 16 06 87"
+        description="Spécialiste Fichet à Lille : installation serrures A2P, cylindres haute sécurité, portes blindées. Intervention 24/7 par expert certifié ☎ 06 21 66 08 67"
         canonical="https://serrurier-urgence-lille.fr/fichet-lille"
       />
       <JsonLd pageName="Serrurier Fichet Lille" pageUrl="/fichet-lille" />
@@ -200,10 +200,10 @@ const FichetLille = () => {
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <a 
-                  href="tel:0626160687"
+                  href="tel:0621660867"
                   className="inline-block bg-background text-foreground px-8 py-4 rounded-lg font-bold text-lg hover:shadow-elegant transition-shadow"
                 >
-                  Appeler : 06 26 16 06 87
+                  Appeler : 06 21 66 08 67
                 </a>
                 <a 
                   href="/contact"

@@ -44,7 +44,7 @@ const ChangementSerrure = () => {
         <title>Changement de Serrure à Lille - Toutes Marques | ELM SÉCURITÉ</title>
         <meta 
           name="description" 
-          content="Changement de serrure à Lille. Installation serrure 3, 5 points, haute sécurité. Intervention rapide, devis gratuit ☎ 06 26 16 06 87" 
+          content="Changement de serrure à Lille. Installation serrure 3, 5 points, haute sécurité. Intervention rapide, devis gratuit ☎ 06 21 66 08 67" 
         />
         <link rel="canonical" href="https://serrurier-urgence-lille.fr/changement-serrure" />
       </Helmet>

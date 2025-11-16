@@ -28,7 +28,7 @@ const SerrurierFaches = () => {
         <title>Serrurier Faches-Thumesnil – Dépannage sur tous les secteurs | ELM SÉCURITÉ</title>
         <meta 
           name="description" 
-          content="Serrurier à Faches-Thumesnil 24/7. Intervention Centre, Cheminots, Saint-Exupéry. Proximité aéroport. Ouverture porte ☎ 06 26 16 06 87" 
+          content="Serrurier à Faches-Thumesnil 24/7. Intervention Centre, Cheminots, Saint-Exupéry. Proximité aéroport. Ouverture porte ☎ 06 21 66 08 67" 
         />
         <link rel="canonical" href="https://serrurier-urgence-lille.fr/serrurier-faches-thumesnil" />
       </Helmet>
@@ -129,7 +129,7 @@ const SerrurierFaches = () => {
                 Contact
               </h2>
               <p className="text-center text-muted-foreground mb-8">
-                Téléphone : <a href="tel:0626160687" className="text-primary font-bold hover:underline">06 26 16 06 87</a>
+                Téléphone : <a href="tel:0621660867" className="text-primary font-bold hover:underline">06 21 66 08 67</a>
               </p>
               <ContactForm />
             </div>

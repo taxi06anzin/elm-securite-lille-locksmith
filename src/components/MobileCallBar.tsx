@@ -21,12 +21,12 @@ const MobileCallBar = () => {
       }`}
     >
       <a
-        href="tel:0626160687"
+        href="tel:0621660867"
         className="flex items-center justify-center gap-3 bg-green-600 hover:bg-green-700 text-white py-4 px-6 shadow-2xl transition-colors"
         aria-label="Appeler le serrurier"
       >
         <Phone className="h-6 w-6 animate-pulse" />
-        <span className="font-bold text-lg">Appelez maintenant : 06 26 16 06 87</span>
+        <span className="font-bold text-lg">Appelez maintenant : 06 21 66 08 67</span>
       </a>
     </div>
   );

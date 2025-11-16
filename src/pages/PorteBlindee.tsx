@@ -24,7 +24,7 @@ const PorteBlindee = () => {
         <title>Blindage de Porte Lille – Renforcement et Installation | ELM SÉCURITÉ</title>
         <meta 
           name="description" 
-          content="Blindage de porte à Lille. Renforcement sur porte existante ou installation porte blindée neuve. Intervention MEL ☎ 06 26 16 06 87" 
+          content="Blindage de porte à Lille. Renforcement sur porte existante ou installation porte blindée neuve. Intervention MEL ☎ 06 21 66 08 67" 
         />
         <link rel="canonical" href="https://serrurier-urgence-lille.fr/porte-blindee" />
       </Helmet>

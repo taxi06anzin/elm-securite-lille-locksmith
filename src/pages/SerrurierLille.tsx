@@ -33,7 +33,7 @@ const SerrurierLille = () => {
         <title>Serrurier Lille – Dépannage immédiat 24h/24 | ELM SÉCURITÉ</title>
         <meta 
           name="description" 
-          content="Serrurier à Lille disponible 24h/24. Intervention rapide dans tous les quartiers : Centre, Wazemmes, Fives, Vauban. Ouverture porte, changement serrure ☎ 06 26 16 06 87" 
+          content="Serrurier à Lille disponible 24h/24. Intervention rapide dans tous les quartiers : Centre, Wazemmes, Fives, Vauban. Ouverture porte, changement serrure ☎ 06 21 66 08 67" 
         />
         <meta name="robots" content="index, follow" />
         <link rel="canonical" href="https://serrurier-urgence-lille.fr/serrurier-lille" />
@@ -209,7 +209,7 @@ const SerrurierLille = () => {
                 Contact rapide
               </h2>
               <p className="text-center text-muted-foreground mb-8">
-                Téléphone : <a href="tel:0626160687" className="text-primary font-bold hover:underline">06 26 16 06 87</a>
+                Téléphone : <a href="tel:0621660867" className="text-primary font-bold hover:underline">06 21 66 08 67</a>
               </p>
               <ContactForm />
             </div>

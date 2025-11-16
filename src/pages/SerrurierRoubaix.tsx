@@ -33,7 +33,7 @@ const SerrurierRoubaix = () => {
         <title>Serrurier Roubaix – Service rapide et disponible 7j/7 | ELM SÉCURITÉ</title>
         <meta 
           name="description" 
-          content="Serrurier à Roubaix 24/7. Intervention rapide tous quartiers : Alma, Pile, 3 Ponts, Centre. Ouverture porte, dépannage urgent ☎ 06 26 16 06 87" 
+          content="Serrurier à Roubaix 24/7. Intervention rapide tous quartiers : Alma, Pile, 3 Ponts, Centre. Ouverture porte, dépannage urgent ☎ 06 21 66 08 67" 
         />
         <meta name="robots" content="index, follow" />
         <link rel="canonical" href="https://serrurier-urgence-lille.fr/serrurier-roubaix" />
@@ -153,7 +153,7 @@ const SerrurierRoubaix = () => {
                 Contact
               </h2>
               <p className="text-center text-muted-foreground mb-8">
-                Téléphone : <a href="tel:0626160687" className="text-primary font-bold hover:underline">06 26 16 06 87</a>
+                Téléphone : <a href="tel:0621660867" className="text-primary font-bold hover:underline">06 21 66 08 67</a>
               </p>
               <ContactForm />
             </div>
