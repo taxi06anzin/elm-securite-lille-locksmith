@@ -1,7 +1,5 @@
 import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
 import Breadcrumb from "@/components/Breadcrumb";
 import JsonLd from "@/components/JsonLd";
 import SeoHead from "@/components/SeoHead";
@@ -43,7 +41,6 @@ const VillesCouvertes = () => {
       <JsonLd pageName="Villes Couvertes" pageUrl="/villes-couvertes" />
       
       <div className="min-h-screen bg-background">
-        <Header />
         <Breadcrumb 
           items={[
             { label: "Accueil", path: "/" },
@@ -171,8 +168,6 @@ const VillesCouvertes = () => {
             </div>
           </section>
         </div>
-
-        <Footer />
       </div>
     </>
   );

@@ -1,6 +1,4 @@
 import { Helmet } from "react-helmet";
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
 import TrustBadges from "@/components/TrustBadges";
 import ContactForm from "@/components/ContactForm";
 import JsonLd from "@/components/JsonLd";
@@ -64,8 +62,6 @@ const Index = () => {
       <JsonLd />
       
       <div className="min-h-screen bg-background">
-        <Header />
-        
         {/* Hero Section */}
         <section className="relative h-[600px] flex items-center">
           <div 
@@ -331,8 +327,6 @@ const Index = () => {
             <ContactForm />
           </div>
         </section>
-
-        <Footer />
       </div>
     </>
   );

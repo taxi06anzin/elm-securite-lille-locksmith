@@ -1,6 +1,5 @@
 import { Helmet } from "react-helmet";
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
+import { Link } from "react-router-dom";
 import TrustBadges from "@/components/TrustBadges";
 import ContactForm from "@/components/ContactForm";
 import JsonLd from "@/components/JsonLd";
@@ -35,7 +34,6 @@ const SerrurierHalluin = () => {
       <JsonLd />
       
       <div className="min-h-screen bg-background">
-        <Header />
         
         <section className="relative py-20 bg-gradient-to-br from-secondary to-primary">
           <div className="container mx-auto px-4 text-secondary-foreground">
@@ -46,6 +44,17 @@ const SerrurierHalluin = () => {
               <p className="text-xl mb-8 opacity-90">
                 Halluin possède un tissu résidentiel varié composé de maisons mitoyennes, logements collectifs 
                 et pavillons. Le service couvre les dépannages liés aux portes et cylindres.
+              </p>
+              <p className="text-lg opacity-90 max-w-3xl">
+                Un serrurier à Halluin doit pouvoir intervenir rapidement sur l'ensemble de la commune, du centre-ville 
+                aux quartiers du Mont d'Halluin, de Colbras à Salengro. ELM SÉCURITÉ assure un dépannage serrurier 
+                à Halluin 24h/24 et 7j/7 : ouverture de porte claquée, clé cassée dans la serrure, changement de 
+                cylindre ou de serrure multipoints, sécurisation après effraction. Nos interventions sont réalisées 
+                avec des tarifs annoncés à l'avance et un devis gratuit. Que vous soyez en maison individuelle ou en 
+                immeuble, notre serrurier à Halluin adapte ses méthodes (ouverture fine, remplacement de barillet) 
+                pour limiter les dégâts et vous garantir une remise en état durable. La proximité avec la frontière 
+                belge et les villes de la MEL (Roubaix, Tourcoing, Bousbecque) nous permet d'intervenir dans un 
+                délai de 20 à 30 minutes après votre appel.
               </p>
               <CallButton size="lg" />
             </div>
@@ -123,6 +132,34 @@ const SerrurierHalluin = () => {
             </div>
           </section>
 
+          <section className="py-16 bg-muted -mx-4 px-4 md:mx-0 md:rounded-lg">
+            <div className="max-w-4xl mx-auto">
+              <h2 className="text-3xl font-bold mb-6 text-center">
+                Nos autres services
+              </h2>
+              <p className="text-center text-muted-foreground mb-8">
+                Dépannage, ouverture de porte, changement de serrure dans toute la MEL.
+              </p>
+              <div className="flex flex-wrap justify-center gap-4">
+                <Link to="/depannage-serrurerie" className="px-5 py-3 bg-background border rounded-lg font-medium hover:border-primary hover:shadow-card transition-all">
+                  Dépannage 24/7
+                </Link>
+                <Link to="/ouverture-porte" className="px-5 py-3 bg-background border rounded-lg font-medium hover:border-primary hover:shadow-card transition-all">
+                  Ouverture de porte
+                </Link>
+                <Link to="/changement-serrure" className="px-5 py-3 bg-background border rounded-lg font-medium hover:border-primary hover:shadow-card transition-all">
+                  Changement serrure
+                </Link>
+                <Link to="/tarifs" className="px-5 py-3 bg-background border rounded-lg font-medium hover:border-primary hover:shadow-card transition-all">
+                  Tarifs
+                </Link>
+                <Link to="/serrurier-lille" className="px-5 py-3 bg-background border rounded-lg font-medium hover:border-primary hover:shadow-card transition-all">
+                  Serrurier Lille
+                </Link>
+              </div>
+            </div>
+          </section>
+
           <section id="contact" className="py-16">
             <div className="max-w-2xl mx-auto">
               <h2 className="text-3xl font-bold mb-4 text-center">
@@ -135,8 +172,6 @@ const SerrurierHalluin = () => {
             </div>
           </section>
         </div>
-
-        <Footer />
       </div>
     </>
   );

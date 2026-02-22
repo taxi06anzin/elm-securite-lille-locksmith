@@ -1,6 +1,5 @@
 import { Helmet } from "react-helmet";
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
+import { Link } from "react-router-dom";
 import ContactForm from "@/components/ContactForm";
 import JsonLd from "@/components/JsonLd";
 import { CallButton } from "@/components/ui/button-variants";
@@ -20,7 +19,6 @@ const Contact = () => {
       <JsonLd />
       
       <div className="min-h-screen bg-background">
-        <Header />
         
         <section className="relative py-20 bg-gradient-to-br from-secondary to-primary">
           <div className="container mx-auto px-4 text-secondary-foreground">
@@ -147,35 +145,51 @@ const Contact = () => {
           <section className="mt-16 max-w-6xl mx-auto">
             <h2 className="text-3xl font-bold mb-8 text-center">Nos services de serrurier</h2>
             <div className="grid md:grid-cols-4 gap-6">
-              <div className="bg-card p-5 rounded-lg border text-center shadow-card">
+              <Link to="/depannage-serrurerie" className="bg-card p-5 rounded-lg border text-center shadow-card hover:shadow-elegant hover:border-primary transition-all">
                 <h3 className="font-bold mb-2">Dépannage 24/7</h3>
                 <p className="text-sm text-muted-foreground">
                   Intervention d'urgence jour et nuit
                 </p>
-              </div>
-              <div className="bg-card p-5 rounded-lg border text-center shadow-card">
+              </Link>
+              <Link to="/ouverture-porte" className="bg-card p-5 rounded-lg border text-center shadow-card hover:shadow-elegant hover:border-primary transition-all">
                 <h3 className="font-bold mb-2">Ouverture de porte</h3>
                 <p className="text-sm text-muted-foreground">
                   Sans casse si possible
                 </p>
-              </div>
-              <div className="bg-card p-5 rounded-lg border text-center shadow-card">
+              </Link>
+              <Link to="/changement-serrure" className="bg-card p-5 rounded-lg border text-center shadow-card hover:shadow-elegant hover:border-primary transition-all">
                 <h3 className="font-bold mb-2">Changement serrure</h3>
                 <p className="text-sm text-muted-foreground">
                   Toutes marques et modèles
                 </p>
-              </div>
-              <div className="bg-card p-5 rounded-lg border text-center shadow-card">
+              </Link>
+              <Link to="/porte-blindee" className="bg-card p-5 rounded-lg border text-center shadow-card hover:shadow-elegant hover:border-primary transition-all">
                 <h3 className="font-bold mb-2">Porte blindée</h3>
                 <p className="text-sm text-muted-foreground">
                   Installation et blindage
                 </p>
-              </div>
+              </Link>
+            </div>
+            <h2 className="text-2xl font-bold mb-6 text-center mt-12">Zones d'intervention</h2>
+            <p className="text-center text-muted-foreground mb-6">
+              Nous intervenons dans toute la Métropole Européenne de Lille. Consultez nos pages par ville :
+            </p>
+            <div className="flex flex-wrap justify-center gap-3">
+              <Link to="/serrurier-lille" className="px-4 py-2 bg-primary/10 text-primary rounded-lg font-medium hover:bg-primary hover:text-primary-foreground transition-colors">
+                Serrurier Lille
+              </Link>
+              <Link to="/serrurier-roubaix" className="px-4 py-2 bg-primary/10 text-primary rounded-lg font-medium hover:bg-primary hover:text-primary-foreground transition-colors">
+                Serrurier Roubaix
+              </Link>
+              <Link to="/tarifs" className="px-4 py-2 bg-primary/10 text-primary rounded-lg font-medium hover:bg-primary hover:text-primary-foreground transition-colors">
+                Tarifs
+              </Link>
+              <Link to="/villes-couvertes" className="px-4 py-2 bg-primary/10 text-primary rounded-lg font-medium hover:bg-primary hover:text-primary-foreground transition-colors">
+                Toutes les communes
+              </Link>
             </div>
           </section>
         </div>
-
-        <Footer />
       </div>
     </>
   );

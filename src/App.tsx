@@ -38,6 +38,7 @@ import Contact from "./pages/Contact";
 import VillesCouvertes from "./pages/VillesCouvertes";
 import FichetLille from "./pages/FichetLille";
 import NotFound from "./pages/NotFound";
+import Layout from "./components/Layout";
 
 const queryClient = new QueryClient();
 
@@ -50,6 +51,7 @@ const App = () => (
         <MobileCallBar />
         <WhatsAppButton />
         <Routes>
+          <Route element={<Layout />}>
           <Route path="/" element={<Index />} />
           <Route path="/depannage-serrurerie" element={<DepannageSerrurerie />} />
           <Route path="/ouverture-porte" element={<OuverturePorte />} />
@@ -82,6 +84,7 @@ const App = () => (
           <Route path="/contact" element={<Contact />} />
           <Route path="/villes-couvertes" element={<VillesCouvertes />} />
           <Route path="/fichet-lille" element={<FichetLille />} />
+          </Route>
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

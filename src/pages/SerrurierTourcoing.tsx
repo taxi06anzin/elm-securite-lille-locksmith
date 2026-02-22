@@ -1,6 +1,4 @@
 import { Helmet } from "react-helmet";
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
 import TrustBadges from "@/components/TrustBadges";
 import ContactForm from "@/components/ContactForm";
 import JsonLd from "@/components/JsonLd";
@@ -38,7 +36,6 @@ const SerrurierTourcoing = () => {
       <JsonLd />
       
       <div className="min-h-screen bg-background">
-        <Header />
         
         <section className="relative py-20 bg-gradient-to-br from-secondary to-primary">
           <div className="container mx-auto px-4 text-secondary-foreground">
@@ -158,8 +155,6 @@ const SerrurierTourcoing = () => {
             </div>
           </section>
         </div>
-
-        <Footer />
       </div>
     </>
   );

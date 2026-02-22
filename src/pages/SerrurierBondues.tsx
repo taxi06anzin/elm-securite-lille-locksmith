@@ -1,6 +1,4 @@
 import { Helmet } from "react-helmet";
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
 import TrustBadges from "@/components/TrustBadges";
 import ContactForm from "@/components/ContactForm";
 import JsonLd from "@/components/JsonLd";
@@ -49,7 +47,6 @@ const SerrurierBondues = () => {
       <JsonLd pageName="Serrurier Bondues" pageUrl="https://serrurier-urgence-lille.fr/serrurier-bondues" />
       
       <div className="min-h-screen bg-background">
-        <Header />
         <Breadcrumb 
           items={[
             { label: "Accueil", path: "/" },
@@ -158,8 +155,6 @@ const SerrurierBondues = () => {
 
           <InternalLinks currentCity="Bondues" />
         </div>
-
-        <Footer />
       </div>
     </>
   );

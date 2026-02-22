@@ -1,6 +1,4 @@
 import { Helmet } from "react-helmet";
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
 import TrustBadges from "@/components/TrustBadges";
 import ContactForm from "@/components/ContactForm";
 import JsonLd from "@/components/JsonLd";
@@ -53,7 +51,6 @@ const SerrurierLille = () => {
       <JsonLd pageName="Serrurier Lille" pageUrl="/serrurier-lille" />
       
       <div className="min-h-screen bg-background">
-        <Header />
         <Breadcrumb items={[{ label: "Serrurier Lille", path: "/serrurier-lille" }]} />
         
         <section className="relative py-20 bg-gradient-to-br from-secondary to-primary">
@@ -227,7 +224,6 @@ const SerrurierLille = () => {
         </div>
 
         <InternalLinks currentCity="serrurier-lille" />
-        <Footer />
       </div>
     </>
   );

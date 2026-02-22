@@ -25,23 +25,28 @@ const TrustBadges = () => {
   ];
 
   return (
-    <div className="grid grid-cols-2 md:grid-cols-4 gap-4 my-12">
-      {badges.map((badge, index) => {
-        const Icon = badge.icon;
-        return (
-          <div
-            key={index}
-            className="flex flex-col items-center text-center p-4 bg-card rounded-lg border shadow-card"
-          >
-            <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mb-3">
-              <Icon className="h-6 w-6 text-primary" />
+    <section className="my-12" aria-labelledby="trust-badges-heading">
+      <h2 id="trust-badges-heading" className="sr-only">
+        Nos engagements
+      </h2>
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+        {badges.map((badge, index) => {
+          const Icon = badge.icon;
+          return (
+            <div
+              key={index}
+              className="flex flex-col items-center text-center p-4 bg-card rounded-lg border shadow-card"
+            >
+              <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mb-3">
+                <Icon className="h-6 w-6 text-primary" />
+              </div>
+              <h3 className="font-bold text-sm mb-1">{badge.title}</h3>
+              <p className="text-xs text-muted-foreground">{badge.description}</p>
             </div>
-            <h3 className="font-bold text-sm mb-1">{badge.title}</h3>
-            <p className="text-xs text-muted-foreground">{badge.description}</p>
-          </div>
-        );
-      })}
-    </div>
+          );
+        })}
+      </div>
+    </section>
   );
 };
 

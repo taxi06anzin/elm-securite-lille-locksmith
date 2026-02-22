@@ -7,8 +7,6 @@ import OptimizedImage from "@/components/OptimizedImage";
 import InternalLinks from "@/components/InternalLinks";
 import ServiceSchema from "@/components/ServiceSchema";
 import { Helmet } from "react-helmet";
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
 import TrustBadges from "@/components/TrustBadges";
 import ContactForm from "@/components/ContactForm";
 import { CallButton } from "@/components/ui/button-variants";
@@ -65,8 +63,6 @@ const OuverturePorte = () => {
       />
       
       <div className="min-h-screen bg-background">
-        <Header />
-        
         <section className="relative py-20 bg-gradient-to-br from-secondary to-primary">
           <div className="container mx-auto px-4 text-secondary-foreground">
             <div className="max-w-3xl">
@@ -247,8 +243,7 @@ const OuverturePorte = () => {
           </section>
         </div>
 
-        <Footer />
-      </div>
+        </div>
     </>
   );
 };
