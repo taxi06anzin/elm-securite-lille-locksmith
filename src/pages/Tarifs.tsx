@@ -3,53 +3,47 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import ContactForm from "@/components/ContactForm";
 import JsonLd from "@/components/JsonLd";
+import FAQ from "@/components/FAQ";
 import { CallButton } from "@/components/ui/button-variants";
 import { Euro, Clock, Shield, CheckCircle } from "lucide-react";
 
-const Tarifs = () => {
-  const prestations = [
-    {
-      service: "Ouverture de porte claquée",
-      tarif: "À partir de 89€",
-      details: "Sans casse si possible, horaires normaux"
-    },
-    {
-      service: "Changement de serrure standard",
-      tarif: "À partir de 150€",
-      details: "Pose comprise, serrure 3 points"
-    },
-    {
-      service: "Changement de cylindre",
-      tarif: "À partir de 90€",
-      details: "Cylindre européen standard"
-    },
-    {
-      service: "Installation serrure haute sécurité",
-      tarif: "À partir de 300€",
-      details: "Serrure certifiée A2P, pose incluse"
-    },
-    {
-      service: "Blindage de porte",
-      tarif: "À partir de 800€",
-      details: "Tôle d'acier + serrure renforcée"
-    },
-    {
-      service: "Porte blindée complète",
-      tarif: "Sur devis",
-      details: "Certification A2P, plusieurs niveaux disponibles"
-    },
-    {
-      service: "Dépannage urgence (nuit/week-end)",
-      tarif: "Supplément +40€",
-      details: "En dehors des horaires normaux"
-    },
-    {
-      service: "Déplacement à Lille et MEL",
-      tarif: "Inclus",
-      details: "Gratuit pour toute intervention"
-    }
-  ];
+const prestationsFrequentes = [
+  { prestation: "Ouverture porte claquée", jour: "89 €", nuit: "129 €" },
+  { prestation: "Ouverture porte simple fermée", jour: "109 €", nuit: "149 €" },
+  { prestation: "Ouverture porte blindée", jour: "150 €", nuit: "190 €" },
+  { prestation: "Ouverture porte Fichet", jour: "220 €", nuit: "260 €" },
+  { prestation: "Changement cylindre standard", jour: "100–150 €", nuit: "+30 %" },
+  { prestation: "Changement cylindre renforcé", jour: "150–220 €", nuit: "+30 %" },
+  { prestation: "Changement cylindre haute sécu", jour: "220–350 €", nuit: "+30 %" },
+  { prestation: "Réparation serrure", jour: "100–150 €", nuit: "+30 %" },
+  { prestation: "Mise en sécurité après effraction", jour: "Sur devis", nuit: "Sur devis" },
+  { prestation: "Devis / Diagnostic", jour: "Gratuit", nuit: "Gratuit" }
+];
 
+const grilleBase = [
+  { element: "Main d'œuvre (horaire)", tarif: "60 €/h" },
+  { element: "Déplacement Lille", tarif: "30 €" },
+  { element: "Déplacement hors Lille", tarif: "40 €" },
+  { element: "Majoration nuit (20h–8h)", tarif: "+30 %" },
+  { element: "Majoration dimanche/fériés", tarif: "+50 %" }
+];
+
+const faqTarifs = [
+  {
+    question: "Le déplacement est-il inclus dans le prix ?",
+    answer: "Non, un forfait déplacement de 30€ s'ajoute sur Lille (40€ hors Lille). Il vous est indiqué avant toute intervention."
+  },
+  {
+    question: "Les tarifs sont-ils majorés la nuit ?",
+    answer: "Oui, une majoration de 30% s'applique entre 20h et 8h, et 50% les dimanches et jours fériés."
+  },
+  {
+    question: "Acceptez-vous les prises en charge assurance ?",
+    answer: "Oui, nous sommes agréés par les assurances et pouvons vous accompagner dans votre déclaration de sinistre."
+  }
+];
+
+const Tarifs = () => {
   const garanties = [
     "Devis gratuit et détaillé avant toute intervention",
     "Pas de frais cachés, tarifs annoncés à l'avance",
@@ -65,7 +59,7 @@ const Tarifs = () => {
         <title>Tarifs Serrurier Lille - Prix Transparents | ELM SÉCURITÉ</title>
         <meta 
           name="description" 
-          content="Tarifs serrurier à Lille : ouverture porte dès 89€, changement serrure dès 150€. Devis gratuit, prix fixes sans surprise ☎ 06 21 66 08 67" 
+          content="Tarifs serrurier Lille : ouverture porte dès 89€, changement serrure dès 100€. Grille complète TTC, devis gratuit. Appelez le 06 21 66 08 67" 
         />
         <link rel="canonical" href="https://serrurier-urgence-lille.fr/tarifs" />
       </Helmet>
@@ -124,26 +118,53 @@ const Tarifs = () => {
             </div>
 
             <div className="max-w-5xl mx-auto">
-              <h2 className="text-3xl font-bold mb-8 text-center">
-                Grille tarifaire serrurier Lille
-              </h2>
+              <p className="text-muted-foreground mb-8 text-center max-w-2xl mx-auto">
+                Tous nos tarifs sont communiqués avant intervention sous forme de devis écrit et signé. Pas de frais cachés, pas de mauvaise surprise.
+              </p>
 
-              <div className="bg-card border rounded-lg shadow-card overflow-hidden">
+              <h2 className="text-3xl font-bold mb-4 text-center">
+                Prestations fréquentes (TTC)
+              </h2>
+              <div className="bg-card border rounded-lg shadow-card overflow-hidden mb-10">
                 <div className="overflow-x-auto">
                   <table className="w-full">
                     <thead className="bg-primary text-primary-foreground">
                       <tr>
                         <th className="px-6 py-4 text-left font-bold">Prestation</th>
-                        <th className="px-6 py-4 text-left font-bold">Tarif TTC</th>
-                        <th className="px-6 py-4 text-left font-bold">Détails</th>
+                        <th className="px-6 py-4 text-left font-bold">Jour (8h–20h)</th>
+                        <th className="px-6 py-4 text-left font-bold">Nuit / Week-end</th>
                       </tr>
                     </thead>
                     <tbody>
-                      {prestations.map((prestation, index) => (
+                      {prestationsFrequentes.map((row, index) => (
                         <tr key={index} className={index % 2 === 0 ? "bg-muted/50" : ""}>
-                          <td className="px-6 py-4 font-medium">{prestation.service}</td>
-                          <td className="px-6 py-4 text-primary font-bold">{prestation.tarif}</td>
-                          <td className="px-6 py-4 text-sm text-muted-foreground">{prestation.details}</td>
+                          <td className="px-6 py-4 font-medium">{row.prestation}</td>
+                          <td className="px-6 py-4 text-primary font-bold">{row.jour}</td>
+                          <td className="px-6 py-4 text-primary font-bold">{row.nuit}</td>
+                        </tr>
+                      ))}
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+
+              <h2 className="text-3xl font-bold mb-4 text-center">
+                Grille tarifaire de base
+              </h2>
+              <div className="bg-card border rounded-lg shadow-card overflow-hidden mb-10">
+                <div className="overflow-x-auto">
+                  <table className="w-full">
+                    <thead className="bg-primary text-primary-foreground">
+                      <tr>
+                        <th className="px-6 py-4 text-left font-bold">Élément</th>
+                        <th className="px-6 py-4 text-left font-bold">Tarif</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      {grilleBase.map((row, index) => (
+                        <tr key={index} className={index % 2 === 0 ? "bg-muted/50" : ""}>
+                          <td className="px-6 py-4 font-medium">{row.element}</td>
+                          <td className="px-6 py-4 text-primary font-bold">{row.tarif}</td>
                         </tr>
                       ))}
                     </tbody>
@@ -161,7 +182,7 @@ const Tarifs = () => {
                 </p>
                 <ul className="space-y-1 text-sm text-muted-foreground ml-4">
                   <li>• <strong>Horaires normaux</strong> (lundi-vendredi 8h-19h) : tarifs standards</li>
-                  <li>• <strong>Nuit, week-end, jours fériés</strong> : supplément urgence de 40€</li>
+                  <li>• <strong>Nuit, week-end, jours fériés</strong> : majoration 30% ou 50% selon le cas</li>
                   <li>• <strong>Intervention complexe</strong> : devis personnalisé gratuit</li>
                 </ul>
               </div>
@@ -229,6 +250,15 @@ const Tarifs = () => {
                   </p>
                 </div>
               </div>
+            </div>
+          </section>
+
+          <section className="py-16 bg-muted -mx-4 px-4 md:mx-0 md:rounded-lg">
+            <div className="max-w-3xl mx-auto">
+              <h2 className="text-3xl font-bold mb-8 text-center">
+                Questions fréquentes sur nos tarifs
+              </h2>
+              <FAQ items={faqTarifs} />
             </div>
           </section>
 

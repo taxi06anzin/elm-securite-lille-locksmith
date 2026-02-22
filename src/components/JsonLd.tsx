@@ -1,4 +1,5 @@
 import { Helmet } from "react-helmet";
+import { GOOGLE_BUSINESS_URL } from "@/config/site";
 
 interface JsonLdProps {
   pageName?: string;
@@ -54,7 +55,7 @@ const JsonLd = ({ pageName, pageUrl }: JsonLdProps) => {
       { "@type": "City", "name": "Lomme" },
       { "@type": "City", "name": "Hellemmes" }
     ],
-    "sameAs": [baseUrl]
+    "sameAs": [baseUrl, GOOGLE_BUSINESS_URL]
   };
 
   return (

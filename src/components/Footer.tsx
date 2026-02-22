@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
-import { Phone, MapPin, Clock, Mail } from "lucide-react";
+import { Phone, MapPin, Clock, Mail, Star } from "lucide-react";
+import { GOOGLE_BUSINESS_URL } from "@/config/site";
 
 const Footer = () => {
   const zones = [
@@ -49,6 +50,17 @@ const Footer = () => {
               <div className="flex items-start gap-2">
                 <Clock className="h-5 w-5 mt-0.5" />
                 <span>Disponible 24h/24<br />7 jours sur 7</span>
+              </div>
+              <div className="mt-4">
+                <a
+                  href={GOOGLE_BUSINESS_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 font-semibold text-primary-foreground/90 hover:underline"
+                >
+                  <Star className="h-5 w-5 fill-current" />
+                  Voir nos avis sur Google
+                </a>
               </div>
             </div>
           </div>

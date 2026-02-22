@@ -1,5 +1,6 @@
 import { Helmet } from "react-helmet";
 import { Star } from "lucide-react";
+import { GOOGLE_BUSINESS_URL } from "@/config/site";
 
 interface ReviewsProps {
   showSchema?: boolean;
@@ -85,6 +86,14 @@ const Reviews = ({ showSchema = true }: ReviewsProps) => {
             <p className="text-muted-foreground">
               Basé sur 127 avis clients à Lille et la Métropole
             </p>
+            <a
+              href={GOOGLE_BUSINESS_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 mt-4 px-5 py-2.5 rounded-lg border-2 border-primary bg-primary/5 text-primary font-semibold hover:bg-primary hover:text-primary-foreground transition-colors"
+            >
+              ⭐ Voir nos avis sur Google
+            </a>
           </div>
 
           <div className="grid md:grid-cols-2 gap-6">
