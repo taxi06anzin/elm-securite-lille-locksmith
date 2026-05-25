@@ -24,6 +24,12 @@ export default defineConfig(({ mode }) => ({
       "@": path.resolve(__dirname, "./src"),
     },
   },
+  build: {
+    // react-snap (postbuild) ships an old Chromium (puppeteer 1.20 -> Chromium 77)
+    // qui ne sait pas parser ?. et ?? (ES2020). On transpile vers es2019 pour que
+    // le pré-rendu exécute bien l'app et que react-helmet injecte les meta par page.
+    target: "es2019",
+  },
   preview: {
     headers: {
       "Content-Security-Policy": "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self' https:;",
