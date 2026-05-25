@@ -84,3 +84,56 @@ Quand une nouvelle page est créée :
 - **NE JAMAIS** committer le `.env` (voir `.gitignore`)
 - **Vérifier régulièrement** les policies RLS Supabase :
   https://supabase.com/dashboard/project/ijevofayzehybwhpivvm/auth/policies
+
+## 🖼️ Gestion des images
+
+### Ajouter une nouvelle image au projet
+
+1. Placer le fichier source (PNG ou JPG) dans `src/assets/`
+2. Lancer `npm run optimize:images` pour générer la version WebP
+3. Importer dans la page avec :
+   ```tsx
+   import monImage from "@/assets/mon-image.png";
+   ```
+4. Utiliser via le composant `<OptimizedImage>` (PAS un `<img>` direct) :
+   ```tsx
+   <OptimizedImage
+     src={monImage}
+     alt="Description précise + 'Lille' si pertinent"
+     loading="lazy"
+     width={800}
+     height={600}
+   />
+   ```
+   `OptimizedImage` détecte automatiquement la version `.webp` (résolution au
+   build via `import.meta.glob`) et la sert en `<picture>` avec fallback sur
+   l'original. **Pas besoin d'importer le `.webp` à la main.**
+
+### Règles d'optimisation
+
+- **Format source** : préférer JPG pour les photos, PNG uniquement pour les
+  graphiques avec transparence.
+- **Dimensions** : max 1600px de large à la source (le script resize si plus).
+- **Image HERO / above-the-fold** : `loading="eager"` + `fetchPriority="high"`
+  + preload via `<Helmet>` (importer le `.webp` explicitement pour le `href`).
+  ⚠️ Ne PAS précharger une image située sous la ligne de flottaison
+  (anti-pattern : Lighthouse pénalise « preloaded but not used »).
+- **Autres images** : `loading="lazy"` (défaut du composant).
+- **Fournir width/height** quand le conteneur n'a pas de hauteur fixe (limite le
+  CLS). Avec un conteneur `h-XX` + `object-cover`, le CLS est déjà maîtrisé.
+
+### Régénérer toutes les WebP
+
+```bash
+npm run optimize:images
+```
+Le script est idempotent — il écrase les `.webp` existants et régénère
+`public/og-image.jpg` (1200×630) à partir de `hero-locksmith.jpg`, sans toucher
+aux PNG/JPG sources (conservés comme fallback `<picture>`).
+
+### og-image (aperçus réseaux sociaux)
+
+`public/og-image.jpg` est l'image partagée sur Facebook/LinkedIn/WhatsApp/Twitter.
+Toute meta `og:image` / `twitter:image` doit pointer vers
+`https://serrurier-urgence-lille.fr/og-image.jpg` (ne JAMAIS référencer un fichier
+de `src/assets/` à la racine, ex. `/hero-locksmith.jpg` → 404).

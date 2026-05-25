@@ -87,7 +87,7 @@ const PorteBlindee = () => {
 
           <section className="py-16 grid md:grid-cols-2 gap-12 items-center bg-muted -mx-4 px-4 md:mx-0 md:rounded-lg">
             <div className="relative h-[500px] rounded-lg overflow-hidden shadow-elegant">
-              <img src={porteBlindeeImage} alt="Installation porte blindée Lille" className="w-full h-full object-cover" />
+              <OptimizedImage src={porteBlindeeImage} alt="Installation porte blindée Lille" className="w-full h-full object-cover" />
             </div>
 
             <div>
@@ -143,7 +143,7 @@ const PorteBlindee = () => {
                 </div>
 
                 <div className="relative h-96 rounded-lg overflow-hidden shadow-elegant">
-                  <img src={porteBlindeeInstallation} alt="Installation porte blindée professionnelle" className="w-full h-full object-cover" />
+                  <OptimizedImage src={porteBlindeeInstallation} alt="Installation porte blindée professionnelle" className="w-full h-full object-cover" />
                 </div>
               </div>
 

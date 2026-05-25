@@ -109,7 +109,7 @@ const ChangementSerrure = () => {
 
           <section className="py-16 grid md:grid-cols-2 gap-12 items-center bg-muted -mx-4 px-4 md:mx-0 md:rounded-lg">
             <div className="relative h-[500px] rounded-lg overflow-hidden shadow-elegant">
-              <img src={changementSerrure} alt="Changement serrure Lille intervention rapide" className="w-full h-full object-cover" />
+              <OptimizedImage src={changementSerrure} alt="Changement serrure Lille intervention rapide" className="w-full h-full object-cover" />
             </div>
 
             <div>
@@ -163,13 +163,13 @@ const ChangementSerrure = () => {
 
               <div className="grid md:grid-cols-2 gap-6">
                 <div className="relative h-72 rounded-lg overflow-hidden shadow-elegant">
-                  <img src={changementCylindre} alt="Changement de cylindre" className="w-full h-full object-cover" />
+                  <OptimizedImage src={changementCylindre} alt="Changement de cylindre" className="w-full h-full object-cover" />
                   <div className="absolute inset-0 bg-gradient-to-t from-secondary/90 to-transparent flex items-end p-6">
                     <h3 className="text-white font-bold text-xl">Changement de cylindre</h3>
                   </div>
                 </div>
                 <div className="relative h-72 rounded-lg overflow-hidden shadow-elegant">
-                  <img src={installationSerrure} alt="Installation serrure" className="w-full h-full object-cover" />
+                  <OptimizedImage src={installationSerrure} alt="Installation serrure" className="w-full h-full object-cover" />
                   <div className="absolute inset-0 bg-gradient-to-t from-secondary/90 to-transparent flex items-end p-6">
                     <h3 className="text-white font-bold text-xl">Installation complète</h3>
                   </div>

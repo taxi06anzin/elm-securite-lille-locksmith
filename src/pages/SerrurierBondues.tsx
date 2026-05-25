@@ -38,7 +38,7 @@ const SerrurierBondues = () => {
         <meta property="og:description" content="Serrurier à Bondues 24/7. Intervention Centre, Bois d'Achelles, Grand Bondues, Ravennes. Ouverture porte, cylindre haute sécurité ☎ 06 21 66 08 67" />
         <meta property="og:url" content="https://serrurier-urgence-lille.fr/serrurier-bondues" />
         <meta property="og:type" content="website" />
-        <meta property="og:image" content="https://serrurier-urgence-lille.fr/hero-locksmith.jpg" />
+        <meta property="og:image" content="https://serrurier-urgence-lille.fr/og-image.jpg" />
         
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Serrurier Bondues – Intervention sur secteurs résidentiels premium | ELM SÉCURITÉ" />
@@ -121,7 +121,7 @@ const SerrurierBondues = () => {
               
               <div className="grid md:grid-cols-2 gap-8 items-center">
                 <div className="relative h-80 rounded-lg overflow-hidden shadow-elegant">
-                  <img src={changementCylindre} alt="Changement cylindre Bondues" className="w-full h-full object-cover" />
+                  <OptimizedImage src={changementCylindre} alt="Changement cylindre Bondues" className="w-full h-full object-cover" />
                 </div>
 
                 <div>

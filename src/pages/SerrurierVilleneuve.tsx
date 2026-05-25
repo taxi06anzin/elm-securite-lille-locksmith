@@ -94,7 +94,7 @@ const SerrurierVilleneuve = () => {
 
               <div className="max-w-2xl mx-auto mt-12">
                 <div className="relative h-80 rounded-lg overflow-hidden shadow-elegant">
-                  <img src={installationSerrure} alt="Intervention serrurier Villeneuve-d'Ascq" className="w-full h-full object-cover" />
+                  <OptimizedImage src={installationSerrure} alt="Intervention serrurier Villeneuve-d'Ascq" className="w-full h-full object-cover" />
                 </div>
               </div>
             </div>

@@ -83,7 +83,7 @@ const SerrurierMadeleine = () => {
             </div>
 
             <div className="relative h-96 rounded-lg overflow-hidden shadow-elegant">
-              <img src={cleCassee} alt="Dépannage serrurier La Madeleine" className="w-full h-full object-cover" />
+              <OptimizedImage src={cleCassee} alt="Dépannage serrurier La Madeleine" className="w-full h-full object-cover" />
             </div>
           </section>
 

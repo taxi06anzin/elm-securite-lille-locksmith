@@ -1,4 +1,5 @@
 import { Helmet } from "react-helmet";
+import OptimizedImage from "@/components/OptimizedImage";
 import TrustBadges from "@/components/TrustBadges";
 import ContactForm from "@/components/ContactForm";
 import JsonLd from "@/components/JsonLd";
@@ -67,7 +68,7 @@ const SerrurierMons = () => {
 
             <div className="grid md:grid-cols-2 gap-12 items-center mb-12">
               <div className="relative h-96 rounded-lg overflow-hidden shadow-elegant">
-                <img src={ouverturePorte} alt="Ouverture porte Mons-en-Barœul" className="w-full h-full object-cover" />
+                <OptimizedImage src={ouverturePorte} alt="Ouverture porte Mons-en-Barœul" className="w-full h-full object-cover" />
               </div>
 
               <div className="space-y-6">
@@ -124,7 +125,7 @@ const SerrurierMons = () => {
                 </div>
 
                 <div className="relative h-80 rounded-lg overflow-hidden shadow-elegant">
-                  <img src={changementCylindre} alt="Changement cylindre Mons-en-Barœul" className="w-full h-full object-cover" />
+                  <OptimizedImage src={changementCylindre} alt="Changement cylindre Mons-en-Barœul" className="w-full h-full object-cover" />
                 </div>
               </div>
             </div>

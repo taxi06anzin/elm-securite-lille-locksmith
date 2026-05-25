@@ -95,7 +95,7 @@ const SerrurierMarcq = () => {
             </div>
 
             <div className="relative h-96 rounded-lg overflow-hidden shadow-elegant">
-              <img src={porteBlindee} alt="Ouverture porte Marcq-en-Barœul" className="w-full h-full object-cover" />
+              <OptimizedImage src={porteBlindee} alt="Ouverture porte Marcq-en-Barœul" className="w-full h-full object-cover" />
             </div>
           </section>
 

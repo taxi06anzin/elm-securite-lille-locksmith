@@ -60,7 +60,7 @@ const SerrurierLambersart = () => {
 
           <section className="py-16 grid md:grid-cols-2 gap-12 items-center">
             <div className="relative h-96 rounded-lg overflow-hidden shadow-elegant">
-              <img src={ouverturePorte} alt="Serrurier Lambersart intervention" className="w-full h-full object-cover" />
+              <OptimizedImage src={ouverturePorte} alt="Serrurier Lambersart intervention" className="w-full h-full object-cover" />
             </div>
 
             <div>
@@ -110,7 +110,7 @@ const SerrurierLambersart = () => {
               
               <div className="grid md:grid-cols-2 gap-8 items-center">
                 <div className="relative h-80 rounded-lg overflow-hidden shadow-elegant">
-                  <img src={changementCylindre} alt="Changement cylindre Lambersart" className="w-full h-full object-cover" />
+                  <OptimizedImage src={changementCylindre} alt="Changement cylindre Lambersart" className="w-full h-full object-cover" />
                 </div>
 
                 <div>

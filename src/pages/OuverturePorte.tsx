@@ -131,7 +131,7 @@ const OuverturePorte = () => {
               
               <div className="grid md:grid-cols-2 gap-8 mb-12">
                 <div className="relative h-80 rounded-lg overflow-hidden shadow-elegant">
-                  <img src={ouvertureFine} alt="Technique ouverture fine" className="w-full h-full object-cover" />
+                  <OptimizedImage src={ouvertureFine} alt="Technique ouverture fine" className="w-full h-full object-cover" />
                   <div className="absolute inset-0 bg-gradient-to-t from-secondary/90 to-transparent flex items-end p-6">
                     <div>
                       <h3 className="text-white font-bold text-xl mb-2">Ouverture fine</h3>
@@ -141,7 +141,7 @@ const OuverturePorte = () => {
                 </div>
                 
                 <div className="relative h-80 rounded-lg overflow-hidden shadow-elegant">
-                  <img src={cleCassee} alt="Extraction de clé cassée" className="w-full h-full object-cover" />
+                  <OptimizedImage src={cleCassee} alt="Extraction de clé cassée" className="w-full h-full object-cover" />
                   <div className="absolute inset-0 bg-gradient-to-t from-secondary/90 to-transparent flex items-end p-6">
                     <div>
                       <h3 className="text-white font-bold text-xl mb-2">Extraction de clé</h3>

@@ -1,4 +1,5 @@
 import { Helmet } from "react-helmet";
+import OptimizedImage from "@/components/OptimizedImage";
 import { Link } from "react-router-dom";
 import TrustBadges from "@/components/TrustBadges";
 import ContactForm from "@/components/ContactForm";
@@ -68,7 +69,7 @@ const SerrurierHalluin = () => {
 
           <section className="py-16 grid md:grid-cols-2 gap-12 items-center">
             <div className="relative h-96 rounded-lg overflow-hidden shadow-elegant">
-              <img src={ouverturePorte} alt="Dépannage Halluin" className="w-full h-full object-cover" />
+              <OptimizedImage src={ouverturePorte} alt="Dépannage Halluin" className="w-full h-full object-cover" />
             </div>
 
             <div>
@@ -126,7 +127,7 @@ const SerrurierHalluin = () => {
                 </div>
 
                 <div className="relative h-80 rounded-lg overflow-hidden shadow-elegant">
-                  <img src={installationSerrure} alt="Changement cylindre Halluin" className="w-full h-full object-cover" />
+                  <OptimizedImage src={installationSerrure} alt="Changement cylindre Halluin" className="w-full h-full object-cover" />
                 </div>
               </div>
             </div>

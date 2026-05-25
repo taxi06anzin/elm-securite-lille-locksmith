@@ -1,4 +1,5 @@
 import { Helmet } from "react-helmet";
+import OptimizedImage from "@/components/OptimizedImage";
 import TrustBadges from "@/components/TrustBadges";
 import ContactForm from "@/components/ContactForm";
 import JsonLd from "@/components/JsonLd";
@@ -122,10 +123,10 @@ const DepannageSerrurerie = () => {
             </div>
             <div className="grid grid-cols-2 gap-4">
               <div className="relative h-64 rounded-lg overflow-hidden shadow-elegant">
-                <img src={interventionImage} alt="Serrurier intervention urgence" className="w-full h-full object-cover" />
+                <OptimizedImage src={interventionImage} alt="Serrurier intervention urgence" className="w-full h-full object-cover" />
               </div>
               <div className="relative h-64 rounded-lg overflow-hidden shadow-elegant mt-8">
-                <img src={reparationImage} alt="Réparation après effraction" className="w-full h-full object-cover" />
+                <OptimizedImage src={reparationImage} alt="Réparation après effraction" className="w-full h-full object-cover" />
               </div>
             </div>
           </section>
