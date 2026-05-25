@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import { Phone, Menu, X, MapPin, Clock, Mail } from "lucide-react";
+import { Phone, Menu, X, MapPin, Clock, Mail, Star } from "lucide-react";
 import { CallButton } from "./ui/button-variants";
 import { Button } from "./ui/button";
 
@@ -21,7 +21,20 @@ const Header = () => {
       {/* Top bar urgence */}
       <div className="bg-gradient-primary text-primary-foreground py-2">
         <div className="container mx-auto px-4">
-          <div className="flex flex-wrap items-center justify-center md:justify-between gap-3 text-sm">
+          {/* Mobile : bande preuve compacte (Fichet + note Google) */}
+          <div className="flex items-center justify-between gap-2 text-xs md:hidden">
+            <span className="inline-flex items-center gap-1 font-semibold">
+              <span aria-hidden="true">🔐</span>
+              Point Fort Fichet · 24/7
+            </span>
+            <span className="inline-flex items-center gap-1 font-semibold">
+              <Star className="h-3.5 w-3.5 fill-current" aria-hidden="true" />
+              4,7/5 Google
+            </span>
+          </div>
+
+          {/* Desktop/tablette : infos complètes */}
+          <div className="hidden md:flex flex-wrap items-center justify-between gap-3 text-sm">
             <div className="flex items-center gap-2">
               <Clock className="h-4 w-4" />
               <span className="font-semibold">Disponible 24h/24 et 7j/7</span>
@@ -34,7 +47,7 @@ const Header = () => {
               <Phone className="h-4 w-4" />
               06 21 66 08 67
             </a>
-            <a 
+            <a
               href="https://wa.me/33621660867?text=Bonjour,%20j'ai%20besoin%20d'un%20serrurier%20d'urgence" 
               target="_blank" 
               rel="noopener noreferrer"
@@ -55,16 +68,16 @@ const Header = () => {
 
       {/* Main navigation */}
       <nav className="container mx-auto px-4 py-4">
-        {/* Badge Point Fort Fichet — différenciateur principal */}
-        <div className="flex justify-center lg:justify-start mb-3">
+        {/* Badge Point Fort Fichet — différenciateur principal (mobile : déjà dans la top-bar) */}
+        <div className="hidden md:flex justify-center lg:justify-start mb-3">
           <div className="bg-primary/10 border border-primary/20 text-primary text-xs font-semibold px-3 py-1 rounded-full inline-flex items-center gap-1.5">
             <span aria-hidden="true">🔐</span>
             Concessionnaire Point Fort Fichet · 24/7
           </div>
         </div>
-        <div className="flex items-center justify-between">
+        <div className="flex items-center justify-between gap-2">
           <Link to="/" className="flex flex-col">
-            <span className="text-2xl font-bold text-primary">ELM SÉCURITÉ</span>
+            <span className="text-xl md:text-2xl font-bold text-primary">ELM SÉCURITÉ</span>
             <span className="text-xs text-muted-foreground">Serrurier - Dépannage - Lille</span>
           </Link>
 
@@ -104,17 +117,26 @@ const Header = () => {
             <CallButton />
           </div>
 
-          {/* Mobile menu button */}
-          <Button
-            variant="ghost"
-            size="icon"
-            className="lg:hidden"
-            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            aria-label={mobileMenuOpen ? "Fermer le menu de navigation" : "Ouvrir le menu de navigation"}
-            aria-expanded={mobileMenuOpen}
-          >
-            {mobileMenuOpen ? <X /> : <Menu />}
-          </Button>
+          {/* Mobile/tablette : CTA appel inline + bouton menu */}
+          <div className="flex items-center gap-2 lg:hidden">
+            <a
+              href="tel:0621660867"
+              className="flex items-center gap-1 bg-urgent text-urgent-foreground px-3 py-2 rounded-full font-bold text-sm touch-manipulation active:scale-95 transition-transform min-h-[48px] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-urgent focus-visible:ring-offset-2"
+              aria-label="Appeler maintenant ELM Sécurité au 06 21 66 08 67"
+            >
+              <Phone className="h-4 w-4" aria-hidden="true" />
+              Appeler
+            </a>
+            <Button
+              variant="ghost"
+              size="icon"
+              onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+              aria-label={mobileMenuOpen ? "Fermer le menu de navigation" : "Ouvrir le menu de navigation"}
+              aria-expanded={mobileMenuOpen}
+            >
+              {mobileMenuOpen ? <X /> : <Menu />}
+            </Button>
+          </div>
         </div>
 
         {/* Mobile menu */}

@@ -9,6 +9,8 @@ const Layout = () => (
       <Outlet />
     </main>
     <Footer />
+    {/* Réserve l'espace de la barre d'urgence fixe (EmergencyCallBar) en bas sur mobile */}
+    <div aria-hidden="true" className="h-24 md:hidden" />
   </>
 );
 

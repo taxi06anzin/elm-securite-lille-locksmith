@@ -3,7 +3,7 @@ import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import MobileCallBar from "@/components/MobileCallBar";
+import EmergencyCallBar from "@/components/EmergencyCallBar";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import Index from "./pages/Index";
 import DepannageSerrurerie from "./pages/DepannageSerrurerie";
@@ -49,7 +49,7 @@ const App = () => (
       <Toaster />
       <Sonner />
       <BrowserRouter>
-        <MobileCallBar />
+        <EmergencyCallBar />
         <WhatsAppButton />
         <Routes>
           <Route element={<Layout />}>
