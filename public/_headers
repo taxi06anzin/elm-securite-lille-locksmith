@@ -1,11 +1,30 @@
-# Netlify security headers — ELM Sécurité
-# S'applique à toutes les routes. CSP adaptée à GA4 (googletagmanager) + Supabase.
-# NB: 'unsafe-inline' (script) requis par le snippet GA4 inline d'index.html.
+# ─────────────────────────────────────────────────────────────────────────────
+# Netlify HTTP Headers — ELM Sécurité Serrurier Lille
+# Headers de sécurité appliqués à toutes les routes
+# ─────────────────────────────────────────────────────────────────────────────
 
 /*
-  Content-Security-Policy: default-src 'self'; base-uri 'self'; object-src 'none'; frame-ancestors 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; font-src 'self' data:; connect-src 'self' https://www.googletagmanager.com https://*.google-analytics.com https://*.analytics.google.com https://*.supabase.co wss://*.supabase.co; manifest-src 'self'; form-action 'self'; frame-src 'self'; upgrade-insecure-requests
-  Strict-Transport-Security: max-age=31536000; includeSubDomains
-  X-Frame-Options: SAMEORIGIN
   X-Content-Type-Options: nosniff
+  X-Frame-Options: SAMEORIGIN
   Referrer-Policy: strict-origin-when-cross-origin
-  Permissions-Policy: camera=(), microphone=(), geolocation=(), payment=(), usb=(), interest-cohort=()
+  Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+  Permissions-Policy: camera=(), microphone=(), geolocation=(self), payment=()
+  Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.googletagmanager.com https://www.google-analytics.com https://*.supabase.co; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com data:; img-src 'self' data: https:; connect-src 'self' https://www.google-analytics.com https://*.supabase.co https://*.supabase.in wss://*.supabase.co; frame-ancestors 'self'; base-uri 'self'; form-action 'self';
+
+# Cache long pour les assets versionnés (Vite ajoute des hashes dans les noms)
+/assets/*
+  Cache-Control: public, max-age=31536000, immutable
+
+# Cache court pour le HTML (permet les MAJ de contenu rapides)
+/*.html
+  Cache-Control: public, max-age=300, must-revalidate
+
+# Cache moyen pour les fichiers SEO (peuvent changer)
+/sitemap.xml
+  Cache-Control: public, max-age=3600
+
+/robots.txt
+  Cache-Control: public, max-age=3600
+
+/llms.txt
+  Cache-Control: public, max-age=3600
