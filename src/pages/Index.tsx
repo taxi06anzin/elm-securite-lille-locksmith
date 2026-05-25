@@ -1,11 +1,14 @@
 import { Helmet } from "react-helmet";
+import OptimizedImage from "@/components/OptimizedImage";
 import TrustBadges from "@/components/TrustBadges";
+import TrustPills from "@/components/TrustPills";
 import ContactForm from "@/components/ContactForm";
 import JsonLd from "@/components/JsonLd";
 import FAQ from "@/components/FAQ";
 import { CallButton, CtaButton } from "@/components/ui/button-variants";
-import { Phone, Clock, MapPin, Shield, Wrench, Lock, DoorOpen } from "lucide-react";
+import { Phone, Clock, MapPin, Shield, Wrench, Lock, DoorOpen, MessageCircle, CheckCircle } from "lucide-react";
 import heroImage from "@/assets/hero-locksmith.jpg";
+import heroImageWebp from "@/assets/hero-locksmith.webp";
 import porteBlindeeImage from "@/assets/porte-blindee.jpg";
 import serrureImage from "@/assets/serrure-cylindre.jpg";
 import changementSerrureImage from "@/assets/changement-serrure.jpg";
@@ -58,39 +61,104 @@ const Index = () => {
           content="Serrurier à Lille disponible 24h/24. Ouverture de porte, changement de serrure, porte blindée. Intervention en 20-30 min. Devis gratuit ☎ 06 21 66 08 67" 
         />
         <link rel="canonical" href="https://serrurier-urgence-lille.fr/" />
+        {/* Préchargement de l'image LCP (hero) en WebP */}
+        <link
+          rel="preload"
+          as="image"
+          href={heroImageWebp}
+          type="image/webp"
+          fetchPriority="high"
+        />
       </Helmet>
       <JsonLd />
       
       <div className="min-h-screen bg-background">
         {/* Hero Section */}
-        <section className="relative h-[600px] flex items-center">
-          <div 
-            className="absolute inset-0 bg-cover bg-center"
-            style={{ backgroundImage: `url(${heroImage})` }}
-          >
-            <div className="absolute inset-0 bg-gradient-to-r from-secondary/95 to-secondary/70"></div>
-          </div>
-          
+        <section className="relative min-h-[560px] md:h-[600px] flex items-center overflow-hidden py-10 md:py-0">
+          {/* Image LCP : <img> dédié (meilleure détection LCP que background-image) */}
+          <OptimizedImage
+            src={heroImage}
+            alt="Serrurier ELM Sécurité en intervention à Lille"
+            className="absolute inset-0 w-full h-full object-cover"
+            loading="eager"
+            fetchPriority="high"
+            width={1920}
+            height={1080}
+          />
+          {/* Overlay gradient (préserve le design existant) */}
+          <div className="absolute inset-0 bg-gradient-to-r from-secondary/95 to-secondary/70"></div>
+
           <div className="container mx-auto px-4 relative z-10">
             <div className="max-w-2xl text-secondary-foreground">
-              <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight">
+              <h1 className="text-3xl sm:text-4xl md:text-6xl font-bold mb-4 md:mb-6 leading-tight">
                 Serrurier Lille<br />
                 <span className="text-accent">Dépannage rapide 24h/24 et 7j/7</span>
               </h1>
-              <p className="text-xl mb-8 opacity-90">
-                Intervention disponible à Lille et dans toute la MEL. Dépannage immédiat pour porte claquée, 
-                clé perdue, serrure bloquée, barillet endommagé ou changement de cylindre. 
+
+              {/* Sous-titre court mobile */}
+              <p className="md:hidden text-base opacity-95 mb-4">
+                Intervention en 20-30 min à Lille et dans toute la MEL.
+              </p>
+
+              {/* Paragraphe complet desktop (inchangé) */}
+              <p className="hidden md:block text-xl mb-8 opacity-90">
+                Intervention disponible à Lille et dans toute la MEL. Dépannage immédiat pour porte claquée,
+                clé perdue, serrure bloquée, barillet endommagé ou changement de cylindre.
                 Déplacement rapide et prise en charge des situations urgentes de jour comme de nuit.
               </p>
-              
-              <div className="flex flex-wrap gap-4 mb-8">
+
+              {/* Mobile : preuve avant action */}
+              <div className="md:hidden mb-4">
+                <TrustPills inverted />
+              </div>
+
+              {/* Mobile : double CTA (Appel urgent + WhatsApp), zone atteignable au pouce */}
+              <div className="md:hidden flex flex-col gap-3 mb-4">
+                <a
+                  href="tel:0621660867"
+                  className="flex items-center justify-center gap-2 rounded-lg bg-urgent text-urgent-foreground font-bold text-lg min-h-[56px] touch-manipulation active:bg-urgent-pulse active:scale-[0.98] transition-transform focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-urgent focus-visible:ring-offset-2 focus-visible:ring-offset-secondary"
+                  aria-label="Appeler ELM Sécurité au 06 21 66 08 67"
+                >
+                  <Phone className="h-5 w-5 motion-safe:animate-pulse" aria-hidden="true" />
+                  Appeler 06 21 66 08 67
+                </a>
+                <a
+                  href="https://wa.me/33621660867?text=Bonjour,%20j'ai%20besoin%20d'un%20serrurier%20d'urgence%20%C3%A0%20Lille"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center justify-center gap-2 rounded-lg bg-trust text-trust-foreground font-bold text-base min-h-[52px] touch-manipulation active:opacity-80 active:scale-[0.98] transition-transform focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-trust focus-visible:ring-offset-2 focus-visible:ring-offset-secondary"
+                  aria-label="Contacter ELM Sécurité par WhatsApp"
+                >
+                  <MessageCircle className="h-5 w-5" aria-hidden="true" />
+                  WhatsApp
+                </a>
+              </div>
+
+              {/* Mobile : réassurance tarif (anti-arnaque) au-dessus du fold */}
+              <ul className="md:hidden space-y-1.5 text-sm opacity-95">
+                <li className="flex items-center gap-2">
+                  <CheckCircle className="h-4 w-4 text-accent shrink-0" aria-hidden="true" />
+                  Devis avant intervention
+                </li>
+                <li className="flex items-center gap-2">
+                  <CheckCircle className="h-4 w-4 text-accent shrink-0" aria-hidden="true" />
+                  Ouverture porte claquée dès 89&nbsp;€
+                </li>
+                <li className="flex items-center gap-2">
+                  <CheckCircle className="h-4 w-4 text-accent shrink-0" aria-hidden="true" />
+                  Agréé assurances
+                </li>
+              </ul>
+
+              {/* Desktop : CTA + badges (inchangé) */}
+              <div className="hidden md:flex flex-wrap gap-4 mb-8">
                 <CallButton size="lg" className="text-lg px-8 py-6" />
                 <CtaButton variant="accent" size="lg" href="#contact">
                   Devis gratuit immédiat
                 </CtaButton>
               </div>
 
-              <div className="flex flex-wrap gap-6 text-sm">
+              <div className="hidden md:flex flex-wrap gap-6 text-sm">
                 <div className="flex items-center gap-2">
                   <Clock className="h-5 w-5" />
                   <span>Disponible 24h/24</span>
@@ -178,19 +246,19 @@ const Index = () => {
 
           <div className="grid md:grid-cols-3 gap-6">
             <div className="relative h-64 rounded-lg overflow-hidden shadow-card">
-              <img src={changementSerrureImage} alt="Changement de serrure professionnelle" className="w-full h-full object-cover" />
+              <OptimizedImage src={changementSerrureImage} alt="Changement de serrure professionnelle" className="w-full h-full object-cover" />
               <div className="absolute inset-0 bg-gradient-to-t from-secondary/90 to-transparent flex items-end p-6">
                 <h3 className="text-white font-bold text-xl">Changement de serrure</h3>
               </div>
             </div>
             <div className="relative h-64 rounded-lg overflow-hidden shadow-card">
-              <img src={interventionImage} alt="Intervention rapide serrurier" className="w-full h-full object-cover" />
+              <OptimizedImage src={interventionImage} alt="Intervention rapide serrurier" className="w-full h-full object-cover" />
               <div className="absolute inset-0 bg-gradient-to-t from-secondary/90 to-transparent flex items-end p-6">
                 <h3 className="text-white font-bold text-xl">Intervention rapide</h3>
               </div>
             </div>
             <div className="relative h-64 rounded-lg overflow-hidden shadow-card">
-              <img src={ouverturePorteImage} alt="Ouverture fine sans casse" className="w-full h-full object-cover" />
+              <OptimizedImage src={ouverturePorteImage} alt="Ouverture fine sans casse" className="w-full h-full object-cover" />
               <div className="absolute inset-0 bg-gradient-to-t from-secondary/90 to-transparent flex items-end p-6">
                 <h3 className="text-white font-bold text-xl">Ouverture professionnelle</h3>
               </div>
