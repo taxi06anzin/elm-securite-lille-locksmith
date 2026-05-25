@@ -15,21 +15,13 @@
 
 ## 🔄 Actions de maintenance mensuelles
 
-### 1. Mettre à jour la note d'avis (GBP) — ⚠️ 3 ENDROITS À SYNCHRONISER
+### 1. Mettre à jour les données d'avis (3 endroits à synchroniser)
 
-Aller voir le GBP : https://maps.app.goo.gl/THPsBgGUr7hrURWU6
+Quand le compteur d'avis GBP évolue (palier de 10 nouveaux avis par exemple),
+mettre à jour **simultanément** les 3 fichiers suivants pour éviter toute
+incohérence entre site et GBP :
 
-**À chaque palier d'avis GBP, mettre à jour la note ET le nombre d'avis aux 3 endroits
-suivants (ils doivent TOUJOURS être cohérents, sinon Google peut signaler un schema
-trompeur) :**
-
-1. **`src/components/JsonLd.tsx`** → bloc `aggregateRating` (`ratingValue`, `reviewCount`)
-2. **`src/components/Reviews.tsx`** → bloc `aggregateRating` du schema **ET** le texte visible
-   (`<span>4.7/5</span>` + « Basé sur 64 avis clients… »)
-3. **`public/llms.txt`** → section `## Identité`, ligne « Note Google : 4.7/5 sur 64 avis »
-
-Valeur courante (2026-05-25) : **4.7 / 5 sur 64 avis**.
-
+#### a) `src/components/JsonLd.tsx`
 ```tsx
 "aggregateRating": {
   "@type": "AggregateRating",
@@ -38,6 +30,28 @@ Valeur courante (2026-05-25) : **4.7 / 5 sur 64 avis**.
   ...
 }
 ```
+
+#### b) `src/components/Reviews.tsx`
+```tsx
+const GBP_RATING = X.X;        // ← note moyenne actuelle GBP
+const GBP_REVIEW_COUNT = XX;   // ← nombre d'avis actuel GBP
+```
+
+#### c) `public/llms.txt`
+```
+- Note Google : X.X/5 sur XX avis
+```
+
+**Vérification après mise à jour :**
+1. Aller sur https://maps.app.goo.gl/THPsBgGUr7hrURWU6 et noter les vraies valeurs
+2. Les 3 valeurs doivent matcher exactement
+3. Tester avec https://search.google.com/test/rich-results sur la homepage
+
+**IMPORTANT — Pas de Review individuels :** ne JAMAIS réintroduire des avis
+individuels (`@type: Review`) avec auteurs/dates fictifs dans le schema. Cela
+viole les guidelines Google (suppression des rich snippets) et le code de la
+consommation français (DGCCRF). Seul `aggregateRating` global, basé sur les
+vraies données GBP, est autorisé.
 
 ### 2. Mettre à jour les `lastmod` du sitemap.xml
 
