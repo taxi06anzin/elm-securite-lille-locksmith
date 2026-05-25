@@ -40,8 +40,8 @@ const Reviews = ({ showSchema = true }: ReviewsProps) => {
     "name": "ELM Sécurité - Serrurier Lille",
     "aggregateRating": {
       "@type": "AggregateRating",
-      "ratingValue": "4.9",
-      "reviewCount": "127",
+      "ratingValue": "4.7",
+      "reviewCount": "64",
       "bestRating": "5",
       "worstRating": "1"
     },
@@ -81,10 +81,10 @@ const Reviews = ({ showSchema = true }: ReviewsProps) => {
               {[...Array(5)].map((_, i) => (
                 <Star key={i} className="h-6 w-6 fill-accent text-accent" />
               ))}
-              <span className="text-2xl font-bold ml-2">4.9/5</span>
+              <span className="text-2xl font-bold ml-2">4.7/5</span>
             </div>
             <p className="text-muted-foreground">
-              Basé sur 127 avis clients à Lille et la Métropole
+              Basé sur 64 avis clients à Lille et la Métropole
             </p>
             <a
               href={GOOGLE_BUSINESS_URL}

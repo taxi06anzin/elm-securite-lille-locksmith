@@ -15,12 +15,20 @@
 
 ## 🔄 Actions de maintenance mensuelles
 
-### 1. Mettre à jour `aggregateRating` dans JsonLd.tsx
+### 1. Mettre à jour la note d'avis (GBP) — ⚠️ 3 ENDROITS À SYNCHRONISER
 
 Aller voir le GBP : https://maps.app.goo.gl/THPsBgGUr7hrURWU6
 
-Mettre à jour les valeurs `ratingValue` et `reviewCount` dans
-`src/components/JsonLd.tsx` :
+**À chaque palier d'avis GBP, mettre à jour la note ET le nombre d'avis aux 3 endroits
+suivants (ils doivent TOUJOURS être cohérents, sinon Google peut signaler un schema
+trompeur) :**
+
+1. **`src/components/JsonLd.tsx`** → bloc `aggregateRating` (`ratingValue`, `reviewCount`)
+2. **`src/components/Reviews.tsx`** → bloc `aggregateRating` du schema **ET** le texte visible
+   (`<span>4.7/5</span>` + « Basé sur 64 avis clients… »)
+3. **`public/llms.txt`** → section `## Identité`, ligne « Note Google : 4.7/5 sur 64 avis »
+
+Valeur courante (2026-05-25) : **4.7 / 5 sur 64 avis**.
 
 ```tsx
 "aggregateRating": {
