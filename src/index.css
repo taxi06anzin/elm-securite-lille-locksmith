@@ -29,6 +29,19 @@ All colors MUST be HSL.
     --accent: 25 95% 53%;
     --accent-foreground: 0 0% 100%;
 
+    /* Couleur "urgent" — CTA d'action immédiate UNIQUEMENT (ne remplace pas primary).
+       Assombrie à L=42% pour garantir un contraste >= 4.5:1 du texte blanc (WCAG AA).
+       Le #FF5500 d'origine ne donnait que ~3,5:1 et échouait sur le texte normal. */
+    --urgent: 16 100% 42%;
+    --urgent-foreground: 0 0% 100%;
+    --urgent-pulse: 16 100% 50%; /* version vive, réservée au flash d'état :active */
+
+    /* Couleur "trust" — WhatsApp / preuve sociale.
+       L=29% (équiv. green-700) pour garantir >= 4.5:1 du texte blanc (WCAG AA).
+       Le #16a34a d'origine ne donnait que ~3,3:1 en texte normal. */
+    --trust: 142 72% 29%;
+    --trust-foreground: 0 0% 100%;
+
     --muted: 210 20% 96%;
     --muted-foreground: 210 12% 45%;
 
