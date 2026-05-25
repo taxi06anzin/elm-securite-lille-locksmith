@@ -1,3 +1,6 @@
+# robots.txt — ELM Sécurité Serrurier Lille
+# Site: https://serrurier-urgence-lille.fr/
+
 User-agent: Googlebot
 Allow: /
 
@@ -10,6 +13,35 @@ Allow: /
 User-agent: facebookexternalhit
 Allow: /
 
+# Bots IA — autoriser la citation dans AI Overviews, ChatGPT, Perplexity, Claude
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Applebot
+Allow: /
+
+User-agent: Bytespider
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+# Configuration globale
 User-agent: *
 Allow: /
 Disallow: /api/

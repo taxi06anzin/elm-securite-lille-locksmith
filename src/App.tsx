@@ -12,6 +12,7 @@ import ChangementSerrure from "./pages/ChangementSerrure";
 import PorteBlindee from "./pages/PorteBlindee";
 import SerrurierPasCher from "./pages/SerrurierPasCher";
 import SerrurierLille from "./pages/SerrurierLille";
+import SerrurierLilleCentre from "./pages/SerrurierLilleCentre";
 import SerrurierRoubaix from "./pages/SerrurierRoubaix";
 import SerrurierTourcoing from "./pages/SerrurierTourcoing";
 import SerrurierVilleneuve from "./pages/SerrurierVilleneuve";
@@ -59,6 +60,7 @@ const App = () => (
           <Route path="/porte-blindee" element={<PorteBlindee />} />
           <Route path="/serrurier-pas-cher" element={<SerrurierPasCher />} />
         <Route path="/serrurier-lille" element={<SerrurierLille />} />
+        <Route path="/serrurier-lille-centre" element={<SerrurierLilleCentre />} />
         <Route path="/serrurier-roubaix" element={<SerrurierRoubaix />} />
         <Route path="/serrurier-tourcoing" element={<SerrurierTourcoing />} />
         <Route path="/serrurier-villeneuve-ascq" element={<SerrurierVilleneuve />} />

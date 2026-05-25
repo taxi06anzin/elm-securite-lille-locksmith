@@ -55,6 +55,13 @@ const Header = () => {
 
       {/* Main navigation */}
       <nav className="container mx-auto px-4 py-4">
+        {/* Badge Point Fort Fichet — différenciateur principal */}
+        <div className="flex justify-center lg:justify-start mb-3">
+          <div className="bg-primary/10 border border-primary/20 text-primary text-xs font-semibold px-3 py-1 rounded-full inline-flex items-center gap-1.5">
+            <span aria-hidden="true">🔐</span>
+            Concessionnaire Point Fort Fichet · 24/7
+          </div>
+        </div>
         <div className="flex items-center justify-between">
           <Link to="/" className="flex flex-col">
             <span className="text-2xl font-bold text-primary">ELM SÉCURITÉ</span>

@@ -7,6 +7,7 @@ interface InternalLinksProps {
 const InternalLinks = ({ currentCity }: InternalLinksProps) => {
   const cities = [
     { name: "Lille", slug: "serrurier-lille" },
+    { name: "Lille-Centre", slug: "serrurier-lille-centre" },
     { name: "Roubaix", slug: "serrurier-roubaix" },
     { name: "Tourcoing", slug: "serrurier-tourcoing" },
     { name: "Villeneuve-d'Ascq", slug: "serrurier-villeneuve-ascq" },

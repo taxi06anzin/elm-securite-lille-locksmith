@@ -145,6 +145,21 @@ const Footer = () => {
           </div>
         </div>
 
+        {/* À propos — positionnement Point Fort Fichet */}
+        <div className="border-t border-secondary-foreground/20 mt-8 pt-8">
+          <div className="text-sm text-secondary-foreground/90 space-y-2 max-w-2xl">
+            <p className="font-semibold text-secondary-foreground">POINT FORT FICHET - ELM SÉCURITÉ</p>
+            <p>Concessionnaire officiel Point Fort Fichet à Lille</p>
+            <p>Le seul Point Fort Fichet de Lille disponible 24h/24, 7j/7</p>
+            <p>Certifié par les compagnies d'assurance habitation</p>
+            <address className="not-italic pt-2">
+              143 Rue du Molinel<br />
+              59800 Lille<br />
+              <a href="tel:+33621660867" className="hover:underline">+33 6 21 66 08 67</a>
+            </address>
+          </div>
+        </div>
+
         {/* Bottom bar */}
         <div className="border-t border-secondary-foreground/20 mt-8 pt-8 text-center text-sm">
           <p>© {new Date().getFullYear()} ELM SÉCURITÉ - Serrurier Lille - Tous droits réservés</p>
