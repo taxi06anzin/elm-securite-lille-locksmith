@@ -41,10 +41,8 @@ const SerrurierLille = () => {
         <meta property="og:description" content="Serrurier à Lille disponible 24h/24. Intervention rapide dans tous les quartiers." />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://serrurier-urgence-lille.fr/serrurier-lille" />
-        <meta property="og:image" content="https://serrurier-urgence-lille.fr/og-image.jpg" />
-        
+
         {/* Twitter Card */}
-        <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Serrurier Lille – Dépannage immédiat 24h/24" />
         <meta name="twitter:description" content="Serrurier à Lille disponible 24h/24. Intervention rapide." />
       </Helmet>

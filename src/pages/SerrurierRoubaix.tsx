@@ -38,7 +38,6 @@ const SerrurierRoubaix = () => {
         <meta property="og:title" content="Serrurier Roubaix – Service rapide et disponible 7j/7 | ELM SÉCURITÉ" />
         <meta property="og:description" content="Serrurier à Roubaix 24/7. Intervention rapide tous quartiers." />
         <meta property="og:url" content="https://serrurier-urgence-lille.fr/serrurier-roubaix" />
-        <meta property="og:image" content="https://serrurier-urgence-lille.fr/og-image.jpg" />
       </Helmet>
       <JsonLd pageName="Serrurier Roubaix" pageUrl="/serrurier-roubaix" />
       
