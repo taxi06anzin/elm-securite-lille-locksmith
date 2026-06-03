@@ -18,6 +18,8 @@ const JsonLd = ({ pageName, pageUrl }: JsonLdProps) => {
       "ELM Sécurité",
       "Serrurier Urgence Lille",
       "Point Fort Fichet Lille",
+      // Graphie exacte de la fiche Google Business (pour la résolution d'entité)
+      "POINT FORT FICHET - ELM SÉCURITÉ serrurier urgence lille",
     ],
     "image": `${baseUrl}/og-image.jpg`,
     "@id": `${baseUrl}/#business`,
@@ -51,7 +53,7 @@ const JsonLd = ({ pageName, pageUrl }: JsonLdProps) => {
         "Sunday",
       ],
       "opens": "00:00",
-      "closes": "23:59",
+      "closes": "24:00",
     },
     "areaServed": [
       { "@type": "City", "name": "Lille" },
@@ -59,10 +61,23 @@ const JsonLd = ({ pageName, pageUrl }: JsonLdProps) => {
       { "@type": "City", "name": "Tourcoing" },
       { "@type": "City", "name": "Villeneuve-d'Ascq" },
       { "@type": "City", "name": "Marcq-en-Barœul" },
-      { "@type": "City", "name": "Lomme" },
-      { "@type": "City", "name": "Hellemmes" },
       { "@type": "City", "name": "La Madeleine" },
       { "@type": "City", "name": "Lambersart" },
+      { "@type": "City", "name": "Lomme" },
+      { "@type": "City", "name": "Loos" },
+      { "@type": "City", "name": "Hellemmes" },
+      { "@type": "City", "name": "Mons-en-Barœul" },
+      { "@type": "City", "name": "Wasquehal" },
+      { "@type": "City", "name": "Croix" },
+      { "@type": "City", "name": "Mouvaux" },
+      { "@type": "City", "name": "Ronchin" },
+      { "@type": "City", "name": "Faches-Thumesnil" },
+      { "@type": "City", "name": "Wattignies" },
+      { "@type": "City", "name": "Hem" },
+      { "@type": "City", "name": "Pérenchies" },
+      { "@type": "City", "name": "Bondues" },
+      { "@type": "City", "name": "Wambrechies" },
+      { "@type": "City", "name": "Halluin" },
     ],
     "hasOfferCatalog": {
       "@type": "OfferCatalog",
@@ -105,13 +120,15 @@ const JsonLd = ({ pageName, pageUrl }: JsonLdProps) => {
     "aggregateRating": {
       "@type": "AggregateRating",
       "ratingValue": "4.7",
-      "reviewCount": "64",
+      "reviewCount": 65,
       "bestRating": "5",
       "worstRating": "1",
     },
     "sameAs": [
-      baseUrl,
       GOOGLE_BUSINESS_URL,
+      // Fiche officielle du réseau Point Fort Fichet (preuve du statut de
+      // concessionnaire agréé — backlink/citation à la plus forte autorité).
+      "https://reseau.fichet-pointfort.com/fr/fr/france/hauts-de-france/nord/lille/point-fort-fichet-elm-securite-164",
       "https://www.118000.fr/e_C0070091701",
     ],
   };

@@ -4,6 +4,7 @@ import TrustBadges from "@/components/TrustBadges";
 import ContactForm from "@/components/ContactForm";
 import JsonLd from "@/components/JsonLd";
 import ServiceSchema from "@/components/ServiceSchema";
+import Reviews from "@/components/Reviews";
 import { CallButton } from "@/components/ui/button-variants";
 import { Clock, Shield, Wrench, AlertCircle } from "lucide-react";
 import interventionImage from "@/assets/intervention-urgence.png";
@@ -235,6 +236,11 @@ const DepannageSerrurerie = () => {
                 Tarifs TTC • Prix fixes sans surprise • Paiement après intervention
               </p>
             </div>
+          </section>
+
+          {/* Avis Google */}
+          <section className="py-4">
+            <Reviews />
           </section>
 
           {/* Contact */}

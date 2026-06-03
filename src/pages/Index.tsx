@@ -5,6 +5,7 @@ import TrustPills from "@/components/TrustPills";
 import ContactForm from "@/components/ContactForm";
 import JsonLd from "@/components/JsonLd";
 import FAQ from "@/components/FAQ";
+import Reviews from "@/components/Reviews";
 import { CallButton, CtaButton } from "@/components/ui/button-variants";
 import { Phone, Clock, MapPin, Shield, Wrench, Lock, DoorOpen, MessageCircle, CheckCircle } from "lucide-react";
 import heroImage from "@/assets/hero-locksmith.jpg";
@@ -319,6 +320,11 @@ const Index = () => {
           </div>
         </section>
 
+        {/* Avis Google */}
+        <section className="container mx-auto px-4">
+          <Reviews />
+        </section>
+
         {/* FAQ Section */}
         <section className="container mx-auto px-4 py-16">
           <div className="max-w-4xl mx-auto">
@@ -356,7 +362,7 @@ const Index = () => {
                   <div className="inline-block bg-accent text-accent-foreground text-xs font-bold px-3 py-1 rounded-full mb-2">
                     POPULAIRE
                   </div>
-                  <div className="text-4xl font-bold text-primary mb-2">À partir de 150€</div>
+                  <div className="text-4xl font-bold text-primary mb-2">À partir de 149€</div>
                   <h3 className="font-bold mb-2">Changement serrure</h3>
                   <p className="text-sm text-muted-foreground">
                     Pose d'une serrure neuve, garantie incluse

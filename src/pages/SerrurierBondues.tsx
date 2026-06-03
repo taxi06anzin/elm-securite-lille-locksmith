@@ -42,7 +42,7 @@ const SerrurierBondues = () => {
         <meta name="twitter:title" content="Serrurier Bondues – Intervention sur secteurs résidentiels premium | ELM SÉCURITÉ" />
         <meta name="twitter:description" content="Serrurier à Bondues 24/7. Intervention Centre, Bois d'Achelles, Grand Bondues, Ravennes. Ouverture porte, cylindre haute sécurité ☎ 06 21 66 08 67" />
       </Helmet>
-      <JsonLd pageName="Serrurier Bondues" pageUrl="https://serrurier-urgence-lille.fr/serrurier-bondues" />
+      <JsonLd pageName="Serrurier Bondues" pageUrl="/serrurier-bondues" />
       
       <div className="min-h-screen bg-background">
         <Breadcrumb 

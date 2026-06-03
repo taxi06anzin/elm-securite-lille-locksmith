@@ -162,7 +162,7 @@ const Footer = () => {
 
         {/* Bottom bar */}
         <div className="border-t border-secondary-foreground/20 mt-8 pt-8 text-center text-sm">
-          <p>© {new Date().getFullYear()} ELM SÉCURITÉ - Serrurier Lille - Tous droits réservés</p>
+          <p>© {new Date().getFullYear()} POINT FORT FICHET - ELM SÉCURITÉ - Tous droits réservés</p>
           <p className="mt-2 text-xs opacity-80">
             Serrurier, Dépannage, Métallerie, Vitrerie, Menuiserie à Lille et dans toute la MEL
           </p>
