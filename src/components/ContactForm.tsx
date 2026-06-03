@@ -5,6 +5,7 @@ import { Textarea } from "./ui/textarea";
 import { Label } from "./ui/label";
 import { useToast } from "@/hooks/use-toast";
 import { Send } from "lucide-react";
+import { PHONE_HREF, PHONE_DISPLAY } from "@/config/site";
 
 const ContactForm = () => {
   const { toast } = useToast();
@@ -104,7 +105,7 @@ const ContactForm = () => {
       </Button>
 
       <p className="text-xs text-muted-foreground text-center">
-        Ou appelez-nous directement au <a href="tel:0621660867" className="font-bold text-primary hover:underline">06 21 66 08 67</a>
+        Ou appelez-nous directement au <a href={PHONE_HREF} className="font-bold text-primary hover:underline">{PHONE_DISPLAY}</a>
       </p>
     </form>
   );

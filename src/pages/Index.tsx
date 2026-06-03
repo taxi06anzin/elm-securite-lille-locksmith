@@ -7,6 +7,7 @@ import JsonLd from "@/components/JsonLd";
 import FAQ from "@/components/FAQ";
 import Reviews from "@/components/Reviews";
 import { CallButton, CtaButton } from "@/components/ui/button-variants";
+import { PHONE_HREF, WHATSAPP_URL } from "@/config/site";
 import { Phone, Clock, MapPin, Shield, Wrench, Lock, DoorOpen, MessageCircle, CheckCircle } from "lucide-react";
 import heroImage from "@/assets/hero-locksmith.jpg";
 import heroImageWebp from "@/assets/hero-locksmith.webp";
@@ -116,18 +117,18 @@ const Index = () => {
               {/* Mobile : double CTA (Appel urgent + WhatsApp), zone atteignable au pouce */}
               <div className="md:hidden flex flex-col gap-3 mb-4">
                 <a
-                  href="tel:0621660867"
-                  className="flex items-center justify-center gap-2 rounded-lg bg-urgent text-urgent-foreground font-bold text-lg min-h-[56px] touch-manipulation active:bg-urgent-pulse active:scale-[0.98] transition-transform focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-urgent focus-visible:ring-offset-2 focus-visible:ring-offset-secondary"
+                  href={PHONE_HREF}
+                  className="flex items-center justify-center gap-2 rounded-lg bg-urgent text-urgent-foreground font-bold text-lg min-h-14 touch-manipulation active:bg-urgent-pulse active:scale-[0.98] transition-transform focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-urgent focus-visible:ring-offset-2 focus-visible:ring-offset-secondary"
                   aria-label="Appeler ELM Sécurité au 06 21 66 08 67"
                 >
                   <Phone className="h-5 w-5 motion-safe:animate-pulse" aria-hidden="true" />
                   Appeler 06 21 66 08 67
                 </a>
                 <a
-                  href="https://wa.me/33621660867?text=Bonjour,%20j'ai%20besoin%20d'un%20serrurier%20d'urgence%20%C3%A0%20Lille"
+                  href={WHATSAPP_URL}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center justify-center gap-2 rounded-lg bg-trust text-trust-foreground font-bold text-base min-h-[52px] touch-manipulation active:opacity-80 active:scale-[0.98] transition-transform focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-trust focus-visible:ring-offset-2 focus-visible:ring-offset-secondary"
+                  className="flex items-center justify-center gap-2 rounded-lg bg-whatsapp text-whatsapp-foreground font-bold text-base min-h-14 touch-manipulation active:opacity-80 active:scale-[0.98] transition-transform focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-whatsapp focus-visible:ring-offset-2 focus-visible:ring-offset-secondary"
                   aria-label="Contacter ELM Sécurité par WhatsApp"
                 >
                   <MessageCircle className="h-5 w-5" aria-hidden="true" />

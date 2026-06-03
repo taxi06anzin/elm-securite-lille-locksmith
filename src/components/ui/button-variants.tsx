@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import { Phone } from "lucide-react";
+import { PHONE_HREF, PHONE_DISPLAY } from "@/config/site";
 
 interface CallButtonProps {
   className?: string;
@@ -12,14 +13,14 @@ export const CallButton = ({ className, size = "default" }: CallButtonProps) => 
     <Button
       size={size}
       className={cn(
-        "bg-gradient-primary hover:opacity-90 shadow-elegant transition-all duration-300",
+        "bg-urgent text-urgent-foreground hover:bg-urgent/90 active:bg-urgent-pulse shadow-elegant transition-all duration-300 font-semibold",
         className
       )}
       asChild
     >
-      <a href="tel:0621660867" className="flex items-center gap-2">
+      <a href={PHONE_HREF} className="flex items-center gap-2">
         <Phone className="h-4 w-4" />
-        <span>06 21 66 08 67</span>
+        <span>{PHONE_DISPLAY}</span>
       </a>
     </Button>
   );
