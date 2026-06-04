@@ -17,6 +17,8 @@
     "destination": "dist",
     "include": [
       "/",
+      "/serrurier-dimanche-nuit-lille",
+      "/porte-claquee-que-faire",
       "/depannage-serrurerie",
       "/ouverture-porte",
       "/changement-serrure",

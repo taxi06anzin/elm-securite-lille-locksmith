@@ -38,6 +38,8 @@ import Tarifs from "./pages/Tarifs";
 import Contact from "./pages/Contact";
 import VillesCouvertes from "./pages/VillesCouvertes";
 import FichetLille from "./pages/FichetLille";
+import SerrurierDimancheNuit from "./pages/SerrurierDimancheNuit";
+import PorteClaqueeQueFaire from "./pages/PorteClaqueeQueFaire";
 import NotFound from "./pages/NotFound";
 import Layout from "./components/Layout";
 
@@ -86,6 +88,8 @@ const App = () => (
           <Route path="/contact" element={<Contact />} />
           <Route path="/villes-couvertes" element={<VillesCouvertes />} />
           <Route path="/fichet-lille" element={<FichetLille />} />
+          <Route path="/serrurier-dimanche-nuit-lille" element={<SerrurierDimancheNuit />} />
+          <Route path="/porte-claquee-que-faire" element={<PorteClaqueeQueFaire />} />
           </Route>
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />

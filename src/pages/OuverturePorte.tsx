@@ -99,7 +99,7 @@ const OuverturePorte = () => {
                 porte claquée avec les clés à l'intérieur, perte ou vol de clés, serrure bloquée ou grippée, 
                 clé cassée dans le cylindre, ou encore serrure endommagée après une tentative d'effraction. 
                 Dans tous les cas, notre priorité est d'<strong>ouvrir votre porte sans casse</strong> si le matériel le permet, 
-                en utilisant des techniques professionnelles d'ouverture fine. Si un <a href="/changement-serrure" className="text-primary hover:underline">changement de serrure</a> s'avère nécessaire après l'ouverture, nous disposons de tout le matériel nécessaire pour intervenir immédiatement.
+                en utilisant des techniques professionnelles d'ouverture fine. Si un <a href="/changement-serrure" className="text-primary hover:underline">changement de serrure</a> s'avère nécessaire après l'ouverture, nous disposons de tout le matériel nécessaire pour intervenir immédiatement. Vous venez de claquer votre porte&nbsp;? Suivez notre guide <a href="/porte-claquee-que-faire" className="text-primary hover:underline">porte claquée&nbsp;: que faire</a>.
               </p>
             </div>
 
