@@ -29,29 +29,10 @@ export default defineConfig(({ mode }) => ({
     // qui ne sait pas parser ?. et ?? (ES2020). On transpile vers es2019 pour que
     // le pré-rendu exécute bien l'app et que react-helmet injecte les meta par page.
     target: "es2019",
-    chunkSizeWarningLimit: 900,
-    rollupOptions: {
-      output: {
-        // Code-splitting des dépendances pour alléger le chunk principal et
-        // améliorer la mise en cache. Chargement eager (compatible react-snap).
-        manualChunks(id) {
-          if (id.includes("node_modules")) {
-            if (
-              id.includes("react-router") ||
-              id.includes("/react-dom/") ||
-              id.includes("/react/") ||
-              id.includes("/scheduler/")
-            ) {
-              return "react-vendor";
-            }
-            if (id.includes("@radix-ui")) return "radix";
-            if (id.includes("@tanstack")) return "tanstack";
-            if (id.includes("lucide-react")) return "icons";
-            return "vendor";
-          }
-        },
-      },
-    },
+    // PAS de manualChunks : le code-splitting casse le pré-rendu react-snap.
+    // Son Chromium 77 charge les chunks dans un ordre où React est `undefined`
+    // au moment d'un `createContext` → "Cannot read property 'createContext'
+    // of undefined" sur toutes les routes, et le build échoue. Bundle unique.
   },
   preview: {
     headers: {
