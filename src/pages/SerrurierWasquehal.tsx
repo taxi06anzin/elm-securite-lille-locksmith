@@ -1,11 +1,15 @@
 import { Helmet } from "react-helmet";
+import { Link } from "react-router-dom";
 import OptimizedImage from "@/components/OptimizedImage";
 import TrustBadges from "@/components/TrustBadges";
 import ContactForm from "@/components/ContactForm";
 import JsonLd from "@/components/JsonLd";
 import InternalLinks from "@/components/InternalLinks";
+import FAQ from "@/components/FAQ";
+import Reviews from "@/components/Reviews";
 import { CallButton } from "@/components/ui/button-variants";
-import { MapPin, CheckCircle, Lock } from "lucide-react";
+import { PHONE_DISPLAY, PHONE_HREF } from "@/config/site";
+import { MapPin, CheckCircle, Lock, Clock } from "lucide-react";
 import ouvertureFine from "@/assets/ouverture-fine.png";
 import installationSerrure from "@/assets/installation-serrure.png";
 
@@ -19,6 +23,25 @@ const SerrurierWasquehal = () => {
 
   const zones = [
     "Centre", "Noir Bonnet", "Pavé de Lille", "Grand Cottignies", "Triez"
+  ];
+
+  const faqItems = [
+    {
+      question: "Quel temps d'intervention à Wasquehal ?",
+      answer: "Comptez 20 à 30 minutes pour qu'un serrurier arrive à Wasquehal. Positionnée à l'est de la métropole entre Roubaix et Croix, la commune est facilement accessible par la rocade : nous rejoignons aussi bien le Centre que Noir Bonnet, le Pavé de Lille, le Grand Cottignies ou le Triez sans perdre de temps.",
+    },
+    {
+      question: "Quel prix pour une ouverture de porte à Wasquehal ?",
+      answer: "L'ouverture de porte à Wasquehal commence à 89€ en journée, déplacement et diagnostic compris. Sur un pavillon du Triez comme sur un appartement proche du centre, nous tentons d'abord l'ouverture sans casse. Le tarif est communiqué à l'avance et confirmé par un devis gratuit avant toute manipulation.",
+    },
+    {
+      question: "Dépannez-vous la nuit et le dimanche à Wasquehal ?",
+      answer: "Oui, ELM Sécurité assure le dépannage à Wasquehal 24h/24 et 7j/7, nuit, dimanche et jours fériés inclus. Une porte claquée le soir au Grand Cottignies ou un barillet qui tourne dans le vide un dimanche au Pavé de Lille : nous intervenons sans attendre la réouverture des commerces.",
+    },
+    {
+      question: "Quelles zones de Wasquehal couvrez-vous ?",
+      answer: "Nous couvrons tout Wasquehal : le Centre, le quartier Noir Bonnet, le Pavé de Lille, le Grand Cottignies et le Triez, ainsi que les secteurs résidentiels et les zones d'activités proches de Roubaix et Croix.",
+    },
   ];
 
   return (
@@ -41,10 +64,16 @@ const SerrurierWasquehal = () => {
               <h1 className="text-5xl font-bold mb-6">
                 Serrurier Wasquehal – Dépannage immédiat
               </h1>
-              <p className="text-xl mb-8 opacity-90">
-                Wasquehal est composé de zones pavillonnaires, immeubles récents et intersections via la rocade. 
+              <p className="text-xl mb-6 opacity-90">
+                Wasquehal est composé de zones pavillonnaires, immeubles récents et intersections via la rocade.
                 Les interventions sont organisées selon l'accès le plus rapide.
               </p>
+              <div className="inline-flex items-center gap-3 bg-background/15 border border-background/25 rounded-lg px-5 py-3 mb-8 backdrop-blur-sm">
+                <Clock className="h-5 w-5 flex-shrink-0" />
+                <span className="font-semibold">
+                  Ouverture de porte dès 89€ · intervention en 20-30 min à Wasquehal
+                </span>
+              </div>
               <CallButton size="lg" />
             </div>
           </div>
@@ -130,6 +159,55 @@ const SerrurierWasquehal = () => {
               </div>
             </div>
           </section>
+
+          <section className="py-16">
+            <div className="max-w-4xl mx-auto">
+              <h2 className="text-3xl font-bold mb-6 text-center">
+                Dépannage serrurerie entre Roubaix et Croix
+              </h2>
+              <p className="text-muted-foreground leading-relaxed mb-4">
+                À l'est de la MEL, coincée entre Roubaix et Croix, Wasquehal a la particularité de
+                juxtaposer des quartiers résidentiels paisibles et de véritables zones d'activités.
+                Cette double identité se retrouve dans nos interventions : portes pavillonnaires
+                classiques au Triez ou au Grand Cottignies d'un côté, accès professionnels,
+                rideaux et serrures haute sécurité dans les secteurs d'entreprises du Pavé de Lille
+                de l'autre. On ne traite pas un barillet domestique comme une fermeture de local.
+              </p>
+              <p className="text-muted-foreground leading-relaxed">
+                Le maillage de la commune par la rocade et les grands boulevards facilite nos
+                déplacements vers Noir Bonnet et le centre, ce qui réduit les délais quelle que soit
+                l'heure. Porte claquée, clé inaccessible, mécanisme multipoints récalcitrant : un
+                appel au{" "}
+                <a href={PHONE_HREF} className="text-primary font-semibold hover:underline">
+                  {PHONE_DISPLAY}
+                </a>{" "}
+                suffit à lancer l'intervention. Pour préparer votre demande, consultez nos pages{" "}
+                <Link to="/ouverture-porte" className="text-primary font-semibold hover:underline">
+                  ouverture de porte
+                </Link>
+                ,{" "}
+                <Link to="/serrurier-dimanche-nuit-lille" className="text-primary font-semibold hover:underline">
+                  dépannage de nuit et le dimanche
+                </Link>{" "}
+                et nos{" "}
+                <Link to="/tarifs" className="text-primary font-semibold hover:underline">
+                  tarifs
+                </Link>
+                .
+              </p>
+            </div>
+          </section>
+
+          <section className="py-16">
+            <div className="max-w-3xl mx-auto">
+              <h2 className="text-3xl font-bold mb-8 text-center">
+                Questions fréquentes — Serrurier Wasquehal
+              </h2>
+              <FAQ items={faqItems} />
+            </div>
+          </section>
+
+          <Reviews />
 
           <InternalLinks currentCity="serrurier-wasquehal" />
 

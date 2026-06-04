@@ -1,11 +1,15 @@
 import { Helmet } from "react-helmet";
+import { Link } from "react-router-dom";
 import OptimizedImage from "@/components/OptimizedImage";
 import TrustBadges from "@/components/TrustBadges";
 import ContactForm from "@/components/ContactForm";
 import JsonLd from "@/components/JsonLd";
 import InternalLinks from "@/components/InternalLinks";
+import FAQ from "@/components/FAQ";
+import Reviews from "@/components/Reviews";
 import { CallButton } from "@/components/ui/button-variants";
-import { MapPin, CheckCircle, Shield } from "lucide-react";
+import { PHONE_DISPLAY, PHONE_HREF } from "@/config/site";
+import { MapPin, CheckCircle, Shield, Clock } from "lucide-react";
 import ouvertureFine from "@/assets/ouverture-fine.png";
 import changementCylindre from "@/assets/changement-cylindre.jpg";
 
@@ -20,6 +24,25 @@ const SerrurierRonchin = () => {
 
   const quartiers = [
     "Nouveau Ronchin", "Vieux Ronchin", "Les 5 Bonniers", "La Marlière", "Zones proches du Stade Pierre-Mauroy"
+  ];
+
+  const faqItems = [
+    {
+      question: "En combien de temps un serrurier arrive-t-il à Ronchin ?",
+      answer: "À Ronchin, notre serrurier intervient en 20 à 30 minutes après votre appel. La position de la commune au sud de Lille, à proximité immédiate du périphérique et de l'A1, nous permet de rejoindre rapidement le Nouveau Ronchin, le Vieux Ronchin comme les abords des 5 Bonniers et du Stade Pierre-Mauroy.",
+    },
+    {
+      question: "Quel est le prix d'une ouverture de porte à Ronchin ?",
+      answer: "L'ouverture de porte à Ronchin démarre à 89€ en journée, déplacement et diagnostic compris, avec une ouverture sans casse chaque fois que c'est possible. Le tarif vous est annoncé avant l'intervention et un devis gratuit vous est remis, que vous habitiez un pavillon du Vieux Ronchin ou un appartement en collectif près de la Marlière.",
+    },
+    {
+      question: "Intervenez-vous la nuit et le dimanche à Ronchin ?",
+      answer: "Oui, ELM Sécurité dépanne à Ronchin 24h/24 et 7j/7, y compris la nuit, le dimanche et les jours fériés. Une porte claquée à La Marlière un soir de match au Stade Pierre-Mauroy ou un cylindre grippé un dimanche matin : nous nous déplaçons sans attendre les heures ouvrables.",
+    },
+    {
+      question: "Quels quartiers de Ronchin couvrez-vous ?",
+      answer: "Nous couvrons l'ensemble de Ronchin : le Nouveau Ronchin et ses immeubles récents, le Vieux Ronchin et son habitat pavillonnaire, le secteur des 5 Bonniers, La Marlière et les zones proches du Stade Pierre-Mauroy et du périphérique.",
+    },
   ];
 
   return (
@@ -42,10 +65,16 @@ const SerrurierRonchin = () => {
               <h1 className="text-5xl font-bold mb-6">
                 Serrurier Ronchin – Dépannage immédiat
               </h1>
-              <p className="text-xl mb-8 opacity-90">
-                Ronchin est composé de quartiers résidentiels et d'immeubles récents. 
+              <p className="text-xl mb-6 opacity-90">
+                Ronchin est composé de quartiers résidentiels et d'immeubles récents.
                 Les interventions s'adaptent aux portes d'appartements, maisons, accès de garage et entrées principales.
               </p>
+              <div className="inline-flex items-center gap-3 bg-background/15 border border-background/25 rounded-lg px-5 py-3 mb-8 backdrop-blur-sm">
+                <Clock className="h-5 w-5 flex-shrink-0" />
+                <span className="font-semibold">
+                  Ouverture de porte dès 89€ · intervention en 20-30 min à Ronchin
+                </span>
+              </div>
               <CallButton size="lg" />
             </div>
           </div>
@@ -121,6 +150,57 @@ const SerrurierRonchin = () => {
               </div>
             </div>
           </section>
+
+          <section className="py-16">
+            <div className="max-w-4xl mx-auto">
+              <h2 className="text-3xl font-bold mb-6 text-center">
+                Un serrurier de proximité au sud de Lille
+              </h2>
+              <p className="text-muted-foreground leading-relaxed mb-4">
+                Adossée à la frontière sud de Lille et bordée par le périphérique, Ronchin mêle
+                l'habitat pavillonnaire du Vieux Ronchin aux résidences collectives plus récentes
+                du Nouveau Ronchin. Cette mixité change tout pour un dépannage de serrurerie :
+                une porte d'entrée de maison ancienne près de la mairie ne se travaille pas comme
+                la porte palière blindée d'un immeuble des 5 Bonniers. Sur le terrain, nous
+                rencontrons surtout des serrures multipoints récentes côté collectif et des
+                cylindres usés sur les pavillons d'avant les années 80.
+              </p>
+              <p className="text-muted-foreground leading-relaxed">
+                La proximité du Stade Pierre-Mauroy et des grands axes nous permet de rejoindre
+                vite La Marlière comme les rues calmes du centre, sans rester bloqués dans les
+                ralentissements. Pour une porte claquée, une clé cassée dans le barillet ou un
+                besoin de sécurisation après tentative d'effraction, vous pouvez nous joindre
+                directement au{" "}
+                <a href={PHONE_HREF} className="text-primary font-semibold hover:underline">
+                  {PHONE_DISPLAY}
+                </a>
+                . Besoin d'en savoir plus ? Consultez nos pages{" "}
+                <Link to="/ouverture-porte" className="text-primary font-semibold hover:underline">
+                  ouverture de porte
+                </Link>
+                ,{" "}
+                <Link to="/serrurier-dimanche-nuit-lille" className="text-primary font-semibold hover:underline">
+                  dépannage dimanche et nuit
+                </Link>{" "}
+                et nos{" "}
+                <Link to="/tarifs" className="text-primary font-semibold hover:underline">
+                  tarifs détaillés
+                </Link>
+                .
+              </p>
+            </div>
+          </section>
+
+          <section className="py-16">
+            <div className="max-w-3xl mx-auto">
+              <h2 className="text-3xl font-bold mb-8 text-center">
+                Questions fréquentes — Serrurier Ronchin
+              </h2>
+              <FAQ items={faqItems} />
+            </div>
+          </section>
+
+          <Reviews />
 
           <InternalLinks currentCity="serrurier-ronchin" />
 

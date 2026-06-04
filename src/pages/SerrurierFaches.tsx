@@ -1,11 +1,15 @@
 import { Helmet } from "react-helmet";
+import { Link } from "react-router-dom";
 import OptimizedImage from "@/components/OptimizedImage";
 import TrustBadges from "@/components/TrustBadges";
 import ContactForm from "@/components/ContactForm";
 import JsonLd from "@/components/JsonLd";
 import InternalLinks from "@/components/InternalLinks";
+import FAQ from "@/components/FAQ";
+import Reviews from "@/components/Reviews";
 import { CallButton } from "@/components/ui/button-variants";
-import { MapPin, CheckCircle, Lock } from "lucide-react";
+import { MapPin, CheckCircle, Lock, Clock } from "lucide-react";
+import { PHONE_DISPLAY, PHONE_HREF } from "@/config/site";
 import cleCassee from "@/assets/cle-cassee.png";
 import installationSerrure from "@/assets/installation-serrure.png";
 
@@ -20,6 +24,25 @@ const SerrurierFaches = () => {
 
   const secteurs = [
     "Centre", "Cheminots", "Saint-Exupéry", "Mairie", "Limite Ronchin / Lille Sud"
+  ];
+
+  const faqItems = [
+    {
+      question: "Quel délai pour un serrurier à Faches-Thumesnil ?",
+      answer: "Frontalière de Lille-Sud et de Ronchin, Faches-Thumesnil est l'une de nos communes les plus accessibles : nos serruriers y arrivent souvent en moins de 25 minutes. Le centre, le quartier des Cheminots et le secteur Saint-Exupéry sont rejoints rapidement via les grands axes. Composez le " + PHONE_DISPLAY + " pour un départ immédiat."
+    },
+    {
+      question: "Combien coûte une ouverture de porte à Faches-Thumesnil ?",
+      answer: "À Faches-Thumesnil, l'ouverture d'une porte démarre à 89€ TTC en journée, déplacement et diagnostic inclus. Dans les immeubles du centre et près de la zone commerciale, beaucoup de portes palières sont équipées de serrures multipoints : le devis correspondant vous est remis avant toute manipulation, sans frais caché."
+    },
+    {
+      question: "Intervenez-vous la nuit et le dimanche à Faches-Thumesnil ?",
+      answer: "Oui, notre serrurier dépanne Faches-Thumesnil 24h/24 et 7j/7, y compris la nuit, le dimanche et les jours fériés. En appartement comme en maison, du quartier de la Mairie aux Cheminots, une porte claquée ou une clé perdue trouve une solution à toute heure grâce à notre service d'urgence permanent."
+    },
+    {
+      question: "Quels quartiers de Faches-Thumesnil couvrez-vous ?",
+      answer: "Nous couvrons l'ensemble de Faches-Thumesnil : le centre, les Cheminots, Saint-Exupéry, le secteur de la Mairie ainsi que la limite avec Ronchin et Lille-Sud. Habitat collectif, pavillons et locaux de la zone commerciale du sud lillois entrent tous dans notre périmètre d'intervention."
+    }
   ];
 
   return (
@@ -43,9 +66,13 @@ const SerrurierFaches = () => {
                 Serrurier Faches-Thumesnil – Dépannage sur tous les secteurs
               </h1>
               <p className="text-xl mb-8 opacity-90">
-                Commune très demandée en raison de sa proximité avec les grands axes et l'aéroport. 
+                Commune très demandée en raison de sa proximité avec les grands axes et l'aéroport.
                 Intervention sur portes bloquées, systèmes multipoints, barillets et cylindres endommagés.
               </p>
+              <div className="inline-flex items-center gap-2 mb-8 px-4 py-2 rounded-lg bg-white/15 text-secondary-foreground font-semibold">
+                <Clock className="h-5 w-5" />
+                Ouverture de porte dès 89€ · intervention en 20-30 min à Faches-Thumesnil
+              </div>
               <CallButton size="lg" />
             </div>
           </div>
@@ -122,6 +149,40 @@ const SerrurierFaches = () => {
             </div>
           </section>
 
+          <section className="py-16">
+            <div className="max-w-4xl mx-auto">
+              <h2 className="text-3xl font-bold mb-6">
+                Serrurier à Faches-Thumesnil, aux portes de Lille-Sud
+              </h2>
+              <p className="text-muted-foreground leading-relaxed mb-4">
+                Accolée à Lille-Sud et à Ronchin, Faches-Thumesnil se distingue par un
+                habitat plus dense que ses voisines du sud : résidences et immeubles
+                collectifs autour du centre et du quartier de la Mairie côtoient les maisons
+                des Cheminots et de Saint-Exupéry, sans oublier une zone commerciale très
+                fréquentée le long des grands axes. Cette mixité génère des interventions
+                variées : ouverture de portes palières en copropriété, dépannage de serrures
+                multipoints en appartement, mais aussi sécurisation de pavillons et de
+                locaux commerciaux. Nos serruriers maîtrisent aussi bien les portes blindées
+                d'immeuble que les barillets de maisons individuelles. La desserte par
+                l'A1 et la proximité de l'aéroport de Lesquin font de cette commune l'une
+                des plus rapides à atteindre depuis Lille. Voir notre{" "}
+                <Link to="/ouverture-porte" className="text-primary font-medium hover:underline">ouverture de porte</Link>{" "}
+                et nos <Link to="/tarifs" className="text-primary font-medium hover:underline">tarifs</Link>.
+              </p>
+            </div>
+          </section>
+
+          <section className="py-16">
+            <div className="max-w-4xl mx-auto">
+              <h2 className="text-3xl font-bold mb-8 text-center">
+                Questions fréquentes — Serrurier Faches-Thumesnil
+              </h2>
+              <FAQ items={faqItems} />
+            </div>
+          </section>
+
+          <Reviews />
+
           <InternalLinks currentCity="serrurier-faches-thumesnil" />
 
           <section id="contact" className="py-16">
@@ -129,8 +190,12 @@ const SerrurierFaches = () => {
               <h2 className="text-3xl font-bold mb-4 text-center">
                 Contact
               </h2>
+              <p className="text-center text-muted-foreground mb-4">
+                Téléphone : <a href={PHONE_HREF} className="text-primary font-bold hover:underline">{PHONE_DISPLAY}</a>
+              </p>
               <p className="text-center text-muted-foreground mb-8">
-                Téléphone : <a href="tel:0621660867" className="text-primary font-bold hover:underline">06 21 66 08 67</a>
+                Besoin d'un dépannage de nuit à Faches-Thumesnil ? Voir notre{" "}
+                <Link to="/serrurier-dimanche-nuit-lille" className="text-primary font-medium hover:underline">serrurier dimanche et nuit</Link>.
               </p>
               <ContactForm />
             </div>

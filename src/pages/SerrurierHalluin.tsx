@@ -5,8 +5,11 @@ import TrustBadges from "@/components/TrustBadges";
 import ContactForm from "@/components/ContactForm";
 import JsonLd from "@/components/JsonLd";
 import InternalLinks from "@/components/InternalLinks";
+import FAQ from "@/components/FAQ";
+import Reviews from "@/components/Reviews";
 import { CallButton } from "@/components/ui/button-variants";
-import { MapPin, CheckCircle, Lock } from "lucide-react";
+import { PHONE_DISPLAY, PHONE_HREF } from "@/config/site";
+import { MapPin, CheckCircle, Lock, Clock } from "lucide-react";
 import ouverturePorte from "@/assets/ouverture-porte-1.png";
 import installationSerrure from "@/assets/installation-serrure.png";
 
@@ -21,6 +24,25 @@ const SerrurierHalluin = () => {
 
   const zones = [
     "Halluin Centre", "Mont d'Halluin", "Colbras", "Salengro", "Quartiers proches Menin / Bousbecque"
+  ];
+
+  const faqItems = [
+    {
+      question: "En combien de temps intervenez-vous à Halluin ?",
+      answer: "Notre serrurier rejoint Halluin en 20 à 30 minutes. Commune frontalière à l'extrême nord de la MEL, Halluin est desservie via Tourcoing et Roncq : nous couvrons aussi rapidement le centre, le Mont d'Halluin, Colbras et Salengro que les quartiers proches de Menin et Bousbecque.",
+    },
+    {
+      question: "Quel est le tarif d'une ouverture de porte à Halluin ?",
+      answer: "À Halluin, l'ouverture de porte démarre à 89€ en journée, déplacement et diagnostic inclus. Sur les maisons ouvrières mitoyennes du centre comme sur les pavillons du Mont d'Halluin, nous cherchons toujours l'ouverture sans casse en priorité. Le prix est annoncé à l'avance avec un devis gratuit.",
+    },
+    {
+      question: "Êtes-vous joignables la nuit et le dimanche à Halluin ?",
+      answer: "Oui, notre dépannage à Halluin est disponible 24h/24 et 7j/7, nuit, dimanche et jours fériés compris. Une porte claquée un dimanche à Colbras ou une effraction à sécuriser de nuit près de la frontière belge : nous nous déplaçons immédiatement, sans majoration cachée.",
+    },
+    {
+      question: "Quels quartiers d'Halluin couvrez-vous ?",
+      answer: "Nous intervenons dans tout Halluin : Halluin Centre, le Mont d'Halluin, Colbras, Salengro et les secteurs limitrophes de Menin et Bousbecque, sur l'habitat mixte ouvrier comme sur les zones pavillonnaires.",
+    },
   ];
 
   return (
@@ -58,6 +80,12 @@ const SerrurierHalluin = () => {
                 belge et les villes de la MEL (Roubaix, Tourcoing, Bousbecque) nous permet d'intervenir dans un 
                 délai de 20 à 30 minutes après votre appel.
               </p>
+              <div className="inline-flex items-center gap-3 bg-background/15 border border-background/25 rounded-lg px-5 py-3 mb-8 backdrop-blur-sm">
+                <Clock className="h-5 w-5 flex-shrink-0" />
+                <span className="font-semibold">
+                  Ouverture de porte dès 89€ · intervention en 20-30 min à Halluin
+                </span>
+              </div>
               <CallButton size="lg" />
             </div>
           </div>
@@ -161,6 +189,56 @@ const SerrurierHalluin = () => {
               </div>
             </div>
           </section>
+
+          <section className="py-16">
+            <div className="max-w-4xl mx-auto">
+              <h2 className="text-3xl font-bold mb-6 text-center">
+                Serrurier à la frontière belge
+              </h2>
+              <p className="text-muted-foreground leading-relaxed mb-4">
+                Tout au nord de la métropole, Halluin vit collée à la frontière belge, face à
+                Menin. Son histoire industrielle a façonné un habitat mixte : longues rangées de
+                maisons ouvrières mitoyennes héritées du textile, courées du centre, mais aussi
+                lotissements pavillonnaires plus récents qui grimpent vers le Mont d'Halluin. Cette
+                variété se traduit par des serrures très différentes d'une rue à l'autre — vieilles
+                serrures à gorges sur les portes anciennes, multipoints A2P sur les rénovations —
+                et chaque dépannage commence donc par un diagnostic précis avant toute manipulation.
+              </p>
+              <p className="text-muted-foreground leading-relaxed">
+                Le caractère transfrontalier de la commune influe aussi sur la sécurisation : après
+                une effraction à Colbras ou Salengro, beaucoup d'habitants souhaitent renforcer
+                rapidement leur porte. Nous posons cylindres et serrures adaptés, en urgence si
+                nécessaire. Un besoin immédiat ? Composez le{" "}
+                <a href={PHONE_HREF} className="text-primary font-semibold hover:underline">
+                  {PHONE_DISPLAY}
+                </a>
+                . Vous pouvez aussi consulter nos pages{" "}
+                <Link to="/ouverture-porte" className="text-primary font-semibold hover:underline">
+                  ouverture de porte
+                </Link>
+                ,{" "}
+                <Link to="/serrurier-dimanche-nuit-lille" className="text-primary font-semibold hover:underline">
+                  serrurier dimanche et nuit
+                </Link>{" "}
+                et nos{" "}
+                <Link to="/tarifs" className="text-primary font-semibold hover:underline">
+                  tarifs
+                </Link>
+                .
+              </p>
+            </div>
+          </section>
+
+          <section className="py-16">
+            <div className="max-w-3xl mx-auto">
+              <h2 className="text-3xl font-bold mb-8 text-center">
+                Questions fréquentes — Serrurier Halluin
+              </h2>
+              <FAQ items={faqItems} />
+            </div>
+          </section>
+
+          <Reviews />
 
           <InternalLinks currentCity="serrurier-halluin" />
 

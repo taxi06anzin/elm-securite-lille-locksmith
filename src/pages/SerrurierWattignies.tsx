@@ -1,11 +1,15 @@
 import { Helmet } from "react-helmet";
+import { Link } from "react-router-dom";
 import OptimizedImage from "@/components/OptimizedImage";
 import TrustBadges from "@/components/TrustBadges";
 import ContactForm from "@/components/ContactForm";
 import JsonLd from "@/components/JsonLd";
 import InternalLinks from "@/components/InternalLinks";
+import FAQ from "@/components/FAQ";
+import Reviews from "@/components/Reviews";
 import { CallButton } from "@/components/ui/button-variants";
-import { MapPin, CheckCircle, Lock } from "lucide-react";
+import { MapPin, CheckCircle, Lock, Clock } from "lucide-react";
+import { PHONE_DISPLAY, PHONE_HREF } from "@/config/site";
 import interventionImage from "@/assets/intervention-urgence.png";
 import changementSerrure from "@/assets/changement-serrure.jpg";
 
@@ -20,6 +24,25 @@ const SerrurierWattignies = () => {
 
   const zones = [
     "Noirignon", "Centre", "Mont-à-Leux", "Secteur Seclin/Wattignies", "Corneille"
+  ];
+
+  const faqItems = [
+    {
+      question: "Quel délai pour un serrurier à Wattignies ?",
+      answer: "Au sud de Lille, notre serrurier rejoint Wattignies en 20 à 30 minutes en moyenne. Le centre, le quartier de Noirignon, le Mont-à-Leux et les abords commerçants vers Seclin sont desservis sans détour. Un appel au " + PHONE_DISPLAY + " suffit pour qu'un artisan parte immédiatement vers votre domicile ou votre local."
+    },
+    {
+      question: "Combien coûte une ouverture de porte à Wattignies ?",
+      answer: "À Wattignies, comptez à partir de 89€ TTC pour une ouverture de porte en journée, déplacement inclus. Sur les pavillons de Noirignon comme sur les commerces du centre, le devis est communiqué avant l'intervention. Le tarif d'un changement de cylindre dépend du modèle posé, du standard au renforcé."
+    },
+    {
+      question: "Intervenez-vous la nuit et le dimanche à Wattignies ?",
+      answer: "Oui, nous intervenons à Wattignies 24h/24 et 7j/7, nuits, dimanches et jours fériés compris. Un commerçant du centre confronté à un rideau ou une serrure bloquée, comme un particulier du Mont-à-Leux avec une porte claquée, peut compter sur un serrurier disponible à toute heure."
+    },
+    {
+      question: "Quels quartiers de Wattignies couvrez-vous ?",
+      answer: "Nous couvrons l'ensemble de Wattignies : le centre, Noirignon, le Mont-à-Leux, le secteur Corneille et les zones limitrophes vers Seclin. Qu'il s'agisse d'un lotissement pavillonnaire ou d'un local commercial, aucun quartier de la commune n'échappe à notre périmètre d'intervention."
+    }
   ];
 
   return (
@@ -43,9 +66,13 @@ const SerrurierWattignies = () => {
                 Serrurier Wattignies – Dépannage de jour comme de nuit
               </h1>
               <p className="text-xl mb-8 opacity-90">
-                Commune résidentielle composée de lotissements, maisons individuelles et immeubles récents. 
+                Commune résidentielle composée de lotissements, maisons individuelles et immeubles récents.
                 Interventions rapides pour portes bloquées, cylindres défaillants et mécanismes multipoints.
               </p>
+              <div className="inline-flex items-center gap-2 mb-8 px-4 py-2 rounded-lg bg-white/15 text-secondary-foreground font-semibold">
+                <Clock className="h-5 w-5" />
+                Ouverture de porte dès 89€ · intervention en 20-30 min à Wattignies
+              </div>
               <CallButton size="lg" />
             </div>
           </div>
@@ -122,6 +149,40 @@ const SerrurierWattignies = () => {
             </div>
           </section>
 
+          <section className="py-16">
+            <div className="max-w-4xl mx-auto">
+              <h2 className="text-3xl font-bold mb-6">
+                Serrurier à Wattignies, au sud de la métropole
+              </h2>
+              <p className="text-muted-foreground leading-relaxed mb-4">
+                Wattignies, au sud de Lille, mêle larges zones pavillonnaires et un tissu
+                commercial actif. Les lotissements de Noirignon et du Mont-à-Leux alignent
+                des maisons individuelles aux portes d'entrée modernes, tandis que le centre
+                et les axes vers Seclin concentrent commerces, locaux professionnels et
+                petits collectifs. Cette double vocation, résidentielle et commerçante,
+                oriente nos interventions : portes d'habitation claquées et clés perdues
+                d'un côté, rideaux métalliques et serrures de locaux à dépanner ou sécuriser
+                de l'autre. Nos serruriers extraient les clés cassées, débloquent les
+                cylindres grippés et posent des barillets renforcés lorsqu'un commerce ou un
+                pavillon doit être protégé après une tentative d'effraction. La proximité de
+                la D549 et des grands axes du sud lillois nous permet d'atteindre chaque
+                quartier rapidement. Voir nos <Link to="/tarifs" className="text-primary font-medium hover:underline">tarifs</Link> et
+                notre service d'<Link to="/ouverture-porte" className="text-primary font-medium hover:underline">ouverture de porte</Link>.
+              </p>
+            </div>
+          </section>
+
+          <section className="py-16">
+            <div className="max-w-4xl mx-auto">
+              <h2 className="text-3xl font-bold mb-8 text-center">
+                Questions fréquentes — Serrurier Wattignies
+              </h2>
+              <FAQ items={faqItems} />
+            </div>
+          </section>
+
+          <Reviews />
+
           <InternalLinks currentCity="serrurier-wattignies" />
 
           <section id="contact" className="py-16">
@@ -129,8 +190,12 @@ const SerrurierWattignies = () => {
               <h2 className="text-3xl font-bold mb-4 text-center">
                 Contact
               </h2>
+              <p className="text-center text-muted-foreground mb-4">
+                Téléphone : <a href={PHONE_HREF} className="text-primary font-bold hover:underline">{PHONE_DISPLAY}</a>
+              </p>
               <p className="text-center text-muted-foreground mb-8">
-                Téléphone : <a href="tel:0621660867" className="text-primary font-bold hover:underline">06 21 66 08 67</a>
+                Urgence nocturne ou dominicale à Wattignies ? Voir notre{" "}
+                <Link to="/serrurier-dimanche-nuit-lille" className="text-primary font-medium hover:underline">serrurier dimanche et nuit</Link>.
               </p>
               <ContactForm />
             </div>
