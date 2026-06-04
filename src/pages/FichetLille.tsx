@@ -7,7 +7,7 @@ import Breadcrumb from "@/components/Breadcrumb";
 import OptimizedImage from "@/components/OptimizedImage";
 import SeoHead from "@/components/SeoHead";
 import { CallButton } from "@/components/ui/button-variants";
-import { CheckCircle, Shield, Clock, Award } from "lucide-react";
+import { CheckCircle, Shield, Clock, Award, Phone, Euro, KeyRound, Moon } from "lucide-react";
 import serrureCylindreImage from "@/assets/serrure-cylindre.jpg";
 import porteBlindeeImage from "@/assets/porte-blindee-installation.png";
 
@@ -29,9 +29,9 @@ const FichetLille = () => {
 
   return (
     <>
-      <SeoHead 
-        title="Serrurier Fichet Lille - Installation & Dépannage Haute Sécurité | ELM SÉCURITÉ"
-        description="Spécialiste Fichet à Lille : installation serrures A2P, cylindres haute sécurité, portes blindées. Intervention 24/7 par expert certifié ☎ 06 21 66 08 67"
+      <SeoHead
+        title="Serrurier Fichet Lille — Dépannage & Urgence 24/7 | ELM SÉCURITÉ"
+        description="Dépannage Fichet en urgence 24/7 à Lille : ouverture serrure bloquée, cylindre, multipoints Fichet. Nuit & dimanche. Concessionnaire officiel, pièces d'origine ☎ 06 21 66 08 67"
         canonical="https://serrurier-urgence-lille.fr/fichet-lille"
       />
       <JsonLd pageName="Serrurier Fichet Lille" pageUrl="/fichet-lille" />
@@ -49,11 +49,12 @@ const FichetLille = () => {
           <div className="container mx-auto px-4 text-secondary-foreground">
             <div className="max-w-3xl">
               <h1 className="text-5xl font-bold mb-6">
-                Serrurier Fichet Lille - Expert en haute sécurité
+                Serrurier Fichet à Lille — dépannage et urgence 24h/24
               </h1>
               <p className="text-xl mb-8 opacity-90">
-                Installation, dépannage et remplacement de serrures et cylindres Fichet. 
-                Spécialiste des systèmes de sécurité certifiés A2P pour particuliers et professionnels.
+                Serrure Fichet bloquée, clé cassée, cylindre ou multipoints en panne ? Notre serrurier
+                Fichet intervient en urgence à Lille, la nuit comme le dimanche. Concessionnaire officiel
+                Point Fort Fichet : accès aux pièces d'origine et garantie constructeur.
               </p>
               <CallButton size="lg" />
             </div>
@@ -64,6 +65,90 @@ const FichetLille = () => {
           <div className="-mt-8">
             <TrustBadges />
           </div>
+
+          {/* Dépannage Fichet en urgence 24/7 */}
+          <section className="py-16">
+            <div className="max-w-5xl mx-auto">
+              <span className="inline-flex items-center gap-2 bg-urgent/10 text-urgent px-3 py-1 rounded-full text-sm font-semibold mb-4">
+                <Moon className="h-4 w-4" aria-hidden="true" /> Disponible quand les autres sont fermés
+              </span>
+              <h2 className="text-3xl font-bold mb-4">
+                Dépannage Fichet en urgence 24/7 à Lille
+              </h2>
+              <p className="text-muted-foreground mb-8 leading-relaxed">
+                Une serrure ou une porte Fichet ne se dépanne pas comme une serrure standard : il faut
+                connaître les mécanismes, disposer de l'outillage adapté et préserver la certification.
+                ELM Sécurité, <strong>concessionnaire officiel Point Fort Fichet</strong> à Lille, intervient
+                en urgence de jour comme de nuit, le dimanche et les jours fériés — avec un accès direct
+                aux <strong>pièces d'origine Fichet</strong> et le maintien de la <strong>garantie constructeur</strong>.
+              </p>
+
+              <div className="grid md:grid-cols-3 gap-6 mb-8">
+                {[
+                  { icon: KeyRound, title: "Clé bloquée ou cassée", text: "Extraction de clé cassée dans un cylindre Fichet et ouverture fine sans détérioration du mécanisme." },
+                  { icon: Shield, title: "Cylindre & multipoints", text: "Déblocage et remplacement de cylindres et de serrures multipoints Fichet grippés ou forcés." },
+                  { icon: Clock, title: "Nuit & dimanche", text: "Serrurier Fichet de garde 24h/24 : intervention nocturne, dominicale et jours fériés sur Lille et la MEL." },
+                ].map((b) => (
+                  <div key={b.title} className="bg-card border rounded-lg p-6 shadow-card">
+                    <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mb-3">
+                      <b.icon className="h-6 w-6 text-primary" aria-hidden="true" />
+                    </div>
+                    <h3 className="font-bold mb-2">{b.title}</h3>
+                    <p className="text-sm text-muted-foreground">{b.text}</p>
+                  </div>
+                ))}
+              </div>
+
+              <p className="text-muted-foreground">
+                Besoin d'une intervention en pleine nuit ou un jour férié ? Découvrez notre service{" "}
+                <a href="/serrurier-dimanche-nuit-lille" className="text-primary font-semibold hover:underline">
+                  urgence nuit et dimanche
+                </a>{" "}
+                à Lille.
+              </p>
+            </div>
+          </section>
+
+          {/* Prix porte blindée Fichet — ancre tarifaire */}
+          <section className="py-16 bg-muted -mx-4 px-4 md:mx-0 md:rounded-lg">
+            <div className="max-w-4xl mx-auto">
+              <h2 className="text-3xl font-bold mb-4 text-center">
+                Porte blindée Fichet à Lille — prix
+              </h2>
+              <div className="bg-background border rounded-lg p-8 text-center shadow-card">
+                <div className="inline-flex p-4 bg-primary/10 rounded-full mb-4">
+                  <Euro className="h-8 w-8 text-primary" aria-hidden="true" />
+                </div>
+                <p className="text-2xl font-bold mb-2">
+                  À partir de <span className="text-primary">2 680 €</span> — pose comprise
+                </p>
+                <p className="text-muted-foreground mb-6">
+                  Devis personnalisé gratuit. Tarif indicatif pour une{" "}
+                  <a href="/porte-blindee" className="text-primary font-semibold hover:underline">
+                    porte blindée
+                  </a>{" "}
+                  Fichet posée à Lille, équipée d'une{" "}
+                  <a href="/serrure-a2p-3-points-lille" className="text-primary font-semibold hover:underline">
+                    serrure A2P certifiée
+                  </a>. Gammes disponibles : <strong>Forstyl</strong>, <strong>Spheris</strong> et <strong>Foxeo</strong>.
+                </p>
+                <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                  <a
+                    href="tel:0621660867"
+                    className="inline-flex items-center justify-center gap-2 bg-primary text-primary-foreground px-6 py-3 rounded-lg font-bold hover:opacity-90 transition-opacity"
+                  >
+                    <Phone className="h-5 w-5" aria-hidden="true" /> Devis gratuit : 06 21 66 08 67
+                  </a>
+                  <a
+                    href="/tarifs"
+                    className="inline-flex items-center justify-center border-2 border-primary text-primary px-6 py-3 rounded-lg font-bold hover:bg-primary/10 transition-colors"
+                  >
+                    Voir tous nos tarifs
+                  </a>
+                </div>
+              </div>
+            </div>
+          </section>
 
           <section className="py-16 grid md:grid-cols-2 gap-12 items-center">
             <div>

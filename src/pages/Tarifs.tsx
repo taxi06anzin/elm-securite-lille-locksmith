@@ -28,16 +28,36 @@ const grilleBase = [
 
 const faqTarifs = [
   {
+    question: "Quel est le prix d'un serrurier à Lille ?",
+    answer: "Le tarif d'un serrurier à Lille dépend de la prestation. Comptez dès 89€ pour une ouverture de porte claquée et à partir de 149€ pour le changement d'un cylindre. Le déplacement sur Lille est inclus dans le forfait annoncé avant l'intervention. Un devis gratuit vous est toujours remis : vous connaissez le prix exact avant tout accord."
+  },
+  {
+    question: "Quel est le tarif d'un serrurier la nuit ?",
+    answer: "La nuit, entre 20h et 8h, une majoration de 30% s'applique sur nos tarifs de jour. Par exemple, une ouverture de porte claquée démarre à 119€ au lieu de 89€. Cette majoration encadrée vous est toujours communiquée au téléphone et confirmée par devis avant l'intervention : aucune surprise sur la facture."
+  },
+  {
+    question: "Quel est le tarif le dimanche et les jours fériés ?",
+    answer: "Le dimanche, ainsi que les jours fériés, une majoration de 50% s'applique sur la grille de jour. Cette surcharge correspond aux conditions d'intervention en horaires exceptionnels. Comme pour la nuit, le tarif exact vous est annoncé avant tout déplacement et figure noir sur blanc sur le devis gratuit que nous vous remettons."
+  },
+  {
     question: "Le déplacement est-il inclus dans le prix ?",
-    answer: "Non, un forfait déplacement de 30€ s'ajoute sur Lille (40€ hors Lille). Il vous est indiqué avant toute intervention."
+    answer: "Oui, le déplacement est intégré au forfait que nous vous annonçons avant l'intervention. Le montant communiqué au téléphone est celui qui apparaît sur la facture : nous ne facturons aucun frais caché ni supplément de dernière minute. Vous savez exactement combien vous allez payer avant que le serrurier ne commence son travail."
   },
   {
-    question: "Les tarifs sont-ils majorés la nuit ?",
-    answer: "Oui, une majoration de 30% s'applique entre 20h et 8h, et 50% les dimanches et jours fériés."
+    question: "Les frais de serrurier sont-ils remboursés par l'assurance ?",
+    answer: "Oui, dans la plupart des cas, notamment après une effraction ou un sinistre couvert par votre contrat habitation. Nous remettons systématiquement une facture détaillée et conforme aux exigences des assureurs. ELM Sécurité est d'ailleurs un serrurier agréé assurance à Lille : voir notre page dédiée pour préparer votre déclaration de sinistre."
   },
   {
-    question: "Acceptez-vous les prises en charge assurance ?",
-    answer: "Oui, nous sommes agréés par les assurances et pouvons vous accompagner dans votre déclaration de sinistre."
+    question: "Comment éviter les arnaques de serrurier à Lille ?",
+    answer: "Méfiez-vous des annonces affichant des ouvertures à 19€ : ce sont des appâts qui débouchent sur des factures gonflées. Exigez toujours un tarif annoncé avant l'intervention et un devis écrit. Vérifiez le numéro SIRET et l'agrément Fichet de l'entreprise. Chez ELM Sécurité, le prix est ferme, communiqué à l'avance et sans acompte."
+  },
+  {
+    question: "Demandez-vous un acompte avant l'intervention ?",
+    answer: "Non, nous ne demandons jamais d'acompte avant de nous déplacer ou d'intervenir. Le paiement s'effectue uniquement après la réalisation des travaux et la validation du devis. Vous réglez en espèces, par chèque ou par carte bancaire, en toute sérénité, une fois la prestation terminée à votre satisfaction."
+  },
+  {
+    question: "Quel est le prix d'une porte blindée Fichet ?",
+    answer: "Le prix d'une porte blindée Fichet s'établit sur devis selon le modèle, le niveau de certification A2P et la pose. Comptez à partir d'environ 2680€ pose comprise pour un bloc-porte blindé certifié. Chaque projet fait l'objet d'une étude personnalisée gratuite : voir notre page /porte-blindee pour découvrir les gammes et obtenir un chiffrage précis."
   }
 ];
 
@@ -116,7 +136,9 @@ const Tarifs = () => {
 
             <div className="max-w-5xl mx-auto">
               <p className="text-muted-foreground mb-8 text-center max-w-2xl mx-auto">
-                Tous nos tarifs sont communiqués avant intervention sous forme de devis écrit et signé. Pas de frais cachés, pas de mauvaise surprise.
+                Tous nos tarifs sont communiqués avant intervention sous forme de devis écrit et signé. Pas de frais cachés, pas de mauvaise surprise. En cas de sinistre, faites appel à un{" "}
+                <a href="/serrurier-agree-assurance-lille" className="text-primary font-semibold hover:underline">serrurier agréé assurance</a>{" "}
+                pour faciliter votre remboursement.
               </p>
 
               <h2 className="text-3xl font-bold mb-4 text-center">
@@ -179,7 +201,7 @@ const Tarifs = () => {
                 </p>
                 <ul className="space-y-1 text-sm text-muted-foreground ml-4">
                   <li>• <strong>Horaires normaux</strong> (lundi-vendredi 8h-19h) : tarifs standards</li>
-                  <li>• <strong>Nuit, week-end, jours fériés</strong> : majoration 30% ou 50% selon le cas</li>
+                  <li>• <strong>Nuit, week-end, jours fériés</strong> : majoration 30% ou 50% selon le cas (voir nos <a href="/serrurier-dimanche-nuit-lille" className="text-primary font-semibold hover:underline">tarifs nuit et dimanche</a>)</li>
                   <li>• <strong>Intervention complexe</strong> : devis personnalisé gratuit</li>
                 </ul>
               </div>
