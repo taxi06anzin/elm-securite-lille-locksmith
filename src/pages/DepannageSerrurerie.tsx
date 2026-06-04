@@ -52,7 +52,7 @@ const DepannageSerrurerie = () => {
                 Intervention rapide après appel pour la gestion des portes bloquées, clés perdues, serrures forcées ou mécanismes endommagés. 
                 Notre équipe est spécialisée dans les <a href="/ouverture-porte" className="text-accent-foreground hover:underline font-semibold">ouvertures de portes d'urgence</a>, 
                 le <a href="/changement-serrure" className="text-accent-foreground hover:underline font-semibold">remplacement de serrures</a> et la sécurisation après effraction. 
-                Disponible nuit, dimanche et jours fériés.
+                Disponible <a href="/serrurier-dimanche-nuit-lille" className="text-accent-foreground hover:underline font-semibold">nuit, dimanche et jours fériés</a>.
               </p>
               <div className="flex flex-wrap gap-4">
                 <CallButton size="lg" />
