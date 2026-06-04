@@ -44,9 +44,9 @@ export default {
           foreground: "hsl(var(--urgent-foreground))",
           pulse: "hsl(var(--urgent-pulse))",
         },
-        trust: {
-          DEFAULT: "hsl(var(--trust))",
-          foreground: "hsl(var(--trust-foreground))",
+        whatsapp: {
+          DEFAULT: "hsl(var(--whatsapp))",
+          foreground: "hsl(var(--whatsapp-foreground))",
         },
         popover: {
           DEFAULT: "hsl(var(--popover))",
@@ -63,7 +63,15 @@ export default {
       },
       boxShadow: {
         'card': 'var(--shadow-card)',
-        'elegant': 'var(--shadow-lg)',
+        'elegant': 'var(--shadow-elegant)',
+        'bar': 'var(--shadow-bar)',
+      },
+      fontFamily: {
+        sans: [
+          "ui-sans-serif", "system-ui", "-apple-system", "BlinkMacSystemFont",
+          '"Segoe UI"', "Roboto", '"Helvetica Neue"', "Arial", '"Noto Sans"',
+          "sans-serif", '"Apple Color Emoji"', '"Segoe UI Emoji"',
+        ],
       },
       borderRadius: {
         lg: "var(--radius)",

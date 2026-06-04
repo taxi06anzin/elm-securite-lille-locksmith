@@ -42,7 +42,7 @@ const SerrurierHellemmes = () => {
         <meta name="twitter:title" content="Serrurier Hellemmes – Intervention technique 7j/7 | ELM SÉCURITÉ" />
         <meta name="twitter:description" content="Serrurier à Hellemmes 24/7. Intervention Faidherbe, Éléphant, Centre. Ouverture porte, remplacement cylindre ☎ 06 21 66 08 67" />
       </Helmet>
-      <JsonLd pageName="Serrurier Hellemmes" pageUrl="https://serrurier-urgence-lille.fr/serrurier-hellemmes" />
+      <JsonLd pageName="Serrurier Hellemmes" pageUrl="/serrurier-hellemmes" />
       
       <div className="min-h-screen bg-background">
         <Breadcrumb 

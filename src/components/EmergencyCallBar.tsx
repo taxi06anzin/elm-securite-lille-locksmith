@@ -1,9 +1,5 @@
 import { Phone, MessageCircle, Clock } from "lucide-react";
-
-const PHONE = "0621660867";
-const PHONE_DISPLAY = "06 21 66 08 67";
-const WHATSAPP_URL =
-  "https://wa.me/33621660867?text=Bonjour,%20j'ai%20besoin%20d'un%20serrurier%20d'urgence%20%C3%A0%20Lille";
+import { PHONE, PHONE_DISPLAY, WHATSAPP_URL } from "@/config/site";
 
 /**
  * Barre d'urgence permanente mobile.
@@ -39,7 +35,7 @@ const EmergencyCallBar = () => {
             touch-manipulation
             active:bg-urgent-pulse active:scale-[0.98]
             transition-transform
-            min-h-[56px]
+            min-h-14
             focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-urgent focus-visible:ring-offset-2 focus-visible:ring-offset-background
           "
           aria-label={`Appeler ELM Sécurité au ${PHONE_DISPLAY}`}
@@ -53,13 +49,13 @@ const EmergencyCallBar = () => {
           rel="noopener noreferrer"
           className="
             flex items-center justify-center
-            bg-trust text-trust-foreground
+            bg-whatsapp text-whatsapp-foreground
             px-5
             touch-manipulation
             active:opacity-80 active:scale-[0.98]
             transition-transform
-            min-w-[64px] min-h-[56px]
-            focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-trust focus-visible:ring-offset-2 focus-visible:ring-offset-background
+            min-w-16 min-h-14
+            focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-whatsapp focus-visible:ring-offset-2 focus-visible:ring-offset-background
           "
           aria-label="Contacter ELM Sécurité par WhatsApp"
         >

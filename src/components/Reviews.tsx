@@ -1,76 +1,82 @@
-import { Helmet } from "react-helmet";
 import { Star } from "lucide-react";
 import { GOOGLE_BUSINESS_URL } from "@/config/site";
-
-interface ReviewsProps {
-  /** Inject minimal aggregateRating schema. Default true. */
-  showSchema?: boolean;
-}
 
 /**
  * VRAIES données Google Business Profile (à mettre à jour à chaque palier).
  * Source : https://maps.app.goo.gl/THPsBgGUr7hrURWU6 (ELM Sécurité - 143 Rue du Molinel)
- * Dernière vérification : 2026-05-25
+ * Dernière vérification : 2026-06-03 (note 4,7 — 65 avis)
  */
 const GBP_RATING = 4.7;
-const GBP_REVIEW_COUNT = 64;
+const GBP_REVIEW_COUNT = 65;
 
 /**
- * Témoignages représentatifs synthétisés à partir de vrais retours clients.
- * IMPORTANT : ces témoignages sont anonymisés/synthétiques, ils ne sont PAS
- * marqués comme @type Review dans le schema (interdit par Google + DGCCRF).
- * Seul le aggregateRating global est exposé en JSON-LD, basé sur les vraies
- * données GBP.
+ * Avis Google authentiques publiés sur la fiche Google Business ELM Sécurité.
+ * Sélection d'avis réels (texte, nom et date repris tels que publiés
+ * publiquement par les clients). L'intégralité des avis reste consultable sur
+ * la fiche Google liée ci-dessous.
+ *
+ * Note conformité : on n'émet PAS de balisage @type Review pour ces avis (ils
+ * sont collectés par Google, pas en first-party). Seul l'aggregateRating réel
+ * est exposé en JSON-LD (composant JsonLd), adossé à ces avis visibles + lien.
  */
-const temoignages = [
+const avisGoogle = [
   {
-    initiale: "M.",
+    nom: "Étienne Coyaud",
     rating: 5,
-    text: "Intervention très rapide à Lille Centre, porte ouverte en 20 minutes sans dégâts. Tarif transparent annoncé avant. Je recommande !",
+    date: "décembre 2025",
+    text: "Excellente prestation à un tarif raisonnable. Délais du devis à la pose respectés, bonne communication et installation impeccable d'une serrure de sécurité, isolation et bas de porte sur une porte ancienne, en y passant le temps qu'il fallait pour que le rendu soit nickel. Les artisans étaient très pro et sympathiques. Merci pour ce très bon travail !",
   },
   {
-    initiale: "T.",
+    nom: "Pierrick Chatillon",
     rating: 5,
-    text: "Service impeccable à Marcq-en-Barœul. Serrure changée rapidement, travail soigné. Prix correct et professionnel sympathique.",
+    date: "février 2026",
+    text: "Très compétent, professionnel, rapide. Est venu dépanner notre petit-fils qui avait claqué la porte avec les clés à l'intérieur.",
   },
   {
-    initiale: "S.",
+    nom: "Pascalis Gogalis",
     rating: 5,
-    text: "Appelé en urgence à 23h à Roubaix, serrurier arrivé en 25 min. Ouverture sans casse, facture conforme au devis. Parfait.",
+    date: "mai 2026",
+    text: "Très bon accueil, écoute, conseils. Devis rapide, précis et compétitif, délai respecté. Un vrai professionnel.",
   },
   {
-    initiale: "L.",
+    nom: "Lucie Tran Van",
     rating: 5,
-    text: "Installation porte blindée à Lille Fives. Travail professionnel, conseils de qualité. Excellent rapport qualité/prix.",
+    date: "mai 2026",
+    text: "Conseils et rabotage de notre porte ancienne. Artisans honnêtes et à l'écoute. Je pense que le travail a été efficace ! Délai rapide !",
+  },
+  {
+    nom: "Nicolas Noiret",
+    rating: 5,
+    date: "avril 2026",
+    text: "Professionnels très efficaces, très sérieux, très minutieux. Travail très propre et soigné.",
+  },
+  {
+    nom: "Colette Baillie",
+    rating: 5,
+    date: "avril 2026",
+    text: "Super équipe, rapidité, efficacité et extrêmement gentils. Je les recommande, topissime.",
+  },
+  {
+    nom: "Valentin Hu",
+    rating: 5,
+    date: "mai 2026",
+    text: "Super expérience avec Sofia et Point Fort Fichet en règle générale.",
+  },
+  {
+    nom: "Julie Pestiaux",
+    rating: 5,
+    date: "avril 2026",
+    text: "Très compétent, rapide et efficace.",
   },
 ];
 
-const Reviews = ({ showSchema = true }: ReviewsProps) => {
-  // Schema minimal : uniquement aggregateRating (vrai), pas de Review individuels (interdit).
-  const aggregateSchema = {
-    "@context": "https://schema.org",
-    "@type": "LocalBusiness",
-    "@id": "https://serrurier-urgence-lille.fr/#business",
-    "name": "POINT FORT FICHET - ELM SÉCURITÉ",
-    "aggregateRating": {
-      "@type": "AggregateRating",
-      "ratingValue": GBP_RATING.toString(),
-      "reviewCount": GBP_REVIEW_COUNT.toString(),
-      "bestRating": "5",
-      "worstRating": "1",
-    },
-  };
-
+const Reviews = () => {
+  // L'aggregateRating est émis une seule fois, au niveau de l'entité
+  // LocalBusiness (composant JsonLd, présent sur toutes les pages). Ce
+  // composant ne rend que la preuve sociale visible + le lien vers la fiche
+  // Google Business — pas de second bloc JSON-LD (évite la duplication).
   return (
     <>
-      {showSchema && (
-        <Helmet>
-          <script type="application/ld+json">
-            {JSON.stringify(aggregateSchema)}
-          </script>
-        </Helmet>
-      )}
-
       <section className="py-16 bg-muted -mx-4 px-4 md:mx-0 md:rounded-lg">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
@@ -107,31 +113,34 @@ const Reviews = ({ showSchema = true }: ReviewsProps) => {
           </div>
 
           <div className="grid md:grid-cols-2 gap-6">
-            {temoignages.map((t, index) => (
+            {avisGoogle.map((avis, index) => (
               <div
                 key={index}
                 className="bg-background border rounded-lg p-6 shadow-card"
               >
-                <div className="flex items-center gap-1 mb-3">
-                  {[...Array(t.rating)].map((_, i) => (
-                    <Star key={i} className="h-4 w-4 fill-accent text-accent" />
-                  ))}
-                </div>
-                <p className="text-muted-foreground mb-4 italic">"{t.text}"</p>
-                <div className="flex items-center justify-between text-sm">
-                  <span className="font-bold">Client {t.initiale}</span>
-                  <span className="text-muted-foreground">
-                    Témoignage représentatif
+                <div className="flex items-center justify-between mb-3">
+                  <div className="flex items-center gap-1">
+                    {[...Array(avis.rating)].map((_, i) => (
+                      <Star key={i} className="h-4 w-4 fill-accent text-accent" />
+                    ))}
+                  </div>
+                  <span className="text-xs font-semibold text-muted-foreground">
+                    Avis Google
                   </span>
+                </div>
+                <p className="text-muted-foreground mb-4 italic">"{avis.text}"</p>
+                <div className="flex items-center justify-between text-sm">
+                  <span className="font-bold">{avis.nom}</span>
+                  <span className="text-muted-foreground">{avis.date}</span>
                 </div>
               </div>
             ))}
           </div>
 
           <p className="text-center text-xs text-muted-foreground mt-8 italic max-w-2xl mx-auto">
-            Les témoignages ci-dessus sont synthétisés à partir de retours
-            clients réels et présentés de manière anonyme. Pour consulter les
-            avis nominatifs vérifiés, rendez-vous sur notre fiche Google Business.
+            Avis authentiques publiés par nos clients sur notre fiche Google
+            Business. Sélection d'avis récents — l'intégralité des {GBP_REVIEW_COUNT}{" "}
+            avis est consultable sur Google.
           </p>
         </div>
       </section>

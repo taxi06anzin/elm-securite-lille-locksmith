@@ -141,6 +141,23 @@ const Contact = () => {
             </div>
           </div>
 
+          {/* Carte Google Maps */}
+          <section className="mt-16 max-w-6xl mx-auto">
+            <h2 className="text-3xl font-bold mb-6 text-center">Nous situer</h2>
+            <div className="rounded-lg overflow-hidden border shadow-card">
+              <iframe
+                title="Localisation ELM Sécurité — 143 Rue du Molinel, 59800 Lille"
+                src="https://www.google.com/maps?q=143+Rue+du+Molinel,+59800+Lille&output=embed"
+                width="100%"
+                height="400"
+                loading="lazy"
+                style={{ border: 0 }}
+                referrerPolicy="no-referrer-when-downgrade"
+                allowFullScreen
+              />
+            </div>
+          </section>
+
           {/* Services proposés */}
           <section className="mt-16 max-w-6xl mx-auto">
             <h2 className="text-3xl font-bold mb-8 text-center">Nos services de serrurier</h2>

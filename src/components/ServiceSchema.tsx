@@ -23,7 +23,8 @@ const ServiceSchema = ({
     "description": description,
     "provider": {
       "@type": "LocalBusiness",
-      "name": "ELM Sécurité - Serrurier Lille",
+      "@id": "https://serrurier-urgence-lille.fr/#business",
+      "name": "POINT FORT FICHET - ELM SÉCURITÉ",
       "telephone": "+33621660867",
       "address": {
         "@type": "PostalAddress",
@@ -63,7 +64,7 @@ const ServiceSchema = ({
         "Sunday"
       ],
       "opens": "00:00",
-      "closes": "23:59"
+      "closes": "24:00"
     }
   };
 

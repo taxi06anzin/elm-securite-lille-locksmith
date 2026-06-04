@@ -1,10 +1,12 @@
+import { WHATSAPP_URL } from "@/config/site";
+
 const WhatsAppButton = () => {
   return (
     <a
-      href="https://wa.me/33621660867?text=Bonjour,%20j'ai%20besoin%20d'un%20serrurier%20d'urgence"
+      href={WHATSAPP_URL}
       target="_blank"
       rel="noopener noreferrer"
-      className="hidden md:flex fixed bottom-6 right-6 z-50 bg-[#25D366] text-white p-4 rounded-full shadow-elegant hover:scale-110 transition-transform duration-300 motion-safe:animate-bounce"
+      className="hidden md:flex fixed bottom-6 right-6 z-50 bg-whatsapp text-whatsapp-foreground p-4 rounded-full shadow-elegant hover:scale-110 transition-transform duration-300 motion-safe:animate-bounce"
       aria-label="Contactez-nous sur WhatsApp"
     >
       <svg className="h-8 w-8" fill="currentColor" viewBox="0 0 24 24">
