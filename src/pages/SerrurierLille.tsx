@@ -49,7 +49,7 @@ const SerrurierLille = () => {
       <JsonLd pageName="Serrurier Lille" pageUrl="/serrurier-lille" />
       
       <div className="min-h-screen bg-background">
-        <Breadcrumb items={[{ label: "Serrurier Lille", path: "/serrurier-lille" }]} />
+        <Breadcrumb items={[{ label: "Villes couvertes", path: "/villes-couvertes" }, { label: "Serrurier Lille", path: "/serrurier-lille" }]} />
         
         <section className="relative py-20 bg-gradient-to-br from-secondary to-primary">
           <div className="container mx-auto px-4 text-secondary-foreground">

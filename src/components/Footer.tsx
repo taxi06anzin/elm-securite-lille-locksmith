@@ -114,6 +114,36 @@ const Footer = () => {
                   Tarifs transparents
                 </Link>
               </li>
+              <li>
+                <Link to="/serrurier-dimanche-nuit-lille" className="hover:underline">
+                  Urgence nuit &amp; dimanche
+                </Link>
+              </li>
+              <li>
+                <Link to="/serrurier-agree-assurance-lille" className="hover:underline">
+                  Serrurier agréé assurance
+                </Link>
+              </li>
+              <li>
+                <Link to="/mise-en-securite-effraction-lille" className="hover:underline">
+                  Mise en sécurité effraction
+                </Link>
+              </li>
+              <li>
+                <Link to="/serrure-a2p-3-points-lille" className="hover:underline">
+                  Serrure A2P &amp; 3 points
+                </Link>
+              </li>
+              <li>
+                <Link to="/porte-claquee-que-faire" className="hover:underline">
+                  Porte claquée : que faire
+                </Link>
+              </li>
+              <li>
+                <Link to="/serrure-bloquee-que-faire" className="hover:underline">
+                  Serrure bloquée : que faire
+                </Link>
+              </li>
             </ul>
           </div>
 
