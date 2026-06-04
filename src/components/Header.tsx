@@ -14,6 +14,9 @@ const Header = () => {
     { name: "Changement de serrure", href: "/changement-serrure" },
     { name: "Portes blindées", href: "/porte-blindee" },
     { name: "Serrurier Fichet Lille", href: "/fichet-lille" },
+    { name: "Serrure A2P & 3 points", href: "/serrure-a2p-3-points-lille" },
+    { name: "Urgence nuit & dimanche", href: "/serrurier-dimanche-nuit-lille" },
+    { name: "Serrurier agréé assurance", href: "/serrurier-agree-assurance-lille" },
     { name: "Serrurier pas cher", href: "/serrurier-pas-cher" },
   ];
 

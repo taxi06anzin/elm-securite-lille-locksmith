@@ -47,9 +47,9 @@ const SerrurierHellemmes = () => {
       <div className="min-h-screen bg-background">
         <Breadcrumb 
           items={[
-            { label: "Accueil", path: "/" },
+            { label: "Villes couvertes", path: "/villes-couvertes" },
             { label: "Serrurier Hellemmes", path: "/serrurier-hellemmes" }
-          ]} 
+          ]}
         />
         
         <section className="relative py-20 bg-gradient-to-br from-secondary to-primary">
@@ -150,7 +150,7 @@ const SerrurierHellemmes = () => {
             </div>
           </section>
 
-          <InternalLinks currentCity="Hellemmes" />
+          <InternalLinks currentCity="serrurier-hellemmes" />
         </div>
       </div>
     </>
