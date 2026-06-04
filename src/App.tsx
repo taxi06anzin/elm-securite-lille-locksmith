@@ -40,6 +40,10 @@ import VillesCouvertes from "./pages/VillesCouvertes";
 import FichetLille from "./pages/FichetLille";
 import SerrurierDimancheNuit from "./pages/SerrurierDimancheNuit";
 import PorteClaqueeQueFaire from "./pages/PorteClaqueeQueFaire";
+import SerrurierAgreeAssurance from "./pages/SerrurierAgreeAssurance";
+import MiseEnSecuriteEffraction from "./pages/MiseEnSecuriteEffraction";
+import SerrureBloqueeQueFaire from "./pages/SerrureBloqueeQueFaire";
+import SerrureA2P from "./pages/SerrureA2P";
 import NotFound from "./pages/NotFound";
 import Layout from "./components/Layout";
 
@@ -90,6 +94,10 @@ const App = () => (
           <Route path="/fichet-lille" element={<FichetLille />} />
           <Route path="/serrurier-dimanche-nuit-lille" element={<SerrurierDimancheNuit />} />
           <Route path="/porte-claquee-que-faire" element={<PorteClaqueeQueFaire />} />
+          <Route path="/serrurier-agree-assurance-lille" element={<SerrurierAgreeAssurance />} />
+          <Route path="/mise-en-securite-effraction-lille" element={<MiseEnSecuriteEffraction />} />
+          <Route path="/serrure-bloquee-que-faire" element={<SerrureBloqueeQueFaire />} />
+          <Route path="/serrure-a2p-3-points-lille" element={<SerrureA2P />} />
           </Route>
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
