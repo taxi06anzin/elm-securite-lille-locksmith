@@ -3,6 +3,7 @@ import OptimizedImage from "@/components/OptimizedImage";
 import TrustBadges from "@/components/TrustBadges";
 import ContactForm from "@/components/ContactForm";
 import JsonLd from "@/components/JsonLd";
+import InternalLinks from "@/components/InternalLinks";
 import { CallButton } from "@/components/ui/button-variants";
 import { MapPin, CheckCircle } from "lucide-react";
 import interventionImage from "@/assets/intervention-urgence.png";
@@ -118,6 +119,8 @@ const SerrurierWambrechies = () => {
               </div>
             </div>
           </section>
+
+          <InternalLinks currentCity="serrurier-wambrechies" />
 
           <section id="contact" className="py-16">
             <div className="max-w-2xl mx-auto">

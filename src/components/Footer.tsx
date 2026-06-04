@@ -4,10 +4,25 @@ import { GOOGLE_BUSINESS_URL, WHATSAPP_URL, PHONE_HREF, PHONE_DISPLAY } from "@/
 
 const Footer = () => {
   const zones = [
-    "Lille", "Lomme", "Hellemmes", "Villeneuve-d'Ascq", "Ronchin", "La Madeleine",
-    "Lambersart", "Mons-en-Barœul", "Wambrechies", "Marcq-en-Barœul", 
-    "Faches-Thumesnil", "Wattignies", "Loos", "Seclin", "Bondues", 
-    "Roubaix", "Tourcoing", "Wasquehal", "Croix", "Hem"
+    { name: "Lille", slug: "serrurier-lille" },
+    { name: "Roubaix", slug: "serrurier-roubaix" },
+    { name: "Tourcoing", slug: "serrurier-tourcoing" },
+    { name: "Villeneuve-d'Ascq", slug: "serrurier-villeneuve-ascq" },
+    { name: "Marcq-en-Barœul", slug: "serrurier-marcq-en-baroeul" },
+    { name: "La Madeleine", slug: "serrurier-la-madeleine" },
+    { name: "Lambersart", slug: "serrurier-lambersart" },
+    { name: "Lomme", slug: "serrurier-lomme" },
+    { name: "Hellemmes", slug: "serrurier-hellemmes" },
+    { name: "Mons-en-Barœul", slug: "serrurier-mons-en-baroeul" },
+    { name: "Wasquehal", slug: "serrurier-wasquehal" },
+    { name: "Croix", slug: "serrurier-croix" },
+    { name: "Ronchin", slug: "serrurier-ronchin" },
+    { name: "Loos", slug: "serrurier-loos" },
+    { name: "Faches-Thumesnil", slug: "serrurier-faches-thumesnil" },
+    { name: "Wattignies", slug: "serrurier-wattignies" },
+    { name: "Wambrechies", slug: "serrurier-wambrechies" },
+    { name: "Bondues", slug: "serrurier-bondues" },
+    { name: "Hem", slug: "serrurier-hem" },
   ];
 
   return (
@@ -135,8 +150,15 @@ const Footer = () => {
           <div>
             <h3 className="text-xl font-bold mb-4">Zones d'intervention MEL</h3>
             <div className="text-sm space-y-1">
-              {zones.slice(0, 12).map((zone) => (
-                <div key={zone}>{zone}</div>
+              {zones.map((zone) => (
+                <div key={zone.slug}>
+                  <Link
+                    to={`/${zone.slug}`}
+                    className="hover:underline hover:text-primary-foreground/100 transition-colors"
+                  >
+                    Serrurier {zone.name}
+                  </Link>
+                </div>
               ))}
               <div className="pt-2 text-xs opacity-80">
                 + toute la Métropole Européenne de Lille
