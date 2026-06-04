@@ -1,11 +1,15 @@
 import { Helmet } from "react-helmet";
+import { Link } from "react-router-dom";
 import OptimizedImage from "@/components/OptimizedImage";
 import TrustBadges from "@/components/TrustBadges";
 import ContactForm from "@/components/ContactForm";
 import JsonLd from "@/components/JsonLd";
 import InternalLinks from "@/components/InternalLinks";
+import FAQ from "@/components/FAQ";
+import Reviews from "@/components/Reviews";
 import { CallButton } from "@/components/ui/button-variants";
-import { MapPin, CheckCircle, Lock } from "lucide-react";
+import { MapPin, CheckCircle, Lock, Clock } from "lucide-react";
+import { PHONE_DISPLAY, PHONE_HREF } from "@/config/site";
 import interventionImage from "@/assets/intervention-urgence.png";
 import changementSerrure from "@/assets/changement-serrure.jpg";
 
@@ -20,6 +24,25 @@ const SerrurierPerenchies = () => {
 
   const zones = [
     "Centre", "Route de la bassée", "Bourg", "Secteur Verlinghem", "Quartiers limitrophes Saint-André et Lompret"
+  ];
+
+  const faqItems = [
+    {
+      question: "Quel délai pour un serrurier à Pérenchies ?",
+      answer: "À Pérenchies, dans l'ouest de la métropole lilloise, notre serrurier arrive généralement sous 20 à 30 minutes. En passant par la Route de la Bassée, nous desservons rapidement le Bourg, le centre et les abords de Verlinghem. Un simple appel au " + PHONE_DISPLAY + " déclenche le départ immédiat de l'artisan le plus proche."
+    },
+    {
+      question: "Combien coûte une ouverture de porte à Pérenchies ?",
+      answer: "Une ouverture de porte à Pérenchies débute à 89€ TTC en journée, déplacement compris. Sur le bâti mixte de la commune — maisons anciennes du Bourg comme pavillons récents près de Lompret — le devis est annoncé avant l'intervention, qu'il s'agisse d'un cylindre standard ou d'une serrure multipoints à remplacer."
+    },
+    {
+      question: "Intervenez-vous la nuit et le dimanche à Pérenchies ?",
+      answer: "Oui, nous sommes disponibles à Pérenchies 24h/24 et 7j/7. Nuit, dimanche et jours fériés inclus, un serrurier reste mobilisable pour le centre, la Route de la Bassée ou les secteurs limitrophes de Saint-André. Les urgences comme une clé cassée dans le barillet ou un cylindre qui tourne dans le vide sont traitées sans attendre."
+    },
+    {
+      question: "Quels quartiers de Pérenchies couvrez-vous ?",
+      answer: "Notre zone couvre tout Pérenchies : le centre, le Bourg, la Route de la Bassée et les quartiers proches de Verlinghem, Lompret et Saint-André. Cette position dans l'ouest de la MEL nous permet d'intervenir aussi bien dans l'habitat ancien que dans les zones pavillonnaires récentes de la commune."
+    }
   ];
 
   return (
@@ -43,9 +66,13 @@ const SerrurierPerenchies = () => {
                 Serrurier Pérenchies – Dépannage rapide 7j/7
               </h1>
               <p className="text-xl mb-8 opacity-90">
-                Pérenchies combine maisons anciennes, constructions récentes et zones pavillonnaires. 
+                Pérenchies combine maisons anciennes, constructions récentes et zones pavillonnaires.
                 Le service couvre l'ensemble des besoins liés aux portes et verrous.
               </p>
+              <div className="inline-flex items-center gap-2 mb-8 px-4 py-2 rounded-lg bg-white/15 text-secondary-foreground font-semibold">
+                <Clock className="h-5 w-5" />
+                Ouverture de porte dès 89€ · intervention en 20-30 min à Pérenchies
+              </div>
               <CallButton size="lg" />
             </div>
           </div>
@@ -126,6 +153,40 @@ const SerrurierPerenchies = () => {
             </div>
           </section>
 
+          <section className="py-16">
+            <div className="max-w-4xl mx-auto">
+              <h2 className="text-3xl font-bold mb-6">
+                Serrurier à Pérenchies, à l'ouest de la métropole lilloise
+              </h2>
+              <p className="text-muted-foreground leading-relaxed mb-4">
+                Située à l'ouest de la MEL, Pérenchies présente un habitat mixte
+                caractéristique : courées et maisons de ville anciennes héritées du passé
+                textile autour du Bourg, côtoient des constructions plus récentes et des
+                lotissements en bordure de Verlinghem et de Lompret. Cette diversité se
+                retrouve dans les serrures rencontrées — du verrou ancien à gorges jusqu'au
+                cylindre européen multipoints. Nos serruriers s'adaptent à chacun de ces
+                mécanismes, de l'ouverture fine d'une porte d'époque au remplacement d'un
+                barillet grippé. La proximité de la Route de la Bassée, axe structurant de
+                la commune, facilite un accès rapide à chaque rue. Les demandes courantes
+                concernent la clé perdue, le cylindre qui tourne dans le vide ou le besoin
+                de sécuriser un logement après un déménagement. Besoin d'un{" "}
+                <Link to="/serrurier-dimanche-nuit-lille" className="text-primary font-medium hover:underline">dépannage en soirée ou le dimanche</Link> ?
+                Consultez aussi nos <Link to="/tarifs" className="text-primary font-medium hover:underline">tarifs</Link>.
+              </p>
+            </div>
+          </section>
+
+          <section className="py-16">
+            <div className="max-w-4xl mx-auto">
+              <h2 className="text-3xl font-bold mb-8 text-center">
+                Questions fréquentes — Serrurier Pérenchies
+              </h2>
+              <FAQ items={faqItems} />
+            </div>
+          </section>
+
+          <Reviews />
+
           <InternalLinks currentCity="serrurier-perenchies" />
 
           <section id="contact" className="py-16">
@@ -133,8 +194,12 @@ const SerrurierPerenchies = () => {
               <h2 className="text-3xl font-bold mb-4 text-center">
                 Contact
               </h2>
+              <p className="text-center text-muted-foreground mb-4">
+                Téléphone : <a href={PHONE_HREF} className="text-primary font-bold hover:underline">{PHONE_DISPLAY}</a>
+              </p>
               <p className="text-center text-muted-foreground mb-8">
-                Téléphone : <a href="tel:0621660867" className="text-primary font-bold hover:underline">06 21 66 08 67</a>
+                Porte claquée à Pérenchies ? Voir notre service d'{" "}
+                <Link to="/ouverture-porte" className="text-primary font-medium hover:underline">ouverture de porte</Link>.
               </p>
               <ContactForm />
             </div>
