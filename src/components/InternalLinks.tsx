@@ -22,10 +22,18 @@ const InternalLinks = ({ currentCity }: InternalLinksProps) => {
     { name: "Mouvaux", slug: "serrurier-mouvaux" },
     { name: "Ronchin", slug: "serrurier-ronchin" },
     { name: "Loos", slug: "serrurier-loos" },
+    { name: "Faches-Thumesnil", slug: "serrurier-faches-thumesnil" },
+    { name: "Wambrechies", slug: "serrurier-wambrechies" },
+    { name: "Wattignies", slug: "serrurier-wattignies" },
+    { name: "Hem", slug: "serrurier-hem" },
+    { name: "Pérenchies", slug: "serrurier-perenchies" },
+    { name: "Bondues", slug: "serrurier-bondues" },
+    { name: "Halluin", slug: "serrurier-halluin" },
   ];
 
-  // Filter out current city
-  const filteredCities = cities.filter(city => city.slug !== currentCity).slice(0, 8);
+  // Toutes les communes desservies (hors page courante) pour une distribution
+  // homogène du maillage interne entre toutes les pages villes.
+  const filteredCities = cities.filter(city => city.slug !== currentCity);
 
   return (
     <section className="py-12 bg-muted/30">
