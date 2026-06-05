@@ -25,6 +25,13 @@ const JsonLd = ({ pageName, pageUrl }: JsonLdProps) => {
     "@id": `${baseUrl}/#business`,
     "url": fullUrl,
     "telephone": "+33621660867",
+    "legalName": "ELM SÉCURITÉ",
+    "vatID": "FR13948562095",
+    "foundingDate": "2023-02-01",
+    "identifier": [
+      { "@type": "PropertyValue", "name": "SIRET", "value": "94856209500018" },
+      { "@type": "PropertyValue", "name": "SIREN", "value": "948562095" },
+    ],
     "priceRange": "€€",
     "description":
       "Concessionnaire officiel Point Fort Fichet à Lille, ELM Sécurité est le seul Point Fort Fichet de Lille disponible 24h/24 et 7j/7. Certifié par les assurances. Intervention en 15-30 minutes.",

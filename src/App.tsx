@@ -44,6 +44,7 @@ import SerrurierAgreeAssurance from "./pages/SerrurierAgreeAssurance";
 import MiseEnSecuriteEffraction from "./pages/MiseEnSecuriteEffraction";
 import SerrureBloqueeQueFaire from "./pages/SerrureBloqueeQueFaire";
 import SerrureA2P from "./pages/SerrureA2P";
+import MentionsLegales from "./pages/MentionsLegales";
 import NotFound from "./pages/NotFound";
 import Layout from "./components/Layout";
 
@@ -98,6 +99,7 @@ const App = () => (
           <Route path="/mise-en-securite-effraction-lille" element={<MiseEnSecuriteEffraction />} />
           <Route path="/serrure-bloquee-que-faire" element={<SerrureBloqueeQueFaire />} />
           <Route path="/serrure-a2p-3-points-lille" element={<SerrureA2P />} />
+          <Route path="/mentions-legales" element={<MentionsLegales />} />
           </Route>
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
