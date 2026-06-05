@@ -207,7 +207,10 @@ const Footer = () => {
             <address className="not-italic pt-2">
               143 Rue du Molinel<br />
               59800 Lille<br />
-              <a href="tel:+33621660867" className="hover:underline">+33 6 21 66 08 67</a>
+              <a href="tel:+33621660867" className="hover:underline">+33 6 21 66 08 67</a><br />
+              <span className="text-xs opacity-80">
+                SASU au capital de 1 000 € · SIRET 948&nbsp;562&nbsp;095&nbsp;00018 · APE 4332B
+              </span>
             </address>
           </div>
         </div>
