@@ -52,7 +52,7 @@ const SerrurierLoos = () => {
           name="description" 
           content="Serrurier à Loos 24/7. Intervention Centre-ville, CHU Eurasanté, Oliveaux. Ouverture porte, changement cylindre ☎ 06 21 66 08 67" 
         />
-        <link rel="canonical" href="https://serrurier-urgence-lille.fr/serrurier-loos" />
+        <link rel="canonical" href="https://serrurier-urgence-lille.fr/serrurier-loos/" />
       </Helmet>
       <JsonLd />
       

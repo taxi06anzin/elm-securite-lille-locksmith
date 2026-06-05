@@ -53,7 +53,7 @@ const SerrurierWattignies = () => {
           name="description" 
           content="Serrurier à Wattignies 24/7. Intervention Noirignon, Centre, Mont-à-Leux, Corneille. Ouverture porte, cylindre renforcé ☎ 06 21 66 08 67" 
         />
-        <link rel="canonical" href="https://serrurier-urgence-lille.fr/serrurier-wattignies" />
+        <link rel="canonical" href="https://serrurier-urgence-lille.fr/serrurier-wattignies/" />
       </Helmet>
       <JsonLd />
       

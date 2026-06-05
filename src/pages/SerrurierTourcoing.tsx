@@ -31,7 +31,7 @@ const SerrurierTourcoing = () => {
           name="description" 
           content="Serrurier à Tourcoing 24/7. Dépannage urgent tous secteurs : Brun-Pain, Epidème, Bourgogne. Ouverture porte, changement serrure ☎ 06 21 66 08 67" 
         />
-        <link rel="canonical" href="https://serrurier-urgence-lille.fr/serrurier-tourcoing" />
+        <link rel="canonical" href="https://serrurier-urgence-lille.fr/serrurier-tourcoing/" />
       </Helmet>
       <JsonLd />
       

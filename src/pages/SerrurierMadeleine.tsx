@@ -29,7 +29,7 @@ const SerrurierMadeleine = () => {
           name="description" 
           content="Serrurier à La Madeleine 24/7. Intervention rapide tous quartiers : Centre, Botanique, Romarin, Beaumarchais. Dépannage urgent ☎ 06 21 66 08 67" 
         />
-        <link rel="canonical" href="https://serrurier-urgence-lille.fr/serrurier-la-madeleine" />
+        <link rel="canonical" href="https://serrurier-urgence-lille.fr/serrurier-la-madeleine/" />
       </Helmet>
       <JsonLd />
       

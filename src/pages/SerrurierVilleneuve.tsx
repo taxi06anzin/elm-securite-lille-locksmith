@@ -32,7 +32,7 @@ const SerrurierVilleneuve = () => {
           name="description" 
           content="Serrurier à Villeneuve-d'Ascq 24/7. Intervention tous quartiers : Triolo, Pont-de-Bois, Cité Scientifique, Ascq. Dépannage urgent ☎ 06 21 66 08 67" 
         />
-        <link rel="canonical" href="https://serrurier-urgence-lille.fr/serrurier-villeneuve-ascq" />
+        <link rel="canonical" href="https://serrurier-urgence-lille.fr/serrurier-villeneuve-ascq/" />
       </Helmet>
       <JsonLd />
       

@@ -54,7 +54,7 @@ const SerrurierMons = () => {
           name="description" 
           content="Serrurier à Mons-en-Barœul 24/7. Intervention Nouveau Mons, Vieux Mons. Ouverture porte, changement cylindre, dépannage urgent ☎ 06 21 66 08 67" 
         />
-        <link rel="canonical" href="https://serrurier-urgence-lille.fr/serrurier-mons-en-baroeul" />
+        <link rel="canonical" href="https://serrurier-urgence-lille.fr/serrurier-mons-en-baroeul/" />
       </Helmet>
       <JsonLd />
       

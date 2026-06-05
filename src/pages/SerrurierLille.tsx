@@ -34,13 +34,13 @@ const SerrurierLille = () => {
           content="Serrurier à Lille disponible 24h/24. Intervention rapide dans tous les quartiers : Centre, Wazemmes, Fives, Vauban. Ouverture porte, changement serrure ☎ 06 21 66 08 67" 
         />
         <meta name="robots" content="index, follow" />
-        <link rel="canonical" href="https://serrurier-urgence-lille.fr/serrurier-lille" />
+        <link rel="canonical" href="https://serrurier-urgence-lille.fr/serrurier-lille/" />
         
         {/* Open Graph */}
         <meta property="og:title" content="Serrurier Lille – Dépannage immédiat 24h/24 | ELM SÉCURITÉ" />
         <meta property="og:description" content="Serrurier à Lille disponible 24h/24. Intervention rapide dans tous les quartiers." />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://serrurier-urgence-lille.fr/serrurier-lille" />
+        <meta property="og:url" content="https://serrurier-urgence-lille.fr/serrurier-lille/" />
 
         {/* Twitter Card */}
         <meta name="twitter:title" content="Serrurier Lille – Dépannage immédiat 24h/24" />

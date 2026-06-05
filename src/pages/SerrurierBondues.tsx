@@ -32,11 +32,11 @@ const SerrurierBondues = () => {
           content="Serrurier à Bondues 24/7. Intervention Centre, Bois d'Achelles, Grand Bondues, Ravennes. Ouverture porte, cylindre haute sécurité ☎ 06 21 66 08 67"
         />
         <meta name="robots" content="index, follow" />
-        <link rel="canonical" href="https://serrurier-urgence-lille.fr/serrurier-bondues" />
+        <link rel="canonical" href="https://serrurier-urgence-lille.fr/serrurier-bondues/" />
         
         <meta property="og:title" content="Serrurier Bondues – Intervention sur secteurs résidentiels premium | ELM SÉCURITÉ" />
         <meta property="og:description" content="Serrurier à Bondues 24/7. Intervention Centre, Bois d'Achelles, Grand Bondues, Ravennes. Ouverture porte, cylindre haute sécurité ☎ 06 21 66 08 67" />
-        <meta property="og:url" content="https://serrurier-urgence-lille.fr/serrurier-bondues" />
+        <meta property="og:url" content="https://serrurier-urgence-lille.fr/serrurier-bondues/" />
         <meta property="og:type" content="website" />
 
         <meta name="twitter:title" content="Serrurier Bondues – Intervention sur secteurs résidentiels premium | ELM SÉCURITÉ" />

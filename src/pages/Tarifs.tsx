@@ -79,7 +79,7 @@ const Tarifs = () => {
           name="description" 
           content="Tarifs serrurier Lille : ouverture porte dès 89€, changement serrure dès 100€. Grille complète TTC, devis gratuit. Appelez le 06 21 66 08 67" 
         />
-        <link rel="canonical" href="https://serrurier-urgence-lille.fr/tarifs" />
+        <link rel="canonical" href="https://serrurier-urgence-lille.fr/tarifs/" />
       </Helmet>
       <JsonLd />
       

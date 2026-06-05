@@ -52,7 +52,7 @@ const SerrurierWambrechies = () => {
           name="description" 
           content="Serrurier à Wambrechies 24/7. Intervention Centre, Robersart, Marque-Église. Ouverture porte, sécurisation après incident ☎ 06 21 66 08 67" 
         />
-        <link rel="canonical" href="https://serrurier-urgence-lille.fr/serrurier-wambrechies" />
+        <link rel="canonical" href="https://serrurier-urgence-lille.fr/serrurier-wambrechies/" />
       </Helmet>
       <JsonLd />
       

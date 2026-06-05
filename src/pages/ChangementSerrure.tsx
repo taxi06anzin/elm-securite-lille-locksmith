@@ -51,7 +51,7 @@ const ChangementSerrure = () => {
           name="description" 
           content="Changement de serrure à Lille. Installation serrure 3, 5 points, haute sécurité. Intervention rapide, devis gratuit ☎ 06 21 66 08 67" 
         />
-        <link rel="canonical" href="https://serrurier-urgence-lille.fr/changement-serrure" />
+        <link rel="canonical" href="https://serrurier-urgence-lille.fr/changement-serrure/" />
       </Helmet>
       <JsonLd pageName="Changement de serrure" pageUrl="/changement-serrure" />
       <ServiceSchema 

@@ -28,7 +28,7 @@ const DepannageSerrurerie = () => {
           name="description" 
           content="Serrurier urgence 24h/24 à Lille. Disponible jour et nuit. Intervention rapide en 20-30 min. Devis gratuit ☎ 06 21 66 08 67" 
         />
-        <link rel="canonical" href="https://serrurier-urgence-lille.fr/depannage-serrurerie" />
+        <link rel="canonical" href="https://serrurier-urgence-lille.fr/depannage-serrurerie/" />
       </Helmet>
       <JsonLd />
       <ServiceSchema 

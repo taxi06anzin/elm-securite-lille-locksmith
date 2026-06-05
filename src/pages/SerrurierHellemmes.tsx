@@ -32,11 +32,11 @@ const SerrurierHellemmes = () => {
           content="Serrurier à Hellemmes 24/7. Intervention Faidherbe, Éléphant, Centre. Ouverture porte, remplacement cylindre ☎ 06 21 66 08 67"
         />
         <meta name="robots" content="index, follow" />
-        <link rel="canonical" href="https://serrurier-urgence-lille.fr/serrurier-hellemmes" />
+        <link rel="canonical" href="https://serrurier-urgence-lille.fr/serrurier-hellemmes/" />
         
         <meta property="og:title" content="Serrurier Hellemmes – Intervention technique 7j/7 | ELM SÉCURITÉ" />
         <meta property="og:description" content="Serrurier à Hellemmes 24/7. Intervention Faidherbe, Éléphant, Centre. Ouverture porte, remplacement cylindre ☎ 06 21 66 08 67" />
-        <meta property="og:url" content="https://serrurier-urgence-lille.fr/serrurier-hellemmes" />
+        <meta property="og:url" content="https://serrurier-urgence-lille.fr/serrurier-hellemmes/" />
         <meta property="og:type" content="website" />
 
         <meta name="twitter:title" content="Serrurier Hellemmes – Intervention technique 7j/7 | ELM SÉCURITÉ" />

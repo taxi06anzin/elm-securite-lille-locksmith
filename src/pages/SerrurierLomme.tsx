@@ -30,7 +30,7 @@ const SerrurierLomme = () => {
           name="description" 
           content="Serrurier à Lomme 24/7. Intervention Bourg, Délivrance, Marais, Mitterie, Euratechnologies. Ouverture porte, changement cylindre ☎ 06 21 66 08 67" 
         />
-        <link rel="canonical" href="https://serrurier-urgence-lille.fr/serrurier-lomme" />
+        <link rel="canonical" href="https://serrurier-urgence-lille.fr/serrurier-lomme/" />
       </Helmet>
       <JsonLd />
       
