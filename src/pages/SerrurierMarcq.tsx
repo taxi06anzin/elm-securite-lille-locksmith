@@ -22,7 +22,7 @@ const SerrurierMarcq = () => {
           name="description" 
           content="Serrurier à Marcq-en-Barœul 24/7. Intervention Croisé-Laroche, Bourg, Briqueterie, Marais. Ouverture porte, renforcement sécurité ☎ 06 21 66 08 67" 
         />
-        <link rel="canonical" href="https://serrurier-urgence-lille.fr/serrurier-marcq-en-baroeul" />
+        <link rel="canonical" href="https://serrurier-urgence-lille.fr/serrurier-marcq-en-baroeul/" />
       </Helmet>
       <JsonLd />
       

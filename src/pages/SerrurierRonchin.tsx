@@ -53,7 +53,7 @@ const SerrurierRonchin = () => {
           name="description" 
           content="Serrurier à Ronchin 24/7. Intervention Nouveau Ronchin, Vieux Ronchin, 5 Bonniers, Marlière. Ouverture porte ☎ 06 21 66 08 67" 
         />
-        <link rel="canonical" href="https://serrurier-urgence-lille.fr/serrurier-ronchin" />
+        <link rel="canonical" href="https://serrurier-urgence-lille.fr/serrurier-ronchin/" />
       </Helmet>
       <JsonLd />
       

@@ -53,7 +53,7 @@ const SerrurierMouvaux = () => {
           name="description" 
           content="Serrurier à Mouvaux 24/7. Intervention Hauts-Champs, centre, Hautmont. Ouverture porte, remplacement cylindre, renforcement sécurité ☎ 06 21 66 08 67" 
         />
-        <link rel="canonical" href="https://serrurier-urgence-lille.fr/serrurier-mouvaux" />
+        <link rel="canonical" href="https://serrurier-urgence-lille.fr/serrurier-mouvaux/" />
       </Helmet>
       <JsonLd />
       

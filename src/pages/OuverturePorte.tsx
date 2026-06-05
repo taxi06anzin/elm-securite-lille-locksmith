@@ -51,7 +51,7 @@ const OuverturePorte = () => {
           name="description" 
           content="Ouverture de porte à Lille 24h/24. Porte claquée, bloquée ou sans clé ? Intervention rapide en 20-30 min. Sans casse si possible ☎ 06 21 66 08 67" 
         />
-        <link rel="canonical" href="https://serrurier-urgence-lille.fr/ouverture-porte" />
+        <link rel="canonical" href="https://serrurier-urgence-lille.fr/ouverture-porte/" />
       </Helmet>
       <JsonLd pageName="Ouverture de porte" pageUrl="/ouverture-porte" />
       <ServiceSchema 

@@ -31,7 +31,7 @@ const PorteBlindee = () => {
           name="description" 
           content="Blindage de porte à Lille. Renforcement sur porte existante ou installation porte blindée neuve. Intervention MEL ☎ 06 21 66 08 67" 
         />
-        <link rel="canonical" href="https://serrurier-urgence-lille.fr/porte-blindee" />
+        <link rel="canonical" href="https://serrurier-urgence-lille.fr/porte-blindee/" />
       </Helmet>
       <JsonLd pageName="Porte blindée" pageUrl="/porte-blindee" />
       <ServiceSchema 

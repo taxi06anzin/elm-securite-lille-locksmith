@@ -53,7 +53,7 @@ const SerrurierFaches = () => {
           name="description" 
           content="Serrurier à Faches-Thumesnil 24/7. Intervention Centre, Cheminots, Saint-Exupéry. Proximité aéroport. Ouverture porte ☎ 06 21 66 08 67" 
         />
-        <link rel="canonical" href="https://serrurier-urgence-lille.fr/serrurier-faches-thumesnil" />
+        <link rel="canonical" href="https://serrurier-urgence-lille.fr/serrurier-faches-thumesnil/" />
       </Helmet>
       <JsonLd />
       

@@ -52,7 +52,7 @@ const SerrurierWasquehal = () => {
           name="description" 
           content="Serrurier à Wasquehal 24/7. Intervention Centre, Noir Bonnet, Pavé de Lille, Cottignies, Triez. Ouverture porte, cylindres renforcés ☎ 06 21 66 08 67" 
         />
-        <link rel="canonical" href="https://serrurier-urgence-lille.fr/serrurier-wasquehal" />
+        <link rel="canonical" href="https://serrurier-urgence-lille.fr/serrurier-wasquehal/" />
       </Helmet>
       <JsonLd />
       

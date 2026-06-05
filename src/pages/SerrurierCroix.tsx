@@ -51,7 +51,7 @@ const SerrurierCroix = () => {
           name="description" 
           content="Serrurier à Croix 24/7. Intervention Croix-Centre, Beaumont, Barbieux, Mallet-Stevens. Ouverture porte, changement cylindre ☎ 06 21 66 08 67" 
         />
-        <link rel="canonical" href="https://serrurier-urgence-lille.fr/serrurier-croix" />
+        <link rel="canonical" href="https://serrurier-urgence-lille.fr/serrurier-croix/" />
       </Helmet>
       <JsonLd />
       

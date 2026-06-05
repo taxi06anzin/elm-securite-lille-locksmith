@@ -53,7 +53,7 @@ const SerrurierHalluin = () => {
           name="description" 
           content="Serrurier à Halluin 24/7. Intervention Centre, Mont d'Halluin, Colbras, Salengro. Ouverture porte, changement cylindre ☎ 06 21 66 08 67" 
         />
-        <link rel="canonical" href="https://serrurier-urgence-lille.fr/serrurier-halluin" />
+        <link rel="canonical" href="https://serrurier-urgence-lille.fr/serrurier-halluin/" />
       </Helmet>
       <JsonLd />
       

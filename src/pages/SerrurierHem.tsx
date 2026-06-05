@@ -52,7 +52,7 @@ const SerrurierHem = () => {
           name="description" 
           content="Serrurier à Hem 24/7. Intervention Centre, Lionderie, Longchamp, Beaumont, 3 Baudets. Ouverture porte, cylindre renforcé ☎ 06 21 66 08 67" 
         />
-        <link rel="canonical" href="https://serrurier-urgence-lille.fr/serrurier-hem" />
+        <link rel="canonical" href="https://serrurier-urgence-lille.fr/serrurier-hem/" />
       </Helmet>
       <JsonLd />
       

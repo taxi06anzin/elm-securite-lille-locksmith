@@ -31,7 +31,7 @@ const SerrurierLambersart = () => {
           name="description" 
           content="Serrurier à Lambersart 24/7. Intervention tous secteurs : Canon d'Or, Bourg, Pacot, Canteleu, Hippodrome. Ouverture porte, changement cylindre ☎ 06 21 66 08 67" 
         />
-        <link rel="canonical" href="https://serrurier-urgence-lille.fr/serrurier-lambersart" />
+        <link rel="canonical" href="https://serrurier-urgence-lille.fr/serrurier-lambersart/" />
       </Helmet>
       <JsonLd />
       
