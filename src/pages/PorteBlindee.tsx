@@ -26,7 +26,7 @@ const PorteBlindee = () => {
   return (
     <>
       <Helmet>
-        <title>Blindage de Porte Lille – Renforcement et Installation | ELM SÉCURITÉ</title>
+        <title>Porte blindée & blindage à Lille | ELM SÉCURITÉ</title>
         <meta 
           name="description" 
           content="Blindage de porte à Lille. Renforcement sur porte existante ou installation porte blindée neuve. Intervention MEL ☎ 06 21 66 08 67" 

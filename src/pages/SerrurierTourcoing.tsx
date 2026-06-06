@@ -26,7 +26,7 @@ const SerrurierTourcoing = () => {
   return (
     <>
       <Helmet>
-        <title>Serrurier Tourcoing – Intervention locale et rapide | ELM SÉCURITÉ</title>
+        <title>Serrurier Tourcoing – Dépannage 24/7 | ELM SÉCURITÉ</title>
         <meta 
           name="description" 
           content="Serrurier à Tourcoing 24/7. Dépannage urgent tous secteurs : Brun-Pain, Epidème, Bourgogne. Ouverture porte, changement serrure ☎ 06 21 66 08 67" 

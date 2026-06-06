@@ -46,7 +46,7 @@ const ChangementSerrure = () => {
   return (
     <>
       <Helmet>
-        <title>Changement de Serrure à Lille - Toutes Marques | ELM SÉCURITÉ</title>
+        <title>Changement de serrure à Lille | ELM SÉCURITÉ</title>
         <meta 
           name="description" 
           content="Changement de serrure à Lille. Installation serrure 3, 5 points, haute sécurité. Intervention rapide, devis gratuit ☎ 06 21 66 08 67" 

@@ -23,7 +23,7 @@ const DepannageSerrurerie = () => {
   return (
     <>
       <Helmet>
-        <title>Serrurier Urgence 24/7 à Lille | Intervention Rapide | ELM SÉCURITÉ</title>
+        <title>Serrurier urgence 24/7 à Lille | ELM SÉCURITÉ</title>
         <meta 
           name="description" 
           content="Serrurier urgence 24h/24 à Lille. Disponible jour et nuit. Intervention rapide en 20-30 min. Devis gratuit ☎ 06 21 66 08 67" 

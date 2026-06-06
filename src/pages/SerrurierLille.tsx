@@ -31,7 +31,7 @@ const SerrurierLille = () => {
         <title>Serrurier Lille – Dépannage immédiat 24h/24 | ELM SÉCURITÉ</title>
         <meta 
           name="description" 
-          content="Serrurier à Lille disponible 24h/24. Intervention rapide dans tous les quartiers : Centre, Wazemmes, Fives, Vauban. Ouverture porte, changement serrure ☎ 06 21 66 08 67" 
+          content="Serrurier à Lille 24h/24, 7j/7. Intervention rapide en 20-30 min dans tous les quartiers : ouverture, serrure, porte blindée ☎ 06 21 66 08 67" 
         />
         <meta name="robots" content="index, follow" />
         <link rel="canonical" href="https://serrurier-urgence-lille.fr/serrurier-lille/" />

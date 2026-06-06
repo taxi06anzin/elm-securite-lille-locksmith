@@ -24,7 +24,7 @@ const SerrurierMadeleine = () => {
   return (
     <>
       <Helmet>
-        <title>Serrurier La Madeleine – Dépannage sur tous les quartiers | ELM SÉCURITÉ</title>
+        <title>Serrurier La Madeleine – Dépannage 24/7 | ELM SÉCURITÉ</title>
         <meta 
           name="description" 
           content="Serrurier à La Madeleine 24/7. Intervention rapide tous quartiers : Centre, Botanique, Romarin, Beaumarchais. Dépannage urgent ☎ 06 21 66 08 67" 

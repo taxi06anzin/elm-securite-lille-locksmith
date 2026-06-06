@@ -42,8 +42,8 @@ const MiseEnSecuriteEffraction = () => {
   return (
     <>
       <SeoHead
-        title="Mise en sécurité après effraction à Lille — Urgence 24/7 | ELM SÉCURITÉ"
-        description="Cambriolage à Lille ? Mise en sécurité d'urgence après effraction 24h/24 : porte forcée, serrure arrachée. Intervention en 20-30 min, devis gratuit ☎ 06 21 66 08 67"
+        title="Mise en sécurité après effraction Lille | ELM SÉCURITÉ"
+        description="Cambriolage à Lille ? Mise en sécurité d'urgence après effraction 24h/24 : sécurisation porte, serrure forcée, facture assurance ☎ 06 21 66 08 67"
         canonical="https://serrurier-urgence-lille.fr/mise-en-securite-effraction-lille"
       />
       <JsonLd pageName="Mise en sécurité après effraction Lille" pageUrl="/mise-en-securite-effraction-lille" />

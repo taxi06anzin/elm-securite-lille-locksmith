@@ -57,7 +57,7 @@ const Index = () => {
   return (
     <>
       <Helmet>
-        <title>Serrurier Lille - Dépannage 24/7 | ELM SÉCURITÉ | Intervention Rapide</title>
+        <title>Serrurier Lille – Dépannage 24/7 urgent | ELM SÉCURITÉ</title>
         <meta 
           name="description" 
           content="Serrurier à Lille disponible 24h/24. Ouverture de porte, changement de serrure, porte blindée. Intervention en 20-30 min. Devis gratuit ☎ 06 21 66 08 67" 

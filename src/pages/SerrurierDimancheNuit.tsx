@@ -42,7 +42,7 @@ const SerrurierDimancheNuit = () => {
   return (
     <>
       <SeoHead
-        title="Serrurier Nuit & Dimanche Lille — Urgence 24h/24 | ELM SÉCURITÉ"
+        title="Serrurier nuit & dimanche à Lille | ELM SÉCURITÉ"
         description="Serrurier disponible la nuit, le dimanche et les jours fériés à Lille. Intervention en 20-30 min, tarif annoncé avant. Devis gratuit ☎ 06 21 66 08 67"
         canonical="https://serrurier-urgence-lille.fr/serrurier-dimanche-nuit-lille"
       />

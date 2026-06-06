@@ -26,7 +26,7 @@ const SerrurierLambersart = () => {
   return (
     <>
       <Helmet>
-        <title>Serrurier Lambersart – Dépannage disponible 7j/7 | ELM SÉCURITÉ</title>
+        <title>Serrurier Lambersart – Dépannage 24/7 | ELM SÉCURITÉ</title>
         <meta 
           name="description" 
           content="Serrurier à Lambersart 24/7. Intervention tous secteurs : Canon d'Or, Bourg, Pacot, Canteleu, Hippodrome. Ouverture porte, changement cylindre ☎ 06 21 66 08 67" 

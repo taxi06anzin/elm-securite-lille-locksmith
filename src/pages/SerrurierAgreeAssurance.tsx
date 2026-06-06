@@ -42,8 +42,8 @@ const SerrurierAgreeAssurance = () => {
   return (
     <>
       <SeoHead
-        title="Serrurier agréé assurance à Lille — Facture conforme & remboursement | ELM SÉCURITÉ"
-        description="Serrurier agréé assurance à Lille : facture conforme, prise en charge après effraction, accompagnement remboursement. Concessionnaire Point Fort Fichet ☎ 06 21 66 08 67"
+        title="Serrurier agréé assurance à Lille | ELM SÉCURITÉ"
+        description="Serrurier agréé assurance à Lille : facture conforme, prise en charge après effraction, devis avant intervention ☎ 06 21 66 08 67"
         canonical="https://serrurier-urgence-lille.fr/serrurier-agree-assurance-lille"
       />
       <JsonLd pageName="Serrurier agréé assurance Lille" pageUrl="/serrurier-agree-assurance-lille" />

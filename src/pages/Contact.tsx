@@ -9,7 +9,7 @@ const Contact = () => {
   return (
     <>
       <Helmet>
-        <title>Contact Serrurier Lille - Intervention Immédiate | ELM SÉCURITÉ</title>
+        <title>Contact serrurier Lille 24/7 | ELM SÉCURITÉ</title>
         <meta 
           name="description" 
           content="Contactez ELM SÉCURITÉ, serrurier à Lille. ☎ 06 21 66 08 67. Disponible 24/7. 143 Rue du Molinel, 59800 Lille. Devis gratuit." 

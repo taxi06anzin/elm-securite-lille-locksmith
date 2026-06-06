@@ -30,8 +30,8 @@ const FichetLille = () => {
   return (
     <>
       <SeoHead
-        title="Serrurier Fichet Lille — Dépannage & Urgence 24/7 | ELM SÉCURITÉ"
-        description="Dépannage Fichet en urgence 24/7 à Lille : ouverture serrure bloquée, cylindre, multipoints Fichet. Nuit & dimanche. Concessionnaire officiel, pièces d'origine ☎ 06 21 66 08 67"
+        title="Serrurier Fichet Lille – Urgence 24/7 | ELM SÉCURITÉ"
+        description="Dépannage Fichet en urgence 24/7 à Lille : ouverture serrure bloquée, cylindre, porte blindée. Concessionnaire Point Fort Fichet ☎ 06 21 66 08 67"
         canonical="https://serrurier-urgence-lille.fr/fichet-lille"
       />
       <JsonLd pageName="Serrurier Fichet Lille" pageUrl="/fichet-lille" />

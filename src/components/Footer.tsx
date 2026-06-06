@@ -23,6 +23,10 @@ const Footer = () => {
     { name: "Wambrechies", slug: "serrurier-wambrechies" },
     { name: "Bondues", slug: "serrurier-bondues" },
     { name: "Hem", slug: "serrurier-hem" },
+    { name: "Mouvaux", slug: "serrurier-mouvaux" },
+    { name: "Pérenchies", slug: "serrurier-perenchies" },
+    { name: "Halluin", slug: "serrurier-halluin" },
+    { name: "Lille-Centre", slug: "serrurier-lille-centre" },
   ];
 
   return (
