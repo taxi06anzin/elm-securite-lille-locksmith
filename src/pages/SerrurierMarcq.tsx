@@ -17,7 +17,7 @@ const SerrurierMarcq = () => {
   return (
     <>
       <Helmet>
-        <title>Serrurier Marcq-en-Barœul – Intervention secteurs résidentiels | ELM SÉCURITÉ</title>
+        <title>Serrurier Marcq-en-Barœul 24/7 | ELM SÉCURITÉ</title>
         <meta 
           name="description" 
           content="Serrurier à Marcq-en-Barœul 24/7. Intervention Croisé-Laroche, Bourg, Briqueterie, Marais. Ouverture porte, renforcement sécurité ☎ 06 21 66 08 67" 

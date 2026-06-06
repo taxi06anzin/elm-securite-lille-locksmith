@@ -42,8 +42,8 @@ const SerrureA2P = () => {
   return (
     <>
       <SeoHead
-        title="Serrure A2P & 3 points Lille — haute sécurité certifiée | ELM SÉCURITÉ"
-        description="Pose de serrures A2P et serrures 3 points certifiées à Lille. Concessionnaire officiel Point Fort Fichet, agréé assurances, garantie 2 ans. Devis gratuit ☎ 06 21 66 08 67"
+        title="Serrure A2P & 3 points à Lille | ELM SÉCURITÉ"
+        description="Pose de serrures A2P et 3 points certifiées à Lille. Concessionnaire Point Fort Fichet, agréé assurances. Devis gratuit ☎ 06 21 66 08 67"
         canonical="https://serrurier-urgence-lille.fr/serrure-a2p-3-points-lille"
       />
       <JsonLd pageName="Serrure A2P et 3 points Lille" pageUrl="/serrure-a2p-3-points-lille" />

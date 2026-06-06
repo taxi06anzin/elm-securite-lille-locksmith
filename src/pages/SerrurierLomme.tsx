@@ -25,7 +25,7 @@ const SerrurierLomme = () => {
   return (
     <>
       <Helmet>
-        <title>Serrurier Lomme – Dépannage disponible sur toute la commune | ELM SÉCURITÉ</title>
+        <title>Serrurier Lomme – Dépannage 24/7 | ELM SÉCURITÉ</title>
         <meta 
           name="description" 
           content="Serrurier à Lomme 24/7. Intervention Bourg, Délivrance, Marais, Mitterie, Euratechnologies. Ouverture porte, changement cylindre ☎ 06 21 66 08 67" 

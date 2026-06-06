@@ -47,7 +47,7 @@ const SerrurierWambrechies = () => {
   return (
     <>
       <Helmet>
-        <title>Serrurier Wambrechies – Dépannage sur tous les quartiers | ELM SÉCURITÉ</title>
+        <title>Serrurier Wambrechies – Dépannage 24/7 | ELM SÉCURITÉ</title>
         <meta 
           name="description" 
           content="Serrurier à Wambrechies 24/7. Intervention Centre, Robersart, Marque-Église. Ouverture porte, sécurisation après incident ☎ 06 21 66 08 67" 

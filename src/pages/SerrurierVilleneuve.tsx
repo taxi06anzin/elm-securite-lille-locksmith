@@ -27,7 +27,7 @@ const SerrurierVilleneuve = () => {
   return (
     <>
       <Helmet>
-        <title>Serrurier Villeneuve-d'Ascq – Dépannage sur toute la ville | ELM SÉCURITÉ</title>
+        <title>Serrurier Villeneuve-d'Ascq 24/7 | ELM SÉCURITÉ</title>
         <meta 
           name="description" 
           content="Serrurier à Villeneuve-d'Ascq 24/7. Intervention tous quartiers : Triolo, Pont-de-Bois, Cité Scientifique, Ascq. Dépannage urgent ☎ 06 21 66 08 67" 

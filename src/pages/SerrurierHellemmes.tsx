@@ -26,7 +26,7 @@ const SerrurierHellemmes = () => {
   return (
     <>
       <Helmet>
-        <title>Serrurier Hellemmes – Intervention technique 7j/7 | ELM SÉCURITÉ</title>
+        <title>Serrurier Hellemmes – Dépannage 24/7 | ELM SÉCURITÉ</title>
         <meta 
           name="description" 
           content="Serrurier à Hellemmes 24/7. Intervention Faidherbe, Éléphant, Centre. Ouverture porte, remplacement cylindre ☎ 06 21 66 08 67"

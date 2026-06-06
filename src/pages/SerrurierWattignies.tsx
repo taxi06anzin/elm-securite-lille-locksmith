@@ -48,7 +48,7 @@ const SerrurierWattignies = () => {
   return (
     <>
       <Helmet>
-        <title>Serrurier Wattignies – Dépannage de jour comme de nuit | ELM SÉCURITÉ</title>
+        <title>Serrurier Wattignies – Dépannage 24/7 | ELM SÉCURITÉ</title>
         <meta 
           name="description" 
           content="Serrurier à Wattignies 24/7. Intervention Noirignon, Centre, Mont-à-Leux, Corneille. Ouverture porte, cylindre renforcé ☎ 06 21 66 08 67" 

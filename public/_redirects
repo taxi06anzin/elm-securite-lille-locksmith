@@ -1,2 +1,5 @@
-# Netlify redirects for SPA
-/*    /index.html   200
+# Netlify redirects for SPA.
+# Statut 404 (et non 200) sur les URL inconnues : les pages valides sont des
+# fichiers statiques pré-rendus (servis en 200 par priorité), seules les URL
+# réellement inexistantes tombent ici → vrai 404 (évite le soft-404).
+/*    /index.html   404

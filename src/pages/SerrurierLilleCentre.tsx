@@ -81,8 +81,8 @@ const SerrurierLilleCentre = () => {
   return (
     <>
       <SeoHead
-        title="Serrurier Lille-Centre 24/7 — Intervention 15 min | Point Fort Fichet"
-        description="Serrurier à Lille-Centre disponible 24h/24 et 7j/7. Concessionnaire officiel Point Fort Fichet. Intervention en 15 min : Grand Place, Faidherbe, Rihour, Gare. ☎ 06 21 66 08 67"
+        title="Serrurier Lille-Centre 24/7 – 15 min | ELM SÉCURITÉ"
+        description="Serrurier Lille-Centre 24/7. Concessionnaire Point Fort Fichet, intervention en 15 min (Vieux-Lille, Euralille). Devis gratuit ☎ 06 21 66 08 67"
         canonical="https://serrurier-urgence-lille.fr/serrurier-lille-centre"
       />
       <JsonLd pageName="Serrurier Lille-Centre" pageUrl="/serrurier-lille-centre" />

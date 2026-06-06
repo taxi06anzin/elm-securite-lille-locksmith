@@ -47,7 +47,7 @@ const SerrurierHem = () => {
   return (
     <>
       <Helmet>
-        <title>Serrurier Hem – Dépannage immédiat sur toute la commune | ELM SÉCURITÉ</title>
+        <title>Serrurier Hem – Dépannage 24/7 | ELM SÉCURITÉ</title>
         <meta 
           name="description" 
           content="Serrurier à Hem 24/7. Intervention Centre, Lionderie, Longchamp, Beaumont, 3 Baudets. Ouverture porte, cylindre renforcé ☎ 06 21 66 08 67" 

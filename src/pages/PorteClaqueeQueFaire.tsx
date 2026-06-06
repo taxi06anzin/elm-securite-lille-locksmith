@@ -40,8 +40,8 @@ const PorteClaqueeQueFaire = () => {
   return (
     <>
       <SeoHead
-        title="Porte claquée : que faire ? Le guide + ouverture Lille | ELM SÉCURITÉ"
-        description="Porte claquée, clés à l'intérieur ? Les bons réflexes, ce qu'il ne faut pas faire, le prix d'une ouverture (dès 89€) et comment éviter les arnaques. ☎ 06 21 66 08 67"
+        title="Porte claquée : que faire ? Guide Lille | ELM SÉCURITÉ"
+        description="Porte claquée, clés à l'intérieur ? Les bons réflexes, les erreurs à éviter et le prix d'une ouverture à Lille (dès 89€) ☎ 06 21 66 08 67"
         canonical="https://serrurier-urgence-lille.fr/porte-claquee-que-faire"
       />
       <JsonLd pageName="Porte claquée : que faire" pageUrl="/porte-claquee-que-faire" />

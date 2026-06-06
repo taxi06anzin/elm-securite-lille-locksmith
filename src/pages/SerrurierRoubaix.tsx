@@ -28,7 +28,7 @@ const SerrurierRoubaix = () => {
   return (
     <>
       <Helmet>
-        <title>Serrurier Roubaix – Service rapide et disponible 7j/7 | ELM SÉCURITÉ</title>
+        <title>Serrurier Roubaix – Dépannage 24/7 | ELM SÉCURITÉ</title>
         <meta 
           name="description" 
           content="Serrurier à Roubaix 24/7. Intervention rapide tous quartiers : Alma, Pile, 3 Ponts, Centre. Ouverture porte, dépannage urgent ☎ 06 21 66 08 67" 

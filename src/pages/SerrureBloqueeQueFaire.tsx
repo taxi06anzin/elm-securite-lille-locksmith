@@ -40,7 +40,7 @@ const SerrureBloqueeQueFaire = () => {
   return (
     <>
       <SeoHead
-        title="Serrure bloquée : que faire ? Le guide + déblocage Lille | ELM SÉCURITÉ"
+        title="Serrure bloquée : que faire ? Guide Lille | ELM SÉCURITÉ"
         description="Serrure bloquée, clé qui ne tourne plus ou cassée ? Les gestes sûrs, les erreurs à éviter et le prix d'un déblocage (dès 89€) à Lille. ☎ 06 21 66 08 67"
         canonical="https://serrurier-urgence-lille.fr/serrure-bloquee-que-faire"
       />

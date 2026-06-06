@@ -34,7 +34,7 @@ const VillesCouvertes = () => {
   return (
     <>
       <SeoHead 
-        title="Villes Couvertes - Serrurier dans toute la Métropole Lilloise | ELM SÉCURITÉ"
+        title="Serrurier Métropole Lilloise – Villes | ELM SÉCURITÉ"
         description="Serrurier intervenant dans 22 communes de la MEL : Lille, Roubaix, Tourcoing, Villeneuve-d'Ascq et plus. Dépannage 24/7 en 20-30 min ☎ 06 21 66 08 67"
         canonical="https://serrurier-urgence-lille.fr/villes-couvertes"
       />

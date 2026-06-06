@@ -48,7 +48,7 @@ const SerrurierFaches = () => {
   return (
     <>
       <Helmet>
-        <title>Serrurier Faches-Thumesnil – Dépannage sur tous les secteurs | ELM SÉCURITÉ</title>
+        <title>Serrurier Faches-Thumesnil 24/7 | ELM SÉCURITÉ</title>
         <meta 
           name="description" 
           content="Serrurier à Faches-Thumesnil 24/7. Intervention Centre, Cheminots, Saint-Exupéry. Proximité aéroport. Ouverture porte ☎ 06 21 66 08 67" 

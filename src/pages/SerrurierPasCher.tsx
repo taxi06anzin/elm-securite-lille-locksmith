@@ -10,10 +10,10 @@ const SerrurierPasCher = () => {
   return (
     <>
       <Helmet>
-        <title>Serrurier pas cher Lille — tarif honnête, sans arnaque | ELM SÉCURITÉ</title>
+        <title>Serrurier pas cher Lille – tarif honnête | ELM SÉCURITÉ</title>
         <meta
           name="description"
-          content="Serrurier pas cher ET honnête à Lille : tarif annoncé avant, devis gratuit, facture conforme. Comment éviter les arnaques de serrurier et reconnaître un pro fiable. ☎ 06 21 66 08 67"
+          content="Serrurier pas cher ET honnête à Lille : tarif annoncé avant, devis gratuit, facture conforme. Évitez les arnaques ☎ 06 21 66 08 67"
         />
         <link rel="canonical" href="https://serrurier-urgence-lille.fr/serrurier-pas-cher/" />
       </Helmet>

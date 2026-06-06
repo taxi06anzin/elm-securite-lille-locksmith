@@ -26,7 +26,7 @@ const SerrurierBondues = () => {
   return (
     <>
       <Helmet>
-        <title>Serrurier Bondues – Intervention sur secteurs résidentiels premium | ELM SÉCURITÉ</title>
+        <title>Serrurier Bondues – Dépannage 24/7 | ELM SÉCURITÉ</title>
         <meta 
           name="description" 
           content="Serrurier à Bondues 24/7. Intervention Centre, Bois d'Achelles, Grand Bondues, Ravennes. Ouverture porte, cylindre haute sécurité ☎ 06 21 66 08 67"
